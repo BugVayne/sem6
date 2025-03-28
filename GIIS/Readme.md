@@ -8,14 +8,13 @@
 ![image](https://github.com/user-attachments/assets/43e59f5e-84aa-404c-a0d3-d67ea3bb057b)
 
 
-# Лабораторная работа №1
 
 ## Условие 
 ![image](https://github.com/user-attachments/assets/dcf80800-920b-4e9f-9a55-8664d185c057)
 
 ## Реализация
 
-![image](https://github.com/user-attachments/assets/fe25d19b-2b79-4ec2-83b7-3e6a58717ee3)
+![image](https://github.com/user-attachments/assets/fe25d19b-2b79-4ec2-83b7-3e6a58717ee3=250x)
 
 
 ### Реализованные алгоритмы  
