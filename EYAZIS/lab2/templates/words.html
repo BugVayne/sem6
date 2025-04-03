@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        th.sortable {
+            cursor: pointer;
+        }
+        th.sortable:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Words</h1>
+        <a href="/" class="btn btn-info mb-4">Back to Home</a>
+
+        <!-- Search Form -->
+        <form method="GET" action="/words" class="mb-4">
+            <div class="form-row">
+                <div class="col-md-6 mb-2">
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            name="search"
+                            class="form-control"
+                            placeholder="Find by word..."
+                            value="{{ request.args.get('search', '') }}">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-primary">Find</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <select name="pos" class="form-control">
+                        <option value="">Filter by POS</option>
+                        <option value="ADJ" {% if request.args.get('pos') == 'ADJ' %}selected{% endif %}>Adjective</option>
+                        <option value="ADP" {% if request.args.get('pos') == 'ADP' %}selected{% endif %}>Adposition</option>
+                        <option value="ADV" {% if request.args.get('pos') == 'ADV' %}selected{% endif %}>Adverb</option>
+                        <option value="AUX" {% if request.args.get('pos') == 'AUX' %}selected{% endif %}>Auxiliary</option>
+                        <option value="CCONJ" {% if request.args.get('pos') == 'CCONJ' %}selected{% endif %}>Coordinating Conjunction</option>
+                        <option value="DET" {% if request.args.get('pos') == 'DET' %}selected{% endif %}>Determiner</option>
+                        <option value="INTJ" {% if request.args.get('pos') == 'INTJ' %}selected{% endif %}>Interjection</option>
+                        <option value="NOUN" {% if request.args.get('pos') == 'NOUN' %}selected{% endif %}>Noun</option>
+                        <option value="NUM" {% if request.args.get('pos') == 'NUM' %}selected{% endif %}>Numeral</option>
+                        <option value="PART" {% if request.args.get('pos') == 'PART' %}selected{% endif %}>Particle</option>
+                        <option value="PRON" {% if request.args.get('pos') == 'PRON' %}selected{% endif %}>Pronoun</option>
+                        <option value="PROPN" {% if request.args.get('pos') == 'PROPN' %}selected{% endif %}>Proper Noun</option>
+                        <option value="PUNCT" {% if request.args.get('pos') == 'PUNCT' %}selected{% endif %}>Punctuation</option>
+                        <option value="SCONJ" {% if request.args.get('pos') == 'SCONJ' %}selected{% endif %}>Subordinating Conjunction</option>
+                        <option value="SYM" {% if request.args.get('pos') == 'SYM' %}selected{% endif %}>Symbol</option>
+                        <option value="VERB" {% if request.args.get('pos') == 'VERB' %}selected{% endif %}>Verb</option>
+                        <option value="X" {% if request.args.get('pos') == 'X' %}selected{% endif %}>Other</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <button type="submit" class="btn btn-secondary btn-block">Apply</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Words Table -->
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th class="sortable" onclick="sortTable(0)">WORD</th>
+                    <th class="sortable" onclick="sortTable(1)">Total Amount</th>
+                </tr>
+            </thead>
+            <tbody id="wordsTable">
+                {% for word in words %}
+                <tr onclick="window.location='/words/{{ word[0] }}'" style="cursor: pointer;">
+                    <td>{{ word[0] }}</td>
+                    <td>{{ word[1] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        /**
+         * Function to sort the table by column index.
+         * @param {number} columnIndex - The index of the column to sort by.
+         */
+        function sortTable(columnIndex) {
+            const table = document.getElementById("wordsTable");
+            const rows = Array.from(table.rows);
+
+            // Determine the sorting order
+            const isAscending = table.getAttribute("data-sort-order") === "asc";
+            const newSortOrder = isAscending ? "desc" : "asc";
+            table.setAttribute("data-sort-order", newSortOrder);
+
+            // Sort rows
+            rows.sort((rowA, rowB) => {
+                const cellA = rowA.cells[columnIndex].innerText.toLowerCase();
+                const cellB = rowB.cells[columnIndex].innerText.toLowerCase();
+
+                if (columnIndex === 1) {
+                    // Sort numerically for the 'Total Amount' column
+                    return isAscending ? cellA - cellB : cellB - cellA;
+                } else {
+                    // Sort alphabetically for the 'Word' column
+                    if (cellA < cellB) return isAscending ? -1 : 1;
+                    if (cellA > cellB) return isAscending ? 1 : -1;
+                    return 0;
+                }
+            });
+
+            // Rebuild the table with sorted rows
+            rows.forEach(row => table.appendChild(row));
+        }
+    </script>
+</body>
+</html>

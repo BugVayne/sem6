@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Articles</h1>
+        <a href="/" class="btn btn-info">Back to Home</a>
+
+        <div class="mt-4">
+            <input type="text" id="searchBar" class="form-control" placeholder="Search by title..." onkeyup="searchArticles()">
+        </div>
+
+        <table class="table table-bordered mt-4" id="articlesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Source URL</th>
+                    <th>Authors</th>
+                    <th>Published Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for article in articles %}
+                <tr>
+                    <td>{{ article[0] }}</td>
+                    <td><a href="/articles/{{ article[0] }}">{{ article[1] }}</a></td>
+                    <td><a href="{{ article[2] }}" target="_blank">{{ article[2] }}</a></td>
+                    <td>{{ article[3] }}</td>
+                    <td>{{ article[4] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function searchArticles() {
+            const input = document.getElementById('searchBar');
+            const filter = input.value.toLowerCase();
+            const table = document.getElementById('articlesTable');
+            const tr = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < tr.length; i++) {
+                const td = tr[i].getElementsByTagName('td')[1]; // Title column
+                if (td) {
+                    const txtValue = td.textContent || td.innerText;
+                    tr[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

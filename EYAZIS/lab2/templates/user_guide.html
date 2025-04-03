@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Guide - Article and Word Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .guide-section {
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            max-width: 800px;
+        }
+
+        .guide-section h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .guide-section ul {
+            margin-left: 20px;
+        }
+
+        .guide-section li {
+            margin-bottom: 8px;
+        }
+
+        .back-to-main {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .back-to-main:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="guide-section">
+            <h2>User Guide</h2>
+            <p>This web application allows you to manage articles and words, upload article content, and analyze word data. Follow the guide below to get started:</p>
+
+            <h3>1. Viewing Articles</h3>
+            <ul>
+                <li>Click the **"View Articles"** button on the main page to see a list of all articles.</li>
+                <li>From the articles page, you can:
+                    <ul>
+                        <li>View details of a specific article by clicking on it.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>2. Viewing Words</h3>
+            <ul>
+                <li>Click the **"View Words"** button on the main page to see a list of all words and their counts.</li>
+                <li>Use the search bar at the top of the words page to filter words by name.</li>
+            </ul>
+
+            <h3>3. Uploading a File</h3>
+            <ul>
+                <li>To upload a file, use the **"Upload a File"** section on the main page.</li>
+                <li>Click the **"Choose File"** button to select a `.txt` file from your computer.</li>
+                <li>Once a file is selected, click the **"Upload File"** button to upload and process the file.</li>
+                <li>After processing, flash messages will display the status of the upload.</li>
+                <li>Ensure the file is in `.txt` format and contains valid data to avoid errors.</li>
+            </ul>
+
+            <h3>4. Updating Part-of-Speech (POS) Information</h3>
+            <ul>
+                <li>While viewing an article's details, you will see a list of words associated with the article.</li>
+                <li>Each word has a **POS Info** field that can be updated by submitting the corresponding form.</li>
+                <li>Provide the updated POS Info, and the system will save the changes in the database.</li>
+            </ul>
+
+
+            <a href="/" class="back-to-main">Back to Main Page</a>
+        </div>
+    </div>
+</body>
+</html>

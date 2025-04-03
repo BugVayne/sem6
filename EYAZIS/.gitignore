@@ -3,3 +3,7 @@ eyazisvenv/
 
 lab1/.idea/
 lab1/__pycache__/
+
+lab2/__pycache__/
+lab2/uploads/
+lab2/scrapper/articles

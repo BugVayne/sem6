@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article and Word Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Hide the default file input */
+        .custom-file-input {
+            display: none;
+        }
+
+        /* Display the selected file name */
+        .file-name {
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* Center the upload section */
+        .upload-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Style the smart button */
+        .smart-upload-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .smart-upload-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .smart-upload-btn.ready {
+            background-color: #28a745;
+        }
+
+        .smart-upload-btn.ready:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <!-- Existing Buttons -->
+        <div class="text-center mt-4">
+            <a href="/articles" class="btn btn-primary btn-lg mx-2">View Articles</a>
+            <a href="/words" class="btn btn-secondary btn-lg mx-2">View Words</a>
+            <a href="/user-guide" class="btn btn-info btn-lg mx-2">User Guide</a>
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="upload-section">
+            <h2>Upload a File</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <!-- Hidden file input -->
+                <input type="file" name="file" id="fileInput" class="custom-file-input" accept=".txt">
+
+                <!-- Smart button that changes function -->
+                <button type="button" id="smartButton" class="smart-upload-btn">Choose File</button>
+
+                <!-- Hidden submit button -->
+                <button type="submit" id="submitBtn" style="display:none;"></button>
+
+                <!-- Display the selected file name -->
+                <div id="fileName" class="file-name"></div>
+            </form>
+        </div>
+
+        <!-- Flash Messages for Feedback -->
+        <div class="mt-4 text-center">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-info">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileNameDisplay = document.getElementById('fileName');
+        const smartButton = document.getElementById('smartButton');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // When smart button is clicked before file is selected
+        smartButton.addEventListener('click', function() {
+            if (!fileInput.files.length) {
+                // No file selected - trigger file selection
+                fileInput.click();
+            } else {
+                // File already selected - trigger form submission
+                submitBtn.click();
+            }
+        });
+
+        // When file is selected
+        fileInput.addEventListener('change', function() {
+            const fileName = this.files[0] ? this.files[0].name : '';
+
+            if (fileName) {
+                // File selected - change button to upload style
+                fileNameDisplay.textContent = `Selected file: ${fileName}`;
+                smartButton.textContent = 'Upload File';
+                smartButton.classList.add('ready');
+            } else {
+                // No file selected - reset button
+                fileNameDisplay.textContent = '';
+                smartButton.textContent = 'Choose File';
+                smartButton.classList.remove('ready');
+            }
+        });
+    </script>
+</body>
+</html>

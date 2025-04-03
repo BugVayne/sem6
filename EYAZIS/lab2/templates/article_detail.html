@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .edit-form {
+            display: none;
+            margin-top: 15px;
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Details for "{{ article.name }}"</h1>
+        <div class="d-flex justify-content-between mb-3">
+            <a href="/articles" class="btn btn-info">Back to Articles</a>
+            <a href="/articles/{{ article.id }}/export-json" class="btn btn-primary">Export to JSON</a>
+        </div>
+
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Authors</th>
+                    <th>Published Date</th>
+                    <th>Source URL</th>
+                    <th>Words Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ article.authors }}</td>
+                    <td>{{ article.publish_date }}</td>
+                    <td>
+                        <a href="{{ article.source_url }}" target="_blank">{{ article.source_url }}</a>
+                    </td>
+                    <td>{{ words|length }} words</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card mt-4">
+            <div class="card-body p-0">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                        <tr>
+                            <th>Word</th>
+                            <th>Count</th>
+                            <th>Part of Speech</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for word in words %}
+                        <tr>
+                            <td>
+                                <a href="/words/{{ word.word }}">{{ word.word }}</a>
+                            </td>
+                            <td>{{ word.count }}</td>
+                            <td class="pos-info">{{ word.pos_info if word.pos_info else '-' }}</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm edit-btn" data-id="{{ loop.index }}" data-pos="{{ word.pos_info }}">Edit</button>
+                            </td>
+                        </tr>
+                        <tr class="edit-form" id="edit-form-{{ loop.index }}">
+                            <td colspan="4">
+                                <form method="POST" action="/update-pos-info">
+                                    <input type="hidden" name="article_name" value="{{ article.name }}">
+                                    <input type="hidden" name="word" value="{{ word.word }}">
+                                    <div class="form-group">
+                                        <label for="pos-info-{{ loop.index }}">Edit Part of Speech:</label>
+                                        <input type="text" class="form-control" id="pos-info-{{ loop.index }}" name="pos_info" value="{{ word.pos_info if word.pos_info else '' }}" required>
+                                    </div>
+                                    <div class="text-right">
+                                        <button type="submit" class="btn btn-success btn-sm">Save</button>
+                                        <button type="button" class="btn btn-secondary btn-sm cancel-btn" data-id="{{ loop.index }}">Cancel</button>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.edit-btn').click(function() {
+                const id = $(this).data('id');
+                $('#edit-form-' + id).show();
+            });
+
+            $('.cancel-btn').click(function() {
+                const id = $(this).data('id');
+                $('#edit-form-' + id).hide();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details for {{ word }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .edit-form {
+            display: none;
+            margin-top: 15px;
+            background: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Details for "{{ word }}"</h1>
+        <a href="/words" class="btn btn-info">Back to Words</a>
+        <table class="table table-bordered mt-4">
+            <thead>
+                <tr>
+                    <th>Article Title</th>
+                    <th>Authors</th>
+                    <th>Publish Date</th>
+                    <th>Count</th>
+                    <th>Part of Speech</th>
+                    <th>Sentences</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for detail in details %}
+                <tr>
+                    <!-- Article title is now clickable -->
+                    <td>
+                        <a href="{{ detail['source_url'] }}" target="_blank">
+                            {{ detail['article_name'] }}
+                        </a>
+                    </td>
+                    <td>{{ detail['authors'] }}</td>
+                    <td>{{ detail['publish_date'] }}</td>
+                    <td>{{ detail['count'] }}</td>
+                    <td class="pos-info">{{ detail['pos_info'] }}</td>
+                    <td>
+                        <ul>
+                            {% for sentence in detail['sentences'] %}
+                            <li>{{ sentence }}</li>
+                            {% endfor %}
+                        </ul>
+                    </td>
+                    <td>
+                        <button
+                            class="btn btn-warning btn-sm edit-btn"
+                            data-id="{{ loop.index }}"
+                            data-pos="{{ detail['pos_info'] }}">Edit</button>
+                    </td>
+                </tr>
+                <!-- Inline form for editing pos_info -->
+                <tr class="edit-form" id="edit-form-{{ loop.index }}">
+                    <td colspan="7">
+                        <form method="POST" action="/update-pos-info">
+                            <input type="hidden" name="article_name" value="{{ detail['article_name'] }}">
+                            <input type="hidden" name="word" value="{{ detail['word'] }}">
+                            <div class="form-group">
+                                <label for="pos-info-{{ loop.index }}">Edit Part of Speech:</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="pos-info-{{ loop.index }}"
+                                    name="pos_info"
+                                    value="{{ detail['pos_info'] }}"
+                                    required>
+                            </div>
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="button" class="btn btn-secondary cancel-btn" data-id="{{ loop.index }}">Cancel</button>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // Handle the "Edit" button click
+        document.querySelectorAll('.edit-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const id = button.getAttribute('data-id');
+                const form = document.getElementById(`edit-form-${id}`);
+                form.style.display = 'table-row';
+            });
+        });
+
+        // Handle the "Cancel" button click
+        document.querySelectorAll('.cancel-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const id = button.getAttribute('data-id');
+                const form = document.getElementById(`edit-form-${id}`);
+                form.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
