@@ -145,7 +145,7 @@ class Object3DViewer(QGraphicsView):
         """Toggles between perspective and orthographic projection."""
         if self.projection_type == "perspective":
             self.projection_type = "orthographic"
-            self.projection_matrix = self.create_orthographic_matrix(left=-2, right=2, bottom=-2, top=2,
+            self.projection_matrix = self.create_orthographic_matrix(left=-1.5, right=1.5, bottom=-1.5, top=1.5,
                                                                      near=-2, far=2)
         else:
             self.projection_type = "perspective"
