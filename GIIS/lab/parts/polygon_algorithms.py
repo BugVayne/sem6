@@ -42,13 +42,11 @@ class PolygonDrawer(QGraphicsView):
         self.draw_grid()
 
     def start_seed_selection(self):
-        """Enables seed point selection mode."""
         self.is_selecting_seed = True
         self.seed_point = None
 
 
     def simple_seed_fill(self, x, y):
-        """Simple seed fill algorithm."""
         target_color = self.get_pixel_color(x, y)
         fill_color = QColor(0, 255, 0)  
 
@@ -63,7 +61,6 @@ class PolygonDrawer(QGraphicsView):
                 stack.extend([(cx + 1, cy), (cx - 1, cy), (cx, cy + 1), (cx, cy - 1)])
 
     def scanline_seed_fill(self, x, y):
-        """Scanline seed fill algorithm with a visited set."""
         target_color = self.get_pixel_color(x, y)
         fill_color = QColor(0, 255, 0)  
 
@@ -115,7 +112,6 @@ class PolygonDrawer(QGraphicsView):
                 time.sleep(self.fill_delay / 1000)
 
     def active_edge_list_fill(self):
-        """Active Edge List fill algorithm that properly fills the polygon interior with adjustments for borders."""
         if len(self.polygon_points) < 3:
             return
 
@@ -197,7 +193,6 @@ class PolygonDrawer(QGraphicsView):
             y += self.pixel_size  
 
     def ordered_edge_list_fill(self):
-        """Ordered Edge List fill algorithm."""
         if len(self.polygon_points) < 3:
             return
 
@@ -310,13 +305,6 @@ class PolygonDrawer(QGraphicsView):
             self.active_edge_list_fill()
 
     def draw_grid(self):
-        
-        
-        
-        
-        
-        
-        
         pass
 
     def fill_pixel(self, x, y):
@@ -382,7 +370,6 @@ class PolygonDrawer(QGraphicsView):
                 self.is_marking_line = False
 
     def draw_line_and_find_intersections(self):
-        """Draws a line between the two marked points and finds intersections with the polygon."""
         if self.line_start_point and self.line_end_point:
             
             self.draw_line(self.line_start_point, self.line_end_point)
@@ -398,7 +385,6 @@ class PolygonDrawer(QGraphicsView):
 
 
     def mouseDoubleClickEvent(self, event):
-        """Handles double-click to close the polygon."""
         if self.is_drawing and len(self.polygon_points) > 2:
             
             first_point = self.polygon_points[0]
@@ -407,7 +393,6 @@ class PolygonDrawer(QGraphicsView):
             self.is_drawing = False  
 
     def find_intersections(self, start, end):
-        """Finds intersections of a line with the polygon."""
         intersections = []
         for i in range(len(self.polygon_points)):
             p1 = self.polygon_points[i]
@@ -418,7 +403,6 @@ class PolygonDrawer(QGraphicsView):
         return intersections
 
     def line_segment_intersection(self, p1, p2, q1, q2):
-        """Finds the intersection point of two line segments."""
 
         def det(a, b, c, d):
             return a * d - b * c
@@ -453,12 +437,10 @@ class PolygonDrawer(QGraphicsView):
         self.draw_grid()  
 
     def is_convex_polygon(self):
-        """Checks if the polygon is convex."""
         if len(self.polygon_points) < 3:
             return False  
 
         def cross_product_sign(p1, p2, p3):
-            """Calculates the cross product of vectors (p1p2) and (p2p3)."""
             dx1 = p2.x() - p1.x()
             dy1 = p2.y() - p1.y()
             dx2 = p3.x() - p2.x()
@@ -599,7 +581,6 @@ class PolygonDrawer(QGraphicsView):
             intery += gradient
 
     def convex_hull_graham(self):
-        """Constructs the convex hull using Graham's scan algorithm."""
         if len(self.polygon_points) < 3:
             QMessageBox.warning(self, "Error", "At least 3 points are required for a convex hull!")
             return []
@@ -652,16 +633,10 @@ class PolygonDrawer(QGraphicsView):
 
         return hull
     def orientation(self, p, q, r):
-        """Determines the orientation of the triplet (p, q, r).
-        Returns:
-            0 -> p, q and r are collinear
-            >0 -> Clockwise
-            <0 -> Counterclockwise
-        """
+
         return (q.y() - p.y()) * (r.x() - q.x()) - (q.x() - p.x()) * (r.y() - q.y())
 
     def draw_convex_hull(self, hull):
-        """Draws the convex hull."""
         if not hull:
             return
         for i in range(len(hull)):
