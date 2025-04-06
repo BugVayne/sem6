@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentences</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Sentences</h1>
+        <form class="mt-4" onsubmit="return false;">
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control"
+                       placeholder="Enter a phrase to search..." onkeyup="searchSentences()">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" onclick="searchSentences()">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('home') }}" class="btn btn-secondary">Go Back</a>
+        </div>
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th onclick="sortSentences()" style="cursor: pointer;">Sentences</th>
+                </tr>
+            </thead>
+            <tbody id="sentenceList">
+                {% if sentences %}
+                    {% for sentence in sentences %}
+                        <tr onclick="window.location='{{ url_for('sentence_detail', sentence_id=sentence.id) }}'" style="cursor: pointer;">
+                            <td>{{ sentence.text }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td>No sentences found matching your search.</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let ascending = true;
+
+        function searchSentences() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const sentences = document.querySelectorAll('#sentenceList tr');
+            sentences.forEach(sentence => {
+                const text = sentence.textContent.toLowerCase();
+                sentence.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+
+        function sortSentences() {
+            const table = document.getElementById('sentenceList');
+            const rows = Array.from(table.getElementsByTagName('tr'));
+
+            rows.sort((a, b) => {
+                const lengthA = a.textContent.trim().length;
+                const lengthB = b.textContent.trim().length;
+                return ascending ? lengthA - lengthB : lengthB - lengthA;
+            });
+
+            // Clear the current table body
+            table.innerHTML = '';
+
+            // Append sorted rows
+            rows.forEach(row => {
+                table.appendChild(row);
+            });
+
+            // Toggle sorting order
+            ascending = !ascending;
+        }
+    </script>
+</body>
+</html>

@@ -231,6 +231,8 @@ def upload_file():
         flash("Invalid file type. Please upload a .txt file.")
 
     return redirect(url_for('index'))
+
+
 @app.route('/words/<string:word>')
 def word_details(word):
     details = db.get_word_details(word)

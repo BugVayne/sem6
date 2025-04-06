@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sentence Viewer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Welcome to the Sentence Viewer</h1>
+        <div class="text-center mt-4">
+            <a href="{{ url_for('show_sentences') }}" class="btn btn-primary btn-lg">See Sentences</a>
+            <a href="{{ url_for('user_manual') }}" class="btn btn-info btn-lg">User Manual</a>
+        </div>
+
+        <!-- File Upload Section -->
+        <div class="upload-section mt-5">
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="text-center">
+                <!-- Hidden file input -->
+                <input type="file" name="file" id="fileInput" class="custom-file-input" accept=".rtf">
+
+                <!-- Smart button that changes function -->
+                <button type="button" id="smartButton" class="btn btn-secondary mt-2">Choose File</button>
+
+                <!-- Hidden submit button -->
+                <button type="submit" id="submitBtn" style="display:none;"></button>
+
+                <!-- Display the selected file name -->
+                <div id="fileName" class="file-name mt-2"></div>
+            </form>
+        </div>
+        <div class="input-section mt-5">
+            <form action="/add_sentence" method="POST" class="text-center">
+                <input type="text" name="sentence" class="form-control" placeholder="Enter your sentence here" required>
+                <button type="submit" class="btn btn-success mt-2">Add Sentence</button>
+            </form>
+        </div>
+        <!-- Flash Messages for Feedback -->
+        <div class="mt-4 text-center">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="alert alert-info">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileNameDisplay = document.getElementById('fileName');
+        const smartButton = document.getElementById('smartButton');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // When smart button is clicked before file is selected
+        smartButton.addEventListener('click', function() {
+            if (!fileInput.files.length) {
+                // No file selected - trigger file selection
+                fileInput.click();
+            } else {
+                // File already selected - trigger form submission
+                submitBtn.click();
+            }
+        });
+
+        // When file is selected
+        fileInput.addEventListener('change', function() {
+            const fileName = this.files[0] ? this.files[0].name : '';
+
+            if (fileName) {
+                // File selected - change button to upload style
+                fileNameDisplay.textContent = `Selected file: ${fileName}`;
+                smartButton.textContent = 'Upload File';
+                smartButton.classList.add('ready');
+            } else {
+                // No file selected - reset button
+                fileNameDisplay.textContent = '';
+                smartButton.textContent = 'Choose File';
+                smartButton.classList.remove('ready');
+            }
+        });
+    </script>
+</body>
+</html>
