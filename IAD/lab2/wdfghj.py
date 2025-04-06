@@ -10,7 +10,6 @@ from sklearn.svm import SVC
 from xgboost import XGBClassifier
 from sklearn.preprocessing import StandardScaler, LabelBinarizer
 import seaborn as sns
-from tqdm import tqdm
 import pandas as pd
 
 # Load MNIST data
@@ -54,15 +53,7 @@ def plot_sample_images(X, y, n=10):
 
 # Visualize first 10 images
 print("Sample images:")
-plot_sample_images(X_train_scaled, y_train)
-
-
-# Function to train model with progress bar
-def train_model_with_progress(model, X_train, y_train, desc="Training Model"):
-    with tqdm(total=1, desc=desc, unit="epoch") as pbar:
-        model.fit(X_train, y_train)
-        pbar.update(1)
-    return model
+plot_sample_images(X_train, y_train)
 
 
 # Define models to compare
@@ -70,7 +61,7 @@ models = {
     "Logistic Regression": LogisticRegression(max_iter=1000, solver='lbfgs'),
     "SVM": SVC(kernel='linear', probability=True, max_iter=1000),
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
-    "XGBoost": XGBClassifier(use_label_encoder=False, eval_metric='mlogloss')
+    "XGBoost": XGBClassifier(use_label_encoder=True, eval_metric='mlogloss')
 }
 
 # Dictionary to store results
@@ -80,9 +71,7 @@ results = {}
 for model_name, model in models.items():
     print(f"\nTraining {model_name}...")
     # Train model with progress bar
-    model = train_model_with_progress(
-        model, X_train_scaled, y_train, desc=f"Training {model_name}"
-    )
+    model.fit(X_train_scaled, y_train)
 
     # Make predictions
     y_pred = model.predict(X_test_scaled)
@@ -152,7 +141,6 @@ grid_search.fit(X_train_scaled, y_train)
 print("\nBest parameters for Random Forest:", grid_search.best_params_)
 print("Best score for Random Forest:", grid_search.best_score_)
 
-# Plot feature importances for best Random Forest model
 best_rf_model = grid_search.best_estimator_
 feature_importances = best_rf_model.feature_importances_
 plt.figure(figsize=(10, 6))
