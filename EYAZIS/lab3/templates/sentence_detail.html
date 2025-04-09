@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         .highlight {
-            background-color: rgba(200, 255, 0, 0.56); /* Change color as needed */
-            padding: 0.2em; /* Optional padding for better visibility */
-            border-radius: 5px; /* Optional rounded corners */
-            display: inline; /* Ensures wrapping */
-            line-height: 1.6; /* Adjust this value to increase/decrease line spacing */
+            background-color: rgba(200, 255, 0, 0.56);
+            padding: 0.2em;
+            border-radius: 5px;
+            display: inline;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -28,9 +28,10 @@
 
         <div class="mt-4">
             <a href="{{ url_for('show_sentences') }}" class="btn btn-primary">Back to Sentences</a>
+            <button id="exportJsonBtn" class="btn btn-success">Export to JSON</button>
         </div>
 
-        <table class="table">
+        <table class="table mt-3">
             <thead>
                 <tr>
                     <th>Word</th>
@@ -61,8 +62,6 @@
                 {% endfor %}
             </tbody>
         </table>
-
-
     </div>
 
     <!-- Edit Word Modal -->
@@ -76,7 +75,6 @@
                     </button>
                 </div>
                 <form id="editWordForm" method="POST" action="">
-                    <!-- Hidden Input for Sentence ID -->
                     <input type="hidden" name="sentence_id" id="sentence_id">
 
                     <div class="modal-body">
@@ -111,6 +109,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Initialize edit word modal
             const editButtons = document.querySelectorAll('.edit-word-btn');
             const editWordModal = document.getElementById('editWordModal');
             const editWordForm = document.getElementById('editWordForm');
@@ -123,19 +122,47 @@
                     const head = button.dataset.head;
                     const sentenceId = button.dataset.sentenceId;
 
-                    // Populate form fields
                     document.getElementById('word').value = word;
                     document.getElementById('pos').value = pos;
                     document.getElementById('dep').value = dep;
                     document.getElementById('head').value = head;
                     document.getElementById('sentence_id').value = sentenceId;
 
-                    // Set the form action dynamically
                     editWordForm.action = `/sentence/${sentenceId}/update_word`;
-
-                    // Show the modal
                     $(editWordModal).modal('show');
                 });
+            });
+
+            // Export to JSON functionality
+            const exportJsonBtn = document.getElementById('exportJsonBtn');
+            exportJsonBtn.addEventListener('click', () => {
+                const sentence = "{{ sentence }}";
+                const words = [
+                    {% for word_data in words %}
+                        {
+                            "word": "{{ word_data[0] }}",
+                            "part_of_speech": "{{ word_data[1] }}",
+                            "dependency": "{{ word_data[2] }}",
+                            "head": "{{ word_data[3] }}"
+                        },
+                    {% endfor %}
+                ];
+
+                const data = {
+                    sentence: sentence,
+                    words: words
+                };
+
+                const jsonString = JSON.stringify(data, null, 4);
+                const blob = new Blob([jsonString], { type: "application/json" });
+                const url = URL.createObjectURL(blob);
+
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = "sentence_details.json";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
             });
         });
     </script>

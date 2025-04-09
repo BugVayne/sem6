@@ -29,8 +29,7 @@ def extract_sentences_from_rtf(file_path):
     with open(file_path, 'r') as rtf_file:
         rtf_content = rtf_file.read()
         plain_text = rtf_to_text(rtf_content)
-        # Split sentences by period and strip whitespace from each sentence
-        sentences = [sentence.strip() for sentence in plain_text.split('. ')]
+        sentences = [sentence.strip() for sentence in plain_text.split('.')]
         return sentences
 
 def get_database_connection():
@@ -115,7 +114,6 @@ def analyze_sentence(sentence_text):
         "xcomp": "Open clausal complement",
     }
 
-    # Prepare tokens data with full names
     tokens_data = [
         (
             token.text,
@@ -123,7 +121,7 @@ def analyze_sentence(sentence_text):
             dep_full_names.get(token.dep_, token.dep_),  # Get full dep name, default to short name
             token.head.text
         )
-        for token in doc
+        for token in doc if not token.is_punct or not token.is_space
     ]
 
     return img_data, tokens_data
