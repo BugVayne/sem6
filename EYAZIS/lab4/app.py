@@ -14,7 +14,7 @@ def home():
 
 @app.route('/sentences')
 def show_sentences():
-    sentences = fetch_sentences()  # Fetch sentences from the database
+    sentences = fetch_sentences()
     return render_template('sentences.html', sentences=sentences)
 
 @app.route('/upload', methods=['POST'])
