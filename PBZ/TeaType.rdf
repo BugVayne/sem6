@@ -1,0 +1,793 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bugvayne/ontologies/2025/3/teatype#"
+     xml:base="http://www.semanticweb.org/bugvayne/ontologies/2025/3/teatype"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:teatype="http://www.semanticweb.org/bugvayne/ontologies/2025/3/teatype#"
+     xmlns:teatype1="http://ontologies/teatype/#">
+    <owl:Ontology rdf:about="http://ontologies/teatype"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#Name -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#Name"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#double -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#double"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- http://ontologies/teatype/www.w3.org/2001/XMLSchema#unsignedInt -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/teatype/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/teatype/#hasAftertaste -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasAftertaste">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#AfterTaste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasClimate -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasClimate">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasHarvestPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasHarvestPeriod">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#HarvestPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasLeafForm -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasLeafForm">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#LeafForm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasOrigin">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasPrimaryAroma -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasPrimaryAroma">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#TeaAroma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasProcessingMethod -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasProcessingMethod">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasSecondaryAroma -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasSecondaryAroma">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#TeaAroma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasSoilType -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasSoilType">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#SoilType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasTasteProfile -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasTasteProfile">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#TasteProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasTeaColor -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasTeaColor">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#TeaColor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasTeaFlavor -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#hasTeaFlavor">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#isBlendedWith -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#isBlendedWith">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#isCultivatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#isCultivatedIn">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#TeaPlantType"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#madeFromTeaPlantType -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#madeFromTeaPlantType">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#TeaPlantType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#pairsWellWith -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/teatype/#pairsWellWith">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/teatype/#hasAltitude -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasAltitude">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasBeverageColor -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasBeverageColor">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#TeaColor"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasBrewingTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasBrewingTemperature">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasCaffeineContent -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasCaffeineContent">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasLeafSize -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasLeafSize">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#LeafForm"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasOxidationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasOxidationLevel">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#TeaColor"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasProcessingShape -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasProcessingShape">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#LeafForm"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasScientificName -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasScientificName">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#TeaPlantType"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasSteepingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasSteepingTime">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#hasTeaProductionVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#hasTeaProductionVolume">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#Country"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#involvesOxidation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#involvesOxidation">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#involvesWithering -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#involvesWithering">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/teatype/#isPremium -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/teatype/#isPremium">
+        <rdfs:domain rdf:resource="http://ontologies/teatype/#HarvestPeriod"/>
+        <rdfs:range rdf:resource="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/teatype/#AfterTaste -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#AfterTaste">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#Climate -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#Climate">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#Country -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#Country">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#Food -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#Food"/>
+    
+
+
+    <!-- http://ontologies/teatype/#GrowingRegion -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#GrowingRegion"/>
+    
+
+
+    <!-- http://ontologies/teatype/#HarvestPeriod -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#HarvestPeriod">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#LeafForm -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#LeafForm">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#ProcessingMethod -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#ProcessingMethod">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#SoilType -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#SoilType">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#TasteProfile -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#TasteProfile">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#Tea -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#Tea"/>
+    
+
+
+    <!-- http://ontologies/teatype/#TeaAroma -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#TeaAroma">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#TeaColor -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#TeaColor">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/teatype/#TeaFlavor -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#TeaFlavor"/>
+    
+
+
+    <!-- http://ontologies/teatype/#TeaPlantType -->
+
+    <owl:Class rdf:about="http://ontologies/teatype/#TeaPlantType">
+        <rdfs:subClassOf rdf:resource="http://ontologies/teatype/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/teatype/#AmberColor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#AmberColor">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaColor"/>
+        <teatype1:hasBeverageColor rdf:datatype="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Amber</teatype1:hasBeverageColor>
+        <teatype1:hasOxidationLevel rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">10</teatype1:hasOxidationLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#AssamRegion -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#AssamRegion">
+        <rdf:type rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+        <teatype1:hasClimate rdf:resource="http://ontologies/teatype/#TropicalClimate"/>
+        <teatype1:hasOrigin rdf:resource="http://ontologies/teatype/#India"/>
+        <teatype1:hasSoilType rdf:resource="http://ontologies/teatype/#LoamySoil"/>
+        <teatype1:hasAltitude rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">100</teatype1:hasAltitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#AssamicaVariety -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#AssamicaVariety">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaPlantType"/>
+        <teatype1:hasHarvestPeriod rdf:resource="http://ontologies/teatype/#FirstFlush"/>
+        <teatype1:isCultivatedIn rdf:resource="http://ontologies/teatype/#India"/>
+        <teatype1:hasScientificName rdf:datatype="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Camellia sinensis var. assamica</teatype1:hasScientificName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#BlackTeaProcessing -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#BlackTeaProcessing">
+        <rdf:type rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+        <teatype1:hasBrewingTemperature rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">95</teatype1:hasBrewingTemperature>
+        <teatype1:hasSteepingTime rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">3</teatype1:hasSteepingTime>
+        <teatype1:involvesOxidation rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean">true</teatype1:involvesOxidation>
+        <teatype1:involvesWithering rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean">true</teatype1:involvesWithering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#CamelliaSinensis -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#CamelliaSinensis">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaPlantType"/>
+        <teatype1:hasHarvestPeriod rdf:resource="http://ontologies/teatype/#SecondFlush"/>
+        <teatype1:isCultivatedIn rdf:resource="http://ontologies/teatype/#China"/>
+        <teatype1:hasScientificName rdf:datatype="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Camellia sinensis</teatype1:hasScientificName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#Candy -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#Candy">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#China -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#China">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Country"/>
+        <teatype1:hasTeaProductionVolume rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">1000000</teatype1:hasTeaProductionVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#CrushedLeaf -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#CrushedLeaf">
+        <rdf:type rdf:resource="http://ontologies/teatype/#LeafForm"/>
+        <teatype1:hasLeafSize rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">1.0</teatype1:hasLeafSize>
+        <teatype1:hasProcessingShape rdf:datatype="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Twisted</teatype1:hasProcessingShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#Desserts -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#Desserts">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#FirstFlush -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#FirstFlush">
+        <rdf:type rdf:resource="http://ontologies/teatype/#HarvestPeriod"/>
+        <teatype1:isPremium rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean">false</teatype1:isPremium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#FloralFlavor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#FloralFlavor">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+        <teatype1:hasAftertaste rdf:resource="http://ontologies/teatype/#FragrantAftertaste"/>
+        <teatype1:hasTasteProfile rdf:resource="http://ontologies/teatype/#SweetProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#FragrantAftertaste -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#FragrantAftertaste">
+        <rdf:type rdf:resource="http://ontologies/teatype/#AfterTaste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#FreshFlavor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#FreshFlavor">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaFlavor"/>
+        <teatype1:hasAftertaste rdf:resource="http://ontologies/teatype/#RefreshingAftertaste"/>
+        <teatype1:hasTasteProfile rdf:resource="http://ontologies/teatype/#MildProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#FujianProvince -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#FujianProvince">
+        <rdf:type rdf:resource="http://ontologies/teatype/#GrowingRegion"/>
+        <teatype1:hasClimate rdf:resource="http://ontologies/teatype/#SubtropicalClimate"/>
+        <teatype1:hasOrigin rdf:resource="http://ontologies/teatype/#China"/>
+        <teatype1:hasSoilType rdf:resource="http://ontologies/teatype/#SandySoil"/>
+        <teatype1:hasAltitude rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">1200</teatype1:hasAltitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#GreenColor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#GreenColor">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaColor"/>
+        <teatype1:hasBeverageColor rdf:datatype="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Light green</teatype1:hasBeverageColor>
+        <teatype1:hasOxidationLevel rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">3</teatype1:hasOxidationLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#GreenTea -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#GreenTea">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Tea"/>
+        <teatype1:hasLeafForm rdf:resource="http://ontologies/teatype/#WholeLeaf"/>
+        <teatype1:hasPrimaryAroma rdf:resource="http://ontologies/teatype/#LightAroma"/>
+        <teatype1:hasProcessingMethod rdf:resource="http://ontologies/teatype/#GreenTeaProcessing"/>
+        <teatype1:hasTeaColor rdf:resource="http://ontologies/teatype/#GreenColor"/>
+        <teatype1:hasTeaFlavor rdf:resource="http://ontologies/teatype/#FloralFlavor"/>
+        <teatype1:isBlendedWith rdf:resource="http://ontologies/teatype/#JasmineTea"/>
+        <teatype1:madeFromTeaPlantType rdf:resource="http://ontologies/teatype/#CamelliaSinensis"/>
+        <teatype1:pairsWellWith rdf:resource="http://ontologies/teatype/#Candy"/>
+        <teatype1:hasBrewingTemperature rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">80</teatype1:hasBrewingTemperature>
+        <teatype1:hasCaffeineContent rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">20</teatype1:hasCaffeineContent>
+        <teatype1:hasSteepingTime rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">3</teatype1:hasSteepingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#GreenTeaProcessing -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#GreenTeaProcessing">
+        <rdf:type rdf:resource="http://ontologies/teatype/#ProcessingMethod"/>
+        <teatype1:hasBrewingTemperature rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">80</teatype1:hasBrewingTemperature>
+        <teatype1:hasSteepingTime rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">3</teatype1:hasSteepingTime>
+        <teatype1:involvesOxidation rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean">false</teatype1:involvesOxidation>
+        <teatype1:involvesWithering rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean">true</teatype1:involvesWithering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#India -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#India">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Country"/>
+        <teatype1:hasTeaProductionVolume rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">1200000</teatype1:hasTeaProductionVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#JasmineAroma -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#JasmineAroma">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaAroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#JasmineTea -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#JasmineTea">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Tea"/>
+        <teatype1:hasLeafForm rdf:resource="http://ontologies/teatype/#CrushedLeaf"/>
+        <teatype1:hasPrimaryAroma rdf:resource="http://ontologies/teatype/#JasmineAroma"/>
+        <teatype1:hasProcessingMethod rdf:resource="http://ontologies/teatype/#BlackTeaProcessing"/>
+        <teatype1:hasSecondaryAroma rdf:resource="http://ontologies/teatype/#LightAroma"/>
+        <teatype1:hasTeaColor rdf:resource="http://ontologies/teatype/#GreenColor"/>
+        <teatype1:hasTeaFlavor rdf:resource="http://ontologies/teatype/#FloralFlavor"/>
+        <teatype1:madeFromTeaPlantType rdf:resource="http://ontologies/teatype/#CamelliaSinensis"/>
+        <teatype1:pairsWellWith rdf:resource="http://ontologies/teatype/#Desserts"/>
+        <teatype1:hasBrewingTemperature rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">85</teatype1:hasBrewingTemperature>
+        <teatype1:hasCaffeineContent rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">25</teatype1:hasCaffeineContent>
+        <teatype1:hasSteepingTime rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">4</teatype1:hasSteepingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#LightAroma -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#LightAroma">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TeaAroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#LoamySoil -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#LoamySoil">
+        <rdf:type rdf:resource="http://ontologies/teatype/#SoilType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#MildProfile -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#MildProfile">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TasteProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#RefreshingAftertaste -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#RefreshingAftertaste">
+        <rdf:type rdf:resource="http://ontologies/teatype/#AfterTaste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#SandySoil -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#SandySoil">
+        <rdf:type rdf:resource="http://ontologies/teatype/#SoilType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#SecondFlush -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#SecondFlush">
+        <rdf:type rdf:resource="http://ontologies/teatype/#HarvestPeriod"/>
+        <teatype1:isPremium rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#boolean">true</teatype1:isPremium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#SubtropicalClimate -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#SubtropicalClimate">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#SweetProfile -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#SweetProfile">
+        <rdf:type rdf:resource="http://ontologies/teatype/#TasteProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#TropicalClimate -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#TropicalClimate">
+        <rdf:type rdf:resource="http://ontologies/teatype/#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/teatype/#WholeLeaf -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/teatype/#WholeLeaf">
+        <rdf:type rdf:resource="http://ontologies/teatype/#LeafForm"/>
+        <teatype1:hasLeafSize rdf:datatype="http://ontologies/teatype/www.w3.org/2001/XMLSchema#decimal">2.5</teatype1:hasLeafSize>
+        <teatype1:hasProcessingShape rdf:datatype="http://ontologies/teatype/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Flat</teatype1:hasProcessingShape>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
