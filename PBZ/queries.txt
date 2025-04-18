@@ -2,10 +2,69 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX  tea: <http://www.semanticweb.org/bugvayne/ontologies/2025/3/teatype#>
+PREFIX tea: <http://ontologies/teatype/#>
 
 SELECT ?a ?b
 WHERE {
   	?a rdf:type tea:TeaColor .
 	?b rdf:type tea:TeaAroma.
 }
+
+
+
+SELECT ?a 
+WHERE {
+  	?a rdfs:subClassOf tea:Tea.
+}
+
+
+
+SELECT ?type 
+WHERE {
+  	tea:LeafForm ?type tea:Tea.
+}
+
+
+SELECT ?obj ?pred ?sub
+WHERE {
+    ?obj ?pred ?sub .
+  FILTER(?pred = tea:hasTeaColor || ?pred = tea:hasTeaFlavor)
+}
+
+
+SELECT ?instance ?dataprop ?value
+WHERE
+	{
+	?instance a tea:ProcessingMethod.
+	?instance ?dataprop ?value.
+	FILTER(isLiteral(?value))
+	}
+
+
+
+SELECT DISTINCT ?instance  ?dataprop ?class2
+WHERE {
+	
+	?instance a  ?class .
+	?instance ?dataprop ?value
+	FILTER(!IsLiteral(?value))
+	FILTER(?dataprop != rdf:type && ?dataprop !=rdfs:subClassOf && ?dataprop !=rdfs:domain &&?dataprop !=rdfs:range) 
+	?value a ?class2
+	FILTER (?class2 != owl:NamedIndividual)
+}
+
+
+
+SELECT DISTINCT ?individ ?place ?plant ?tea
+WHERE {
+	?individ a tea:Country.
+	?individ tea:hasTeaProductionVolume ?value.
+	?place tea:hasOrigin ?individ.
+	?plant tea:isCultivatedIn ?individ.
+	OPTIONAL{?tea tea:madeFromTeaPlantType ?plant.}
+}
+
+
+SELECT ?object ?pred ?subject
+	WHERE { ?object ?pred ?subject.
+		?pred ?smth tea:has.}
