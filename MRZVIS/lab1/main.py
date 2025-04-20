@@ -1,26 +1,60 @@
+# Лабораторная работа №1 по дисциплине Модели решения задач в интеллектуальных системах.
+# Вариант 7. Реализовать алгоритм вычисления произведения пары 6-разрядных чисел умножением с младших разрядов со сдвигом множимого влево.
+# Выполнена студентом группы 221702 БГУИР Багдасаров Тван Евгеньевич
+
+
+
+
+
 import sys
 import os
 
 def validate_number_range(num1, num2):
-    """Проверяет, чтобы числа не превышали 6 разрядов."""
     return num1 <= 63 and num2 <= 63
+
 
 def binary_sum(binary1: str, binary2: str) -> str:
     """Суммирует два бинарных числа и возвращает результат в 12-битном формате."""
-    result = int(binary1, 2) + int(binary2, 2)
-    binary_result = bin(result)[2:]
+    # Make both binary strings the same length by padding with zeros
+    max_len = max(len(binary1), len(binary2))
+    binary1 = binary1.zfill(max_len)
+    binary2 = binary2.zfill(max_len)
+
+    carry = 0
+    result = []
+
+    # Perform binary addition from right to left
+    for b1, b2 in zip(reversed(binary1), reversed(binary2)):
+        total = carry + (b1 == '1') + (b2 == '1')
+        result_bit = total % 2  # Result bit
+        carry = total // 2       # Carry for the next bit
+        result.append(str(result_bit))
+
+    # If there's a carry left, append it
+    if carry:
+        result.append('1')
+
+    # Reverse the result and join to form the final binary string
+    result.reverse()
+    binary_result = ''.join(result)
+
+    # Return the result in 12-bit format
     return binary_result.zfill(12)
 
-def calculate_partial_product(state):
+
+def calculate_partial_product(state, flag = True):
     """Обрабатывает текущий этап алгоритма умножения."""
     multiplicand = state['multiplicand']
     multiplier = state['multiplier']
     partial_product = state['partial_product']
     partial_sum = state['partial_sum']
 
+
+    if flag:
+        partial_product = partial_product[1:] + '0'
     if multiplier[-1] == '1':  # Проверяем младший разряд множителя
         partial_sum = binary_sum(partial_sum, partial_product)  # Суммируем с текущей частичной суммой
-    partial_product = partial_product[1:] + '0'  # Сдвигаем частичное произведение влево
+
     return {
         'multiplicand': multiplicand,
         'multiplier': multiplier,
@@ -40,7 +74,7 @@ def display_step(queue, pipeline_stages, results, cycle):
 
     for stage_index in range(6):
         print(f"Этап {stage_index + 1}")
-        if stage_index < len(pipeline_stages) and pipeline_stages[stage_index]:
+        if pipeline_stages[stage_index]:
             stage = pipeline_stages[stage_index]
             print(f"Множимое: {stage['multiplicand']}")
             print(f"Множитель: {stage['multiplier']}")
@@ -66,7 +100,6 @@ def display_step(queue, pipeline_stages, results, cycle):
 
 def main():
     while True:
-        # Ввод векторов
         print("Введите вектор A (через запятую): ")
         input_a = input()
         print("Введите вектор B (через запятую): ")
@@ -84,7 +117,7 @@ def main():
             return
 
         # Инициализация
-        total_cycles = 6 + len(vector_a)
+        total_cycles = 6 + len(vector_a) - 1
         input_queue = [{'multiplicand': a, 'multiplier': b} for a, b in zip(vector_a, vector_b)]
         pipeline_stages = [None] * 6
         results = []
@@ -93,7 +126,7 @@ def main():
         for pair in input_queue:
             pair['multiplicand'] = bin(pair['multiplicand'])[2:].zfill(6)  # Преобразуем множимое в двоичное
             pair['multiplier'] = bin(pair['multiplier'])[2:].zfill(6)  # Преобразуем множитель в двоичное
-            pair['partial_product'] = pair['multiplicand']  # Начальное частичное произведение
+            pair['partial_product'] = '0'*6 +pair['multiplicand']  # Начальное частичное произведение
             pair['partial_sum'] = '0' * 12  # Изначальная частичная сумма равна 0
 
         # Запуск тактов
@@ -101,8 +134,8 @@ def main():
         for cycle in range(total_cycles):
             for stage_index in range(5, -1, -1):  # Проход по этапам от последнего к первому
                 if stage_index == 0 and input_queue:  # Первый этап обрабатывает данные из очереди
-                    pipeline_stages[0] = calculate_partial_product(input_queue.pop(0))
-                elif pipeline_stages[stage_index - 1]:  # Обрабатываем данные из предыдущего этапа
+                    pipeline_stages[0] = calculate_partial_product(input_queue.pop(0), flag=False)
+                elif pipeline_stages[stage_index - 1] and stage_index>0:  # Обрабатываем данные из предыдущего этапа
                     current_stage = pipeline_stages[stage_index - 1]
                     # Сдвигаем множитель вправо
                     current_stage['multiplier'] = '0' + current_stage['multiplier'][:-1]
