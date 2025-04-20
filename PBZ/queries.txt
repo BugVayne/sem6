@@ -4,20 +4,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX tea: <http://ontologies/teatype/#>
 
-SELECT ?a ?b
-WHERE {
-  	?a rdf:type tea:TeaColor .
-	?b rdf:type tea:TeaAroma.
-}
-
-
-
-SELECT ?a 
-WHERE {
-  	?a rdfs:subClassOf tea:Tea.
-}
-
-
 
 SELECT ?type 
 WHERE {
@@ -68,3 +54,12 @@ WHERE {
 SELECT ?object ?pred ?subject
 	WHERE { ?object ?pred ?subject.
 		?pred ?smth tea:has.}
+
+
+SELECT ?object ?pred ?subject ?individual ?class
+	WHERE {{ ?object ?pred ?subject.
+		?pred ?smth tea:has.}
+	UNION 
+{
+		?individual a ?class.
+}}

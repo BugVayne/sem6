@@ -1,0 +1,1010 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ontologies/united#"
+     xml:base="http://ontologies/united"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:food="http://ontologies/food/#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:united="http://ontologies/united/#">
+    <owl:Ontology rdf:about="http://ontologies/united"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#Name -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#Name"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#boolean -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#decimal -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#double -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#double"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#integer -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#string -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- http://ontologies/united/www.w3.org/2001/XMLSchema#unsignedInt -->
+
+    <rdfs:Datatype rdf:about="http://ontologies/united/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/united/#belongsToCuisine -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#belongsToCuisine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Dish"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Cuisine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#has -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#has"/>
+    
+
+
+    <!-- http://ontologies/united/#hasAftertaste -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasAftertaste">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Flavor"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#AfterTaste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasClimate -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasClimate">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Climate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasFlavor -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasFlavor">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Dish"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Flavor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasHarvestPeriod -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasHarvestPeriod">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#HarvestPeriod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasIngridient -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasIngridient">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Dish"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Ingridient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasLeafForm -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasLeafForm">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#LeafForm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasPrimaryAroma -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasPrimaryAroma">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#TeaAroma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasProcessingMethod -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasProcessingMethod">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#ProcessingMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasSecondaryAroma -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasSecondaryAroma">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#TeaAroma"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasSoilType -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasSoilType">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#GrowingRegion"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#SoilType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasTasteProfile -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasTasteProfile">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Flavor"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#TasteProfile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasTeaColor -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#hasTeaColor">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#has"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#TeaColor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#includesDish -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#includesDish">
+        <rdfs:domain rdf:resource="http://ontologies/united/#Cuisine"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Dish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#is -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#is"/>
+    
+
+
+    <!-- http://ontologies/united/#isBlendedWith -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#isBlendedWith">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#is"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#isCultivatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#isCultivatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://ontologies/united/#is"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#TeaPlantType"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#GrowingRegion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#madeFromTeaPlantType -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#madeFromTeaPlantType">
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#TeaPlantType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#pairsWellWith -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#pairsWellWith">
+        <rdfs:domain rdf:resource="http://ontologies/united/#Dish"/>
+        <rdfs:domain rdf:resource="http://ontologies/united/#Tea"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Dish"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ontologies/united/#partOfDish -->
+
+    <owl:ObjectProperty rdf:about="http://ontologies/united/#partOfDish">
+        <rdfs:domain rdf:resource="http://ontologies/united/#Ingridient"/>
+        <rdfs:range rdf:resource="http://ontologies/united/#Dish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/united/#hasAltitude -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasAltitude">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasBeverageColor -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasBeverageColor">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasBrewingTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasBrewingTemperature">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasCaffeineContent -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasCaffeineContent">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasCookingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasCookingTime">
+        <rdfs:domain rdf:resource="http://ontologies/united/#Dish"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasLeafSize -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasLeafSize">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasOxidationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasOxidationLevel">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasProcessingShape -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasProcessingShape">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasScientificName -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasScientificName">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasSteepingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasSteepingTime">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#hasTeaProductionVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#hasTeaProductionVolume">
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#involvesOxidation -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#involvesOxidation">
+        <rdfs:domain rdf:resource="http://ontologies/united/#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#involvesWithering -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#involvesWithering">
+        <rdfs:domain rdf:resource="http://ontologies/united/#ProcessingMethod"/>
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://ontologies/united/#isPremium -->
+
+    <owl:DatatypeProperty rdf:about="http://ontologies/united/#isPremium">
+        <rdfs:domain rdf:resource="http://ontologies/united/#HarvestPeriod"/>
+        <rdfs:range rdf:resource="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/united/#AfterTaste -->
+
+    <owl:Class rdf:about="http://ontologies/united/#AfterTaste">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Flavor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#Climate -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Climate">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#GrowingRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#Country -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Country">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#GrowingRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#Cuisine -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Cuisine"/>
+    
+
+
+    <!-- http://ontologies/united/#Dish -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Dish"/>
+    
+
+
+    <!-- http://ontologies/united/#Flavor -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Flavor"/>
+    
+
+
+    <!-- http://ontologies/united/#GrowingRegion -->
+
+    <owl:Class rdf:about="http://ontologies/united/#GrowingRegion"/>
+    
+
+
+    <!-- http://ontologies/united/#HarvestPeriod -->
+
+    <owl:Class rdf:about="http://ontologies/united/#HarvestPeriod">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#Ingridient -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Ingridient"/>
+    
+
+
+    <!-- http://ontologies/united/#LeafForm -->
+
+    <owl:Class rdf:about="http://ontologies/united/#LeafForm">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#ProcessingMethod -->
+
+    <owl:Class rdf:about="http://ontologies/united/#ProcessingMethod">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#SoilType -->
+
+    <owl:Class rdf:about="http://ontologies/united/#SoilType">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#GrowingRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#TasteProfile -->
+
+    <owl:Class rdf:about="http://ontologies/united/#TasteProfile">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Flavor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#Tea -->
+
+    <owl:Class rdf:about="http://ontologies/united/#Tea"/>
+    
+
+
+    <!-- http://ontologies/united/#TeaAroma -->
+
+    <owl:Class rdf:about="http://ontologies/united/#TeaAroma">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#TeaColor -->
+
+    <owl:Class rdf:about="http://ontologies/united/#TeaColor">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontologies/united/#TeaPlantType -->
+
+    <owl:Class rdf:about="http://ontologies/united/#TeaPlantType">
+        <rdfs:subClassOf rdf:resource="http://ontologies/united/#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologies/united/#AmberColor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#AmberColor">
+        <rdf:type rdf:resource="http://ontologies/united/#TeaColor"/>
+        <united:hasBeverageColor rdf:datatype="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Amber</united:hasBeverageColor>
+        <united:hasOxidationLevel rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">10</united:hasOxidationLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#AssamRegion -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#AssamRegion">
+        <rdf:type rdf:resource="http://ontologies/united/#GrowingRegion"/>
+        <united:hasClimate rdf:resource="http://ontologies/united/#TropicalClimate"/>
+        <united:hasOrigin rdf:resource="http://ontologies/united/#India"/>
+        <united:hasSoilType rdf:resource="http://ontologies/united/#LoamySoil"/>
+        <united:hasAltitude rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">100</united:hasAltitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#AssamicaVariety -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#AssamicaVariety">
+        <rdf:type rdf:resource="http://ontologies/united/#TeaPlantType"/>
+        <united:hasHarvestPeriod rdf:resource="http://ontologies/united/#FirstFlush"/>
+        <united:isCultivatedIn rdf:resource="http://ontologies/united/#India"/>
+        <united:hasScientificName rdf:datatype="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Camellia sinensis var. assamica</united:hasScientificName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Bitter -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Bitter">
+        <rdf:type rdf:resource="http://ontologies/united/#AfterTaste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#BlackTeaProcessing -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#BlackTeaProcessing">
+        <rdf:type rdf:resource="http://ontologies/united/#ProcessingMethod"/>
+        <united:hasBrewingTemperature rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">95</united:hasBrewingTemperature>
+        <united:hasSteepingTime rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">3</united:hasSteepingTime>
+        <united:involvesOxidation rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean">true</united:involvesOxidation>
+        <united:involvesWithering rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean">true</united:involvesWithering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Bold -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Bold">
+        <rdf:type rdf:resource="http://ontologies/united/#TasteProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#CamelliaSinensis -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#CamelliaSinensis">
+        <rdf:type rdf:resource="http://ontologies/united/#TeaPlantType"/>
+        <united:hasHarvestPeriod rdf:resource="http://ontologies/united/#SecondFlush"/>
+        <united:isCultivatedIn rdf:resource="http://ontologies/united/#China"/>
+        <united:hasScientificName rdf:datatype="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Camellia sinensis</united:hasScientificName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Candy -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Candy">
+        <rdf:type rdf:resource="http://ontologies/united/#Dish"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#FreshFlavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Cheese -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Cheese">
+        <rdf:type rdf:resource="http://ontologies/united/#Ingridient"/>
+        <united:partOfDish rdf:resource="http://ontologies/united/#Pasta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#China -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#China">
+        <rdf:type rdf:resource="http://ontologies/united/#Country"/>
+        <united:hasTeaProductionVolume rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">1000000</united:hasTeaProductionVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#ChineseCuisine -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#ChineseCuisine">
+        <rdf:type rdf:resource="http://ontologies/united/#Cuisine"/>
+        <united:includesDish rdf:resource="http://ontologies/united/#FriedRice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Complex -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Complex">
+        <rdf:type rdf:resource="http://ontologies/united/#TasteProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#CrushedLeaf -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#CrushedLeaf">
+        <rdf:type rdf:resource="http://ontologies/united/#LeafForm"/>
+        <united:hasLeafSize rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">1.0</united:hasLeafSize>
+        <united:hasProcessingShape rdf:datatype="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Twisted</united:hasProcessingShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Desserts -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Desserts">
+        <rdf:type rdf:resource="http://ontologies/united/#Dish"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#FloralFlavor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#FirstFlush -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#FirstFlush">
+        <rdf:type rdf:resource="http://ontologies/united/#HarvestPeriod"/>
+        <united:isPremium rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean">false</united:isPremium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#FloralFlavor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#FloralFlavor">
+        <rdf:type rdf:resource="http://ontologies/united/#Flavor"/>
+        <united:hasAftertaste rdf:resource="http://ontologies/united/#FragrantAftertaste"/>
+        <united:hasTasteProfile rdf:resource="http://ontologies/united/#SweetProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#FragrantAftertaste -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#FragrantAftertaste">
+        <rdf:type rdf:resource="http://ontologies/united/#AfterTaste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#FreshFlavor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#FreshFlavor">
+        <rdf:type rdf:resource="http://ontologies/united/#Flavor"/>
+        <united:hasAftertaste rdf:resource="http://ontologies/united/#RefreshingAftertaste"/>
+        <united:hasTasteProfile rdf:resource="http://ontologies/united/#MildProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#FriedRice -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#FriedRice">
+        <rdf:type rdf:resource="http://ontologies/united/#Dish"/>
+        <united:belongsToCuisine rdf:resource="http://ontologies/united/#ChineseCuisine"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#Spicy"/>
+        <united:hasIngridient rdf:resource="http://ontologies/united/#Rice"/>
+        <united:hasCookingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</united:hasCookingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#FujianProvince -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#FujianProvince">
+        <rdf:type rdf:resource="http://ontologies/united/#GrowingRegion"/>
+        <united:hasClimate rdf:resource="http://ontologies/united/#SubtropicalClimate"/>
+        <united:hasOrigin rdf:resource="http://ontologies/united/#China"/>
+        <united:hasSoilType rdf:resource="http://ontologies/united/#SandySoil"/>
+        <united:hasAltitude rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">1200</united:hasAltitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#GreenColor -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#GreenColor">
+        <rdf:type rdf:resource="http://ontologies/united/#TeaColor"/>
+        <united:hasBeverageColor rdf:datatype="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Light green</united:hasBeverageColor>
+        <united:hasOxidationLevel rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">3</united:hasOxidationLevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#GreenTea -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#GreenTea">
+        <rdf:type rdf:resource="http://ontologies/united/#Tea"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#FloralFlavor"/>
+        <united:hasLeafForm rdf:resource="http://ontologies/united/#WholeLeaf"/>
+        <united:hasPrimaryAroma rdf:resource="http://ontologies/united/#LightAroma"/>
+        <united:hasProcessingMethod rdf:resource="http://ontologies/united/#GreenTeaProcessing"/>
+        <united:hasTeaColor rdf:resource="http://ontologies/united/#GreenColor"/>
+        <united:isBlendedWith rdf:resource="http://ontologies/united/#JasmineTea"/>
+        <united:madeFromTeaPlantType rdf:resource="http://ontologies/united/#CamelliaSinensis"/>
+        <united:pairsWellWith rdf:resource="http://ontologies/united/#Candy"/>
+        <united:hasCaffeineContent rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">20</united:hasCaffeineContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#GreenTeaProcessing -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#GreenTeaProcessing">
+        <rdf:type rdf:resource="http://ontologies/united/#ProcessingMethod"/>
+        <united:hasBrewingTemperature rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">80</united:hasBrewingTemperature>
+        <united:hasSteepingTime rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">3</united:hasSteepingTime>
+        <united:involvesOxidation rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean">false</united:involvesOxidation>
+        <united:involvesWithering rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean">true</united:involvesWithering>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#India -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#India">
+        <rdf:type rdf:resource="http://ontologies/united/#Country"/>
+        <united:hasTeaProductionVolume rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">1200000</united:hasTeaProductionVolume>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#ItalianCuisine -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#ItalianCuisine">
+        <rdf:type rdf:resource="http://ontologies/united/#Cuisine"/>
+        <united:includesDish rdf:resource="http://ontologies/united/#Pasta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#JasmineAroma -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#JasmineAroma">
+        <rdf:type rdf:resource="http://ontologies/united/#TeaAroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#JasmineTea -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#JasmineTea">
+        <rdf:type rdf:resource="http://ontologies/united/#Tea"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#FloralFlavor"/>
+        <united:hasLeafForm rdf:resource="http://ontologies/united/#CrushedLeaf"/>
+        <united:hasPrimaryAroma rdf:resource="http://ontologies/united/#JasmineAroma"/>
+        <united:hasProcessingMethod rdf:resource="http://ontologies/united/#BlackTeaProcessing"/>
+        <united:hasSecondaryAroma rdf:resource="http://ontologies/united/#LightAroma"/>
+        <united:hasTeaColor rdf:resource="http://ontologies/united/#GreenColor"/>
+        <united:madeFromTeaPlantType rdf:resource="http://ontologies/united/#CamelliaSinensis"/>
+        <united:pairsWellWith rdf:resource="http://ontologies/united/#Desserts"/>
+        <united:hasCaffeineContent rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">25</united:hasCaffeineContent>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#LightAroma -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#LightAroma">
+        <rdf:type rdf:resource="http://ontologies/united/#TeaAroma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Lingering -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Lingering">
+        <rdf:type rdf:resource="http://ontologies/united/#AfterTaste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#LoamySoil -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#LoamySoil">
+        <rdf:type rdf:resource="http://ontologies/united/#SoilType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#MexicanCuisine -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#MexicanCuisine">
+        <rdf:type rdf:resource="http://ontologies/united/#Cuisine"/>
+        <united:includesDish rdf:resource="http://ontologies/united/#Tacos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#MildProfile -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#MildProfile">
+        <rdf:type rdf:resource="http://ontologies/united/#TasteProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Pasta -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Pasta">
+        <rdf:type rdf:resource="http://ontologies/united/#Dish"/>
+        <united:belongsToCuisine rdf:resource="http://ontologies/united/#ItalianCuisine"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#Sweet"/>
+        <united:hasIngridient rdf:resource="http://ontologies/united/#Cheese"/>
+        <united:hasCookingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</united:hasCookingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#RefreshingAftertaste -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#RefreshingAftertaste">
+        <rdf:type rdf:resource="http://ontologies/united/#AfterTaste"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Rice -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Rice">
+        <rdf:type rdf:resource="http://ontologies/united/#Ingridient"/>
+        <united:partOfDish rdf:resource="http://ontologies/united/#FriedRice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#SandySoil -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#SandySoil">
+        <rdf:type rdf:resource="http://ontologies/united/#SoilType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#SecondFlush -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#SecondFlush">
+        <rdf:type rdf:resource="http://ontologies/united/#HarvestPeriod"/>
+        <united:isPremium rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#boolean">true</united:isPremium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Spicy -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Spicy">
+        <rdf:type rdf:resource="http://ontologies/united/#Flavor"/>
+        <united:hasAftertaste rdf:resource="http://ontologies/united/#Bitter"/>
+        <united:hasTasteProfile rdf:resource="http://ontologies/united/#Bold"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#SubtropicalClimate -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#SubtropicalClimate">
+        <rdf:type rdf:resource="http://ontologies/united/#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Sweet -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Sweet">
+        <rdf:type rdf:resource="http://ontologies/united/#Flavor"/>
+        <united:hasAftertaste rdf:resource="http://ontologies/united/#Lingering"/>
+        <united:hasTasteProfile rdf:resource="http://ontologies/united/#Complex"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#SweetProfile -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#SweetProfile">
+        <rdf:type rdf:resource="http://ontologies/united/#TasteProfile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Tacos -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Tacos">
+        <rdf:type rdf:resource="http://ontologies/united/#Dish"/>
+        <united:belongsToCuisine rdf:resource="http://ontologies/united/#MexicanCuisine"/>
+        <united:hasFlavor rdf:resource="http://ontologies/united/#Spicy"/>
+        <united:hasIngridient rdf:resource="http://ontologies/united/#Tomato"/>
+        <united:hasCookingTime rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</united:hasCookingTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#Tomato -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#Tomato">
+        <rdf:type rdf:resource="http://ontologies/united/#Ingridient"/>
+        <united:partOfDish rdf:resource="http://ontologies/united/#Tacos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#TropicalClimate -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#TropicalClimate">
+        <rdf:type rdf:resource="http://ontologies/united/#Climate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://ontologies/united/#WholeLeaf -->
+
+    <owl:NamedIndividual rdf:about="http://ontologies/united/#WholeLeaf">
+        <rdf:type rdf:resource="http://ontologies/united/#LeafForm"/>
+        <united:hasLeafSize rdf:datatype="http://ontologies/united/www.w3.org/2001/XMLSchema#decimal">2.5</united:hasLeafSize>
+        <united:hasProcessingShape rdf:datatype="http://ontologies/united/www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Flat</united:hasProcessingShape>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
