@@ -1,0 +1,5 @@
+train: C:\ME\BSUIR\sem6\IAD\lab3\YOLOv5\yolo\images\train
+val: C:\ME\BSUIR\sem6\IAD\lab3\YOLOv5\yolo\images\val
+
+nc: 4
+names: ["trafficlight", "stop", "speedlimit", "crosswalk"]

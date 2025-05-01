@@ -2,7 +2,7 @@ IADvenv/
 lab1/.idea/
 lab2/.idea/
 lab3/katinalaba/
-lab3/YOLOv5/
+lab3/YOLOv5/*
 
 !lab3/YOLOv5/yolov5/runs/
 !lab3/YOLOv5/convertion.py
