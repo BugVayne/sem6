@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+#chatBox {
+    background-color: #f8f9fa;
+    height: calc(100vh - 150px);
+}
+
+.message-wrapper {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.message-content {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.message-time {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.user-message {
+    max-width: 80%;
+    margin-left: auto;
+}
+
+.bot-message {
+    max-width: 80%;
+    margin-right: auto;
+}
+
+#analysisPanel {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+}
+
+.progress {
+    height: 10px;
+}
+
+.badge {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #chatBox {
+        height: calc(100vh - 130px);
+    }
+
+    .user-message, .bot-message {
+        max-width: 90%;
+    }
+}
+
+#contextInfo {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+#contextInfo p {
+    margin-bottom: 0.3rem;
+}
+
+/* Chat history editor styling */
+#historyEditor {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    white-space: pre;
+}
+
+/* Save button in chat interface */
+#saveChatBtn {
+    margin-left: 0.5rem;
+}
+
+/* Analysis Panel Styles */
+.section-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.25rem;
+}
+
+.message-preview {
+    font-size: 0.85rem;
+    min-height: 40px;
+    max-height: 80px;
+    overflow-y: auto;
+    border-left: 3px solid #0d6efd;
+}
+
+.sentiment-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.sentiment-text {
+    font-weight: 500;
+}
+
+.sentiment-score {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+.keyword-container {
+    min-height: 30px;
+}
+
+.keyword-container .badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.65em;
+    margin: 0.1rem;
+}
+
+.no-keywords, .no-context {
+    color: #6c757d;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.context-section {
+    margin-top: 1.5rem;
+}
+
+.context-container {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+}
+
+.context-item {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    border-radius: 3px;
+    border-left: 3px solid #6c757d;
+    font-size: 0.8rem;
+}
+
+.context-item:last-child {
+    margin-bottom: 0;
+}
+
+.context-item strong {
+    display: block;
+    color: #0d6efd;
+    margin-bottom: 0.2rem;
+}
+
+/* Main layout styles */
+.vh-100 {
+    height: 100vh;
+}
+
+.position-sticky {
+    position: sticky;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    z-index: 1020;
+}
+
+/* Analysis panel specific styles */
+#analysisPanel {
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Chat area specific styles */
+#chatBox {
+    scroll-behavior: smooth;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

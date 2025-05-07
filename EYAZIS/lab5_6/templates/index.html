@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Expert Bot</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid vh-100">
+        <div class="row h-100">
+            <!-- Updated Analysis Panel in your HTML -->
+             <div class="col-md-3 bg-light p-3 d-none d-md-block position-sticky top-0 vh-100 overflow-y-auto">
+                <h4 class="text-center mb-4">
+                    <i class="fas fa-music me-2"></i>Analysis Panel
+                </h4>
+                <div id="analysisPanel">
+                    <div class="card mb-3">
+                        <div class="card-header bg-primary text-white">
+                            <i class="fas fa-info-circle me-2"></i>Message Info
+                        </div>
+                        <div class="card-body">
+                            <!-- Last Message Section -->
+                            <div class="mb-3">
+                                <h6 class="section-title">
+                                    <i class="fas fa-comment me-1"></i> Last Message
+                                </h6>
+                                <div id="lastMessage" class="message-preview p-2 bg-light rounded">-</div>
+                            </div>
+
+                            <!-- Sentiment Analysis Section -->
+                            <div class="mb-3">
+                                <h6 class="section-title">
+                                    <i class="fas fa-chart-line me-1"></i> Sentiment Analysis
+                                </h6>
+                                <div class="progress mb-2">
+                                    <div id="sentimentBar" class="progress-bar" role="progressbar"></div>
+                                </div>
+                                <div id="sentimentLabel" class="sentiment-indicator">
+                                    <span class="sentiment-text">Neutral</span>
+                                    <span id="sentimentScore" class="sentiment-score">0.0</span>
+                                </div>
+                            </div>
+
+                            <!-- Keywords Section -->
+                            <div class="mb-3">
+                                <h6 class="section-title">
+                                    <i class="fas fa-tags me-1"></i> Keywords Detected
+                                </h6>
+                                <div id="musicTerms" class="keyword-container d-flex flex-wrap gap-1">
+                                    <span class="no-keywords">None detected</span>
+                                </div>
+                            </div>
+
+                            <!-- Context Section -->
+                            <div class="context-section">
+                                <h6 class="section-title">
+                                    <i class="fas fa-book me-1"></i> Context Used
+                                </h6>
+                                <div id="contextInfo" class="context-container">
+                                    <div class="no-context">No context data available</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main chat area -->
+            <div class="col-md-9 p-0 d-flex flex-column" style="height: 100vh;">
+            <div class="bg-dark text-white p-3 sticky-top">
+                <h2 class="m-0">
+                    <i class="fas fa-robot me-2"></i>Music Expert Bot
+                </h2>
+            </div>
+
+                <div id="chatBox" class="flex-grow-1 p-3 overflow-auto" style="height: calc(100vh - 150px);">
+                    {% for message in history %}
+                        <div class="message-wrapper mb-3">
+                            <div class="user-message bg-primary text-white p-2 rounded mb-1">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>You</strong>
+                                    <small class="message-time">{{ message.time }}</small>
+                                </div>
+                                <div class="message-content">{{ message.user }}</div>
+                            </div>
+                            <div class="bot-message bg-light p-2 rounded">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <strong>Music Bot</strong>
+                                    <small class="message-time">{{ message.time }}</small>
+                                </div>
+                                <div class="message-content">{{ message.bot }}</div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="p-3 border-top  sticky-bottom bg-white">
+                    <div class="input-group">
+                        <input type="text" id="userInput" class="form-control" placeholder="Ask about music..." aria-label="Message input">
+                        <button class="btn btn-primary" type="button" id="sendButton">
+                            <i class="fas fa-paper-plane"></i> Send
+                        </button>
+                        <button class="btn btn-outline-secondary" type="button" id="saveChatBtn" title="Save chat history">
+                            <i class="fas fa-save"></i> Save Chat
+                        </button>
+                    </div>
+                    <small class="text-muted">Press Enter to send</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="historyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="historyModalLabel">Edit Chat History</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea id="historyEditor" class="form-control" rows="15" style="font-family: monospace;"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary" id="saveHistoryBtn">Save as JSON</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+function updateAnalysisPanel(data) {
+    // Last message
+    document.getElementById('lastMessage').textContent = data.lastMessage || '-';
+
+    // Sentiment analysis
+    const sentimentScore = data.sentiment_score || 0;
+    const sentimentBar = document.getElementById('sentimentBar');
+    sentimentBar.style.width = `${(sentimentScore + 1) * 50}%`;
+
+    const sentimentText = document.querySelector('.sentiment-text');
+    const sentimentScoreEl = document.getElementById('sentimentScore');
+    sentimentScoreEl.textContent = sentimentScore.toFixed(2);
+
+    if (sentimentScore > 0.2) {
+        sentimentBar.className = 'progress-bar bg-success';
+        sentimentText.textContent = 'Positive';
+        sentimentText.className = 'sentiment-text text-success';
+    } else if (sentimentScore < -0.2) {
+        sentimentBar.className = 'progress-bar bg-danger';
+        sentimentText.textContent = 'Negative';
+        sentimentText.className = 'sentiment-text text-danger';
+    } else {
+        sentimentBar.className = 'progress-bar bg-warning';
+        sentimentText.textContent = 'Neutral';
+        sentimentText.className = 'sentiment-text text-warning';
+    }
+
+    // Keywords
+    const termsContainer = document.getElementById('musicTerms');
+    termsContainer.innerHTML = '';
+    if (data.keywords && data.keywords.length > 0) {
+        data.keywords.forEach(term => {
+            const badge = document.createElement('span');
+            badge.className = 'badge bg-secondary';
+            badge.textContent = term;
+            termsContainer.appendChild(badge);
+        });
+    } else {
+        termsContainer.innerHTML = '<span class="no-keywords">None detected</span>';
+    }
+
+    // Context
+    const contextContainer = document.getElementById('contextInfo');
+    contextContainer.innerHTML = '';
+    if (data.context) {
+        const contextItems = data.context.split('\n').filter(item => item.trim() !== '');
+        if (contextItems.length > 0) {
+            contextItems.forEach((item, index) => {
+                const contextItem = document.createElement('div');
+                contextItem.className = 'context-item';
+                contextItem.innerHTML = `<strong>Context ${index + 1}</strong>${item}`;
+                contextContainer.appendChild(contextItem);
+            });
+        } else {
+            contextContainer.innerHTML = '<div class="no-context">No context data available</div>';
+        }
+    } else {
+        contextContainer.innerHTML = '<div class="no-context">No context data available</div>';
+    }
+}
+
+        function sendMessage() {
+            const input = document.getElementById('userInput');
+            const message = input.value.trim();
+            if (!message) return;
+
+            // Add user message to chat
+            const chatBox = document.getElementById('chatBox');
+            const time = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+
+            const messageWrapper = document.createElement('div');
+            messageWrapper.className = 'message-wrapper mb-3';
+            messageWrapper.innerHTML = `
+                <div class="user-message bg-primary text-white p-2 rounded mb-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <strong>You</strong>
+                        <small class="message-time">${time}</small>
+                    </div>
+                    <div class="message-content">${message}</div>
+                </div>
+            `;
+            chatBox.appendChild(messageWrapper);
+
+            // Clear input
+            input.value = '';
+
+            // Send to server
+            fetch('/chat', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({message: message})
+            })
+            .then(response => response.json())
+            .then(data => {
+    // Add bot response
+    const botMessage = document.createElement('div');
+    botMessage.className = 'bot-message bg-light p-2 rounded';
+    botMessage.innerHTML = `
+        <div class="d-flex justify-content-between align-items-center">
+            <strong>Music Bot</strong>
+            <small class="message-time">${time}</small>
+        </div>
+        <div class="message-content">${data.response}</div>
+    `;
+    messageWrapper.appendChild(botMessage);
+
+    // Update analysis panel with all data
+    updateAnalysisPanel({
+        lastMessage: message,
+        sentiment_score: data.sentiment_score || 0,
+        keywords: data.keywords || [],
+        context: data.context || ''
+    });
+
+    // Scroll to bottom
+    chatBox.scrollTop = chatBox.scrollHeight;
+});
+        }
+
+        // Event listeners
+        document.getElementById('sendButton').addEventListener('click', sendMessage);
+        document.getElementById('userInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        // Initialize analysis panel
+        updateAnalysisPanel({});
+
+
+
+        // Add to your existing JavaScript
+document.getElementById('saveChatBtn').addEventListener('click', function() {
+    // Fetch current history
+    fetch('/save_history')
+        .then(response => response.json())
+        .then(history => {
+            // Populate the editor
+            const editor = document.getElementById('historyEditor');
+            editor.value = JSON.stringify(history, null, 2);
+
+            // Show the modal
+            const modal = new bootstrap.Modal(document.getElementById('historyModal'));
+            modal.show();
+        });
+});
+
+document.getElementById('saveHistoryBtn').addEventListener('click', function() {
+    const editedHistory = document.getElementById('historyEditor').value;
+
+    try {
+        // Validate JSON
+        const parsed = JSON.parse(editedHistory);
+
+        // Send to server for download
+        fetch('/save_history', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({history: parsed})
+        })
+        .then(response => {
+            if (response.ok) return response.blob();
+            throw new Error('Error saving history');
+        })
+        .then(blob => {
+            // Create download link
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `chat_history_${new Date().toISOString().slice(0, 19)}.json`;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+
+            // Close modal
+            bootstrap.Modal.getInstance(document.getElementById('historyModal')).hide();
+        });
+    } catch (e) {
+        alert('Invalid JSON: ' + e.message);
+    }
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,3302 @@
+[
+    {
+        "id": 1,
+        "text": "A chord is a combination of three or more notes played simultaneously.",
+        "category": "music theory",
+        "tags": ["chord", "music theory", "harmony"]
+    },
+    {
+        "id": 2,
+        "text": "Beethoven is one of the most famous classical composers, known for his symphonies.",
+        "category": "composer",
+        "tags": ["Beethoven", "classical music", "composer"]
+    },
+    {
+        "id": 3,
+        "text": "The guitar is a string instrument commonly used in rock, jazz, and classical music.",
+        "category": "instrument",
+        "tags": ["guitar", "instrument", "rock", "jazz", "classical"]
+    },
+    {
+        "id": 4,
+        "text": "A tempo is the speed at which a piece of music is played, typically measured in beats per minute (BPM).",
+        "category": "music theory",
+        "tags": ["tempo", "BPM", "music theory"]
+    },
+    {
+        "id": 5,
+        "text": "Jazz is a genre of music that originated in the African-American communities in the early 20th century.",
+        "category": "genre",
+        "tags": ["jazz", "genre", "history"]
+    },
+    {
+        "id": 6,
+        "text": "The piano is a versatile instrument used in many genres, including classical, jazz, and pop.",
+        "category": "instrument",
+        "tags": ["piano", "instrument", "classical", "jazz", "pop"]
+    },
+    {
+        "id": 7,
+        "text": "Freddie Mercury was the lead vocalist of the rock band Queen, known for his powerful voice and flamboyant stage presence.",
+        "category": "artist",
+        "tags": ["Freddie Mercury", "Queen", "rock", "vocalist"]
+    },
+    {
+        "id": 8,
+        "text": "The violin is a bowed string instrument commonly used in classical and folk music.",
+        "category": "instrument",
+        "tags": ["violin", "instrument", "classical", "folk"]
+    },
+    {
+        "id": 9,
+        "text": "A scale is a series of notes ordered by pitch, forming the basis of melodies and harmonies.",
+        "category": "music theory",
+        "tags": ["scale", "music theory", "melody", "harmony"]
+    },
+    {
+        "id": 10,
+        "text": "Hip-hop is a genre that originated in the Bronx, New York City, during the 1970s.",
+        "category": "genre",
+        "tags": ["hip-hop", "genre", "history", "Bronx"]
+    },
+    {
+        "id": 11,
+        "text": "The saxophone is a wind instrument commonly used in jazz and classical music.",
+        "category": "instrument",
+        "tags": ["saxophone", "instrument", "jazz", "classical"]
+    },
+    {
+        "id": 12,
+        "text": "Wolfgang Amadeus Mozart was a prolific Austrian composer known for his operas and symphonies.",
+        "category": "composer",
+        "tags": ["Mozart", "classical music", "composer"]
+    },
+    {
+        "id": 13,
+        "text": "A chord progression is a sequence of chords played in a piece of music.",
+        "category": "music theory",
+        "tags": ["chord progression", "music theory", "harmony"]
+    },
+    {
+        "id": 14,
+        "text": "The Beatles were an English rock band that became one of the most influential bands of all time.",
+        "category": "band",
+        "tags": ["The Beatles", "rock", "band", "history"]
+    },
+    {
+        "id": 15,
+        "text": "A metronome is a device used to keep a steady tempo during musical practice.",
+        "category": "music technology",
+        "tags": ["metronome", "tempo", "music technology"]
+    },
+    {
+        "id": 16,
+        "text": "The blues is a genre of music that originated in the Deep South of the United States around the 19th century.",
+        "category": "genre",
+        "tags": ["blues", "genre", "history"]
+    },
+    {
+        "id": 17,
+        "text": "Jimi Hendrix is widely regarded as one of the greatest electric guitarists in the history of rock music.",
+        "category": "artist",
+        "tags": ["Jimi Hendrix", "guitar", "rock", "artist"]
+    },
+    {
+        "id": 18,
+        "text": "An arpeggio is a broken chord where notes are played in sequence rather than simultaneously.",
+        "category": "music theory",
+        "tags": ["arpeggio", "music theory", "chord"]
+    },
+    {
+        "id": 19,
+        "text": "The drum set is a collection of percussion instruments used in various genres, including rock, jazz, and pop.",
+        "category": "instrument",
+        "tags": ["drum set", "instrument", "rock", "jazz", "pop"]
+    },
+    {
+        "id": 20,
+        "text": "The Baroque period in music history spans from approximately 1600 to 1750 and includes composers like Bach and Vivaldi.",
+        "category": "music history",
+        "tags": ["Baroque", "history", "Bach", "Vivaldi"]
+    },
+    {
+        "id": 21,
+        "text": "A synthesizer is an electronic instrument that generates audio signals to create sounds.",
+        "category": "instrument",
+        "tags": ["synthesizer", "electronic", "music technology"]
+    },
+    {
+        "id": 22,
+        "text": "The Romantic period in music emphasized emotion and individualism, spanning roughly 1800-1910.",
+        "category": "music history",
+        "tags": ["Romantic", "period", "history"]
+    },
+    {
+        "id": 23,
+        "text": "David Bowie was an influential English singer-songwriter known for his innovative work in rock music.",
+        "category": "artist",
+        "tags": ["David Bowie", "rock", "artist", "innovative"]
+    },
+    {
+        "id": 24,
+        "text": "A capella music is performed without instrumental accompaniment.",
+        "category": "vocal",
+        "tags": ["a capella", "vocal", "singing"]
+    },
+    {
+        "id": 25,
+        "text": "The trumpet is a brass instrument known for its bright, powerful sound in jazz and classical music.",
+        "category": "instrument",
+        "tags": ["trumpet", "brass", "instrument", "jazz"]
+    },
+    {
+        "id": 26,
+        "text": "Reggae is a music genre that originated in Jamaica in the late 1960s, characterized by its offbeat rhythms.",
+        "category": "genre",
+        "tags": ["reggae", "Jamaica", "genre", "history"]
+    },
+    {
+        "id": 27,
+        "text": "Johann Sebastian Bach was a German composer of the Baroque period known for his complex counterpoint.",
+        "category": "composer",
+        "tags": ["Bach", "Baroque", "composer", "counterpoint"]
+    },
+    {
+        "id": 28,
+        "text": "A crescendo is a gradual increase in loudness in a piece of music.",
+        "category": "music theory",
+        "tags": ["crescendo", "dynamics", "music theory"]
+    },
+    {
+        "id": 29,
+        "text": "The flute is a woodwind instrument that produces sound from the flow of air across an opening.",
+        "category": "instrument",
+        "tags": ["flute", "woodwind", "instrument"]
+    },
+    {
+        "id": 30,
+        "text": "Pink Floyd was an English rock band known for their progressive and psychedelic music.",
+        "category": "band",
+        "tags": ["Pink Floyd", "rock", "progressive", "band"]
+    },
+    {
+        "id": 31,
+        "text": "A minor scale has a characteristic sad or melancholic sound compared to major scales.",
+        "category": "music theory",
+        "tags": ["minor scale", "music theory", "melody"]
+    },
+    {
+        "id": 32,
+        "text": "The clarinet is a woodwind instrument with a single-reed mouthpiece.",
+        "category": "instrument",
+        "tags": ["clarinet", "woodwind", "instrument"]
+    },
+    {
+        "id": 33,
+        "text": "Michael Jackson, known as the 'King of Pop', was one of the most influential entertainers of all time.",
+        "category": "artist",
+        "tags": ["Michael Jackson", "pop", "artist", "King of Pop"]
+    },
+    {
+        "id": 34,
+        "text": "A fermata is a symbol indicating a note should be held longer than its standard duration.",
+        "category": "music notation",
+        "tags": ["fermata", "notation", "music theory"]
+    },
+    {
+        "id": 35,
+        "text": "The cello is a bowed string instrument that is larger than the violin and has a deeper tone.",
+        "category": "instrument",
+        "tags": ["cello", "string", "instrument", "classical"]
+    },
+    {
+        "id": 36,
+        "text": "Electronic dance music (EDM) is a broad range of percussive electronic music genres.",
+        "category": "genre",
+        "tags": ["EDM", "electronic", "genre", "dance"]
+    },
+    {
+        "id": 37,
+        "text": "Franz Schubert was an Austrian composer known for his lieder (art songs) and symphonies.",
+        "category": "composer",
+        "tags": ["Schubert", "classical", "composer", "lieder"]
+    },
+    {
+        "id": 38,
+        "text": "A glissando is a glide from one pitch to another, often heard in harp or trombone playing.",
+        "category": "music technique",
+        "tags": ["glissando", "technique", "music theory"]
+    },
+    {
+        "id": 39,
+        "text": "The harmonica is a free reed wind instrument used in blues, folk, and rock music.",
+        "category": "instrument",
+        "tags": ["harmonica", "instrument", "blues", "folk"]
+    },
+    {
+        "id": 40,
+        "text": "Led Zeppelin was an English rock band known for their heavy, guitar-driven sound.",
+        "category": "band",
+        "tags": ["Led Zeppelin", "rock", "band", "heavy"]
+    },
+    {
+        "id": 41,
+        "text": "A key signature indicates which notes are to be played sharp or flat throughout a piece.",
+        "category": "music notation",
+        "tags": ["key signature", "notation", "music theory"]
+    },
+    {
+        "id": 42,
+        "text": "The oboe is a double reed woodwind instrument with a distinctive penetrating tone.",
+        "category": "instrument",
+        "tags": ["oboe", "woodwind", "instrument", "double reed"]
+    },
+    {
+        "id": 43,
+        "text": "Aretha Franklin, known as the 'Queen of Soul', was a legendary American singer.",
+        "category": "artist",
+        "tags": ["Aretha Franklin", "soul", "artist", "Queen of Soul"]
+    },
+    {
+        "id": 44,
+        "text": "A staccato note is played shorter than its normal duration, creating a detached sound.",
+        "category": "music technique",
+        "tags": ["staccato", "technique", "articulation"]
+    },
+    {
+        "id": 45,
+        "text": "The bass guitar is a string instrument that provides the low-pitched basslines in many genres.",
+        "category": "instrument",
+        "tags": ["bass guitar", "instrument", "rock", "jazz"]
+    },
+    {
+        "id": 46,
+        "text": "Country music originated in the Southern United States in the early 20th century.",
+        "category": "genre",
+        "tags": ["country", "genre", "history", "American"]
+    },
+    {
+        "id": 47,
+        "text": "Claude Debussy was a French composer associated with Impressionist music.",
+        "category": "composer",
+        "tags": ["Debussy", "Impressionist", "composer", "French"]
+    },
+    {
+        "id": 48,
+        "text": "A time signature indicates how many beats are in each measure of music.",
+        "category": "music notation",
+        "tags": ["time signature", "notation", "music theory"]
+    },
+    {
+        "id": 49,
+        "text": "The trombone is a brass instrument that uses a slide to change pitches.",
+        "category": "instrument",
+        "tags": ["trombone", "brass", "instrument", "slide"]
+    },
+    {
+        "id": 50,
+        "text": "The Rolling Stones are an English rock band formed in London in 1962.",
+        "category": "band",
+        "tags": ["Rolling Stones", "rock", "band", "British"]
+    },
+    {
+        "id": 51,
+        "text": "A cadence is a sequence of chords that brings a phrase or piece of music to a conclusion.",
+        "category": "music theory",
+        "tags": ["cadence", "harmony", "music theory"]
+    },
+    {
+        "id": 52,
+        "text": "The harp is a string instrument with individual strings running at an angle to the soundboard.",
+        "category": "instrument",
+        "tags": ["harp", "string", "instrument", "classical"]
+    },
+    {
+        "id": 53,
+        "text": "Ella Fitzgerald was an American jazz singer often referred to as the 'First Lady of Song'.",
+        "category": "artist",
+        "tags": ["Ella Fitzgerald", "jazz", "vocalist", "artist"]
+    },
+    {
+        "id": 54,
+        "text": "A trill is a rapid alternation between two adjacent notes.",
+        "category": "music technique",
+        "tags": ["trill", "ornamentation", "music theory"]
+    },
+    {
+        "id": 55,
+        "text": "The accordion is a box-shaped musical instrument played by compressing or expanding bellows.",
+        "category": "instrument",
+        "tags": ["accordion", "instrument", "folk"]
+    },
+    {
+        "id": 56,
+        "text": "Heavy metal is a genre of rock music that developed in the late 1960s and early 1970s.",
+        "category": "genre",
+        "tags": ["heavy metal", "rock", "genre", "history"]
+    },
+    {
+        "id": 57,
+        "text": "Igor Stravinsky was a Russian composer known for works like 'The Rite of Spring'.",
+        "category": "composer",
+        "tags": ["Stravinsky", "modern", "composer", "ballet"]
+    },
+    {
+        "id": 58,
+        "text": "A clef is a musical symbol used to indicate the pitch of written notes.",
+        "category": "music notation",
+        "tags": ["clef", "notation", "music theory"]
+    },
+    {
+        "id": 59,
+        "text": "The banjo is a string instrument frequently associated with folk and country music.",
+        "category": "instrument",
+        "tags": ["banjo", "string", "instrument", "folk"]
+    },
+    {
+        "id": 60,
+        "text": "Nirvana was an American rock band that played a major role in popularizing grunge music.",
+        "category": "band",
+        "tags": ["Nirvana", "grunge", "rock", "band"]
+    },
+    {
+        "id": 61,
+        "text": "A rest is a musical notation sign that indicates silence for a specified duration.",
+        "category": "music notation",
+        "tags": ["rest", "notation", "rhythm"]
+    },
+    {
+        "id": 62,
+        "text": "The tuba is the largest and lowest-pitched brass instrument.",
+        "category": "instrument",
+        "tags": ["tuba", "brass", "instrument", "low"]
+    },
+    {
+        "id": 63,
+        "text": "Bob Marley was a Jamaican singer-songwriter who popularized reggae music worldwide.",
+        "category": "artist",
+        "tags": ["Bob Marley", "reggae", "artist", "Jamaican"]
+    },
+    {
+        "id": 64,
+        "text": "A grace note is a brief note that serves as a decorative addition to the main note.",
+        "category": "music notation",
+        "tags": ["grace note", "ornamentation", "music theory"]
+    },
+    {
+        "id": 65,
+        "text": "The mandolin is a string instrument with four courses of doubled strings.",
+        "category": "instrument",
+        "tags": ["mandolin", "string", "instrument", "folk"]
+    },
+    {
+        "id": 66,
+        "text": "Funk is a music genre that originated in African-American communities in the mid-1960s.",
+        "category": "genre",
+        "tags": ["funk", "genre", "rhythm", "history"]
+    },
+    {
+        "id": 67,
+        "text": "Pyotr Ilyich Tchaikovsky was a Russian composer known for his ballets and symphonies.",
+        "category": "composer",
+        "tags": ["Tchaikovsky", "Russian", "composer", "ballet"]
+    },
+    {
+        "id": 68,
+        "text": "A slur is a curved line connecting notes of different pitches to indicate legato playing.",
+        "category": "music notation",
+        "tags": ["slur", "notation", "articulation"]
+    },
+    {
+        "id": 69,
+        "text": "The ukulele is a small guitar-like instrument with four strings, associated with Hawaiian music.",
+        "category": "instrument",
+        "tags": ["ukulele", "string", "instrument", "Hawaiian"]
+    },
+    {
+        "id": 70,
+        "text": "The Who were an English rock band known for their energetic live performances.",
+        "category": "band",
+        "tags": ["The Who", "rock", "band", "British"]
+    },
+    {
+        "id": 71,
+        "text": "A tie is a curved line connecting two notes of the same pitch to create a single sustained note.",
+        "category": "music notation",
+        "tags": ["tie", "notation", "rhythm"]
+    },
+    {
+        "id": 72,
+        "text": "The French horn is a brass instrument with a coiled tube and flared bell.",
+        "category": "instrument",
+        "tags": ["French horn", "brass", "instrument", "classical"]
+    },
+    {
+        "id": 73,
+        "text": "Louis Armstrong was an American trumpeter and vocalist who was pivotal in jazz development.",
+        "category": "artist",
+        "tags": ["Louis Armstrong", "jazz", "trumpet", "artist"]
+    },
+    {
+        "id": 74,
+        "text": "A marcato is a musical notation indicating a note should be played with strong emphasis.",
+        "category": "music notation",
+        "tags": ["marcato", "articulation", "notation"]
+    },
+    {
+        "id": 75,
+        "text": "The sitar is a plucked string instrument used in classical Indian music.",
+        "category": "instrument",
+        "tags": ["sitar", "string", "instrument", "Indian"]
+    },
+    {
+        "id": 76,
+        "text": "Disco is a genre of dance music that was popular in the 1970s.",
+        "category": "genre",
+        "tags": ["disco", "dance", "genre", "1970s"]
+    },
+    {
+        "id": 77,
+        "text": "Richard Wagner was a German composer known for his operas and use of leitmotifs.",
+        "category": "composer",
+        "tags": ["Wagner", "opera", "composer", "German"]
+    },
+    {
+        "id": 78,
+        "text": "A natural is a musical symbol that cancels a previous sharp or flat.",
+        "category": "music notation",
+        "tags": ["natural", "notation", "music theory"]
+    },
+    {
+        "id": 79,
+        "text": "The xylophone is a percussion instrument consisting of wooden bars struck by mallets.",
+        "category": "instrument",
+        "tags": ["xylophone", "percussion", "instrument"]
+    },
+    {
+        "id": 80,
+        "text": "Radiohead is an English rock band known for their experimental approach to music.",
+        "category": "band",
+        "tags": ["Radiohead", "rock", "experimental", "band"]
+    },
+    {
+        "id": 81,
+        "text": "A sharp raises a note by a half step, while a flat lowers it by a half step.",
+        "category": "music theory",
+        "tags": ["sharp", "flat", "notation", "music theory"]
+    },
+    {
+        "id": 82,
+        "text": "The double bass is the largest and lowest-pitched bowed string instrument.",
+        "category": "instrument",
+        "tags": ["double bass", "string", "instrument", "low"]
+    },
+    {
+        "id": 83,
+        "text": "Stevie Wonder is an American singer-songwriter and multi-instrumentalist.",
+        "category": "artist",
+        "tags": ["Stevie Wonder", "soul", "artist", "singer"]
+    },
+    {
+        "id": 84,
+        "text": "A triplet is a group of three notes played in the time of two notes of the same value.",
+        "category": "rhythm",
+        "tags": ["triplet", "rhythm", "music theory"]
+    },
+    {
+        "id": 85,
+        "text": "The bagpipes are a wind instrument using enclosed reeds fed from a constant reservoir of air.",
+        "category": "instrument",
+        "tags": ["bagpipes", "wind", "instrument", "folk"]
+    },
+    {
+        "id": 86,
+        "text": "Punk rock is a music genre that emerged in the mid-1970s as a reaction against mainstream rock.",
+        "category": "genre",
+        "tags": ["punk", "rock", "genre", "history"]
+    },
+    {
+        "id": 87,
+        "text": "Antonio Vivaldi was an Italian Baroque composer known for his violin concertos.",
+        "category": "composer",
+        "tags": ["Vivaldi", "Baroque", "composer", "Italian"]
+    },
+    {
+        "id": 88,
+        "text": "A dot after a note increases its duration by half of its original value.",
+        "category": "music notation",
+        "tags": ["dot", "notation", "rhythm"]
+    },
+    {
+        "id": 89,
+        "text": "The tambourine is a percussion instrument consisting of a frame with jingles.",
+        "category": "instrument",
+        "tags": ["tambourine", "percussion", "instrument"]
+    },
+    {
+        "id": 90,
+        "text": "The Doors were an American rock band known for their poetic lyrics and psychedelic sound.",
+        "category": "band",
+        "tags": ["The Doors", "rock", "psychedelic", "band"]
+    },
+    {
+        "id": 91,
+        "text": "A hemiola is a rhythmic pattern where two groups of three beats are replaced by three groups of two beats.",
+        "category": "rhythm",
+        "tags": ["hemiola", "rhythm", "music theory"]
+    },
+    {
+        "id": 92,
+        "text": "The bassoon is a woodwind instrument with a double reed and a distinctive tenor/bass sound.",
+        "category": "instrument",
+        "tags": ["bassoon", "woodwind", "instrument", "double reed"]
+    },
+    {
+        "id": 93,
+        "text": "Prince was an American singer-songwriter known for his eclectic work and flamboyant stage presence.",
+        "category": "artist",
+        "tags": ["Prince", "pop", "artist", "singer"]
+    },
+    {
+        "id": 94,
+        "text": "A syncopation is a displacement of the usual rhythmic accent onto a weak beat.",
+        "category": "rhythm",
+        "tags": ["syncopation", "rhythm", "music theory"]
+    },
+    {
+        "id": 95,
+        "text": "The organ is a keyboard instrument that produces sound by driving air through pipes.",
+        "category": "instrument",
+        "tags": ["organ", "keyboard", "instrument", "pipes"]
+    },
+    {
+        "id": 96,
+        "text": "Soul music combines elements of African-American gospel music, rhythm and blues, and jazz.",
+        "category": "genre",
+        "tags": ["soul", "gospel", "R&B", "genre"]
+    },
+    {
+        "id": 97,
+        "text": "Clara Schumann was a German pianist and composer of the Romantic era.",
+        "category": "composer",
+        "tags": ["Clara Schumann", "Romantic", "composer", "pianist"]
+    },
+    {
+        "id": 98,
+        "text": "A legato indicates that notes should be played smoothly and connected.",
+        "category": "articulation",
+        "tags": ["legato", "articulation", "music theory"]
+    },
+    {
+        "id": 99,
+        "text": "The marimba is a percussion instrument with wooden bars and resonators.",
+        "category": "instrument",
+        "tags": ["marimba", "percussion", "instrument"]
+    },
+    {
+        "id": 100,
+        "text": "The Grateful Dead were an American rock band known for their unique blend of genres and improvisation.",
+        "category": "band",
+        "tags": ["Grateful Dead", "rock", "jam band", "improvisation"]
+    },
+    {
+        "id": 101,
+        "text": "A countermelody is a secondary melody played simultaneously with the main melody.",
+        "category": "music theory",
+        "tags": ["countermelody", "harmony", "composition"]
+    },
+    {
+        "id": 102,
+        "text": "The theremin is an electronic instrument played without physical contact by moving hands near its antennas.",
+        "category": "instrument",
+        "tags": ["theremin", "electronic", "unique"]
+    },
+    {
+        "id": 103,
+        "text": "Björk is an Icelandic singer known for her avant-garde music and distinctive vocal style.",
+        "category": "artist",
+        "tags": ["Björk", "avant-garde", "experimental", "Icelandic"]
+    },
+    {
+        "id": 104,
+        "text": "Polyrhythm is the simultaneous use of two or more conflicting rhythms.",
+        "category": "rhythm",
+        "tags": ["polyrhythm", "complex", "African music"]
+    },
+    {
+        "id": 105,
+        "text": "The harpsichord is a keyboard instrument that plucks strings rather than striking them like a piano.",
+        "category": "instrument",
+        "tags": ["harpsichord", "Baroque", "keyboard"]
+    },
+    {
+        "id": 106,
+        "text": "Grunge is a subgenre of alternative rock that emerged in Seattle in the mid-1980s.",
+        "category": "genre",
+        "tags": ["grunge", "alternative", "Seattle", "Nirvana"]
+    },
+    {
+        "id": 107,
+        "text": "Philip Glass is an American composer known for his minimalist style of music.",
+        "category": "composer",
+        "tags": ["Philip Glass", "minimalism", "modern"]
+    },
+    {
+        "id": 108,
+        "text": "A drone is a sustained tone or chord that continues throughout much of a piece.",
+        "category": "music technique",
+        "tags": ["drone", "sustained", "harmony"]
+    },
+    {
+        "id": 109,
+        "text": "The didgeridoo is a wind instrument developed by Indigenous Australians.",
+        "category": "instrument",
+        "tags": ["didgeridoo", "wind", "Australian", "folk"]
+    },
+    {
+        "id": 110,
+        "text": "The Velvet Underground was an American rock band influential in the development of alternative rock.",
+        "category": "band",
+        "tags": ["Velvet Underground", "experimental", "Andy Warhol"]
+    },
+    {
+        "id": 111,
+        "text": "Aleatoric music is music where some element is left to chance during composition or performance.",
+        "category": "composition",
+        "tags": ["aleatoric", "chance", "modern"]
+    },
+    {
+        "id": 112,
+        "text": "The koto is a traditional Japanese stringed instrument with 13 strings.",
+        "category": "instrument",
+        "tags": ["koto", "Japanese", "traditional"]
+    },
+    {
+        "id": 113,
+        "text": "Dolly Parton is an American singer-songwriter known for her country music and philanthropy.",
+        "category": "artist",
+        "tags": ["Dolly Parton", "country", "songwriter"]
+    },
+    {
+        "id": 114,
+        "text": "A passacaglia is a musical form based on a repeating bass line or chord progression.",
+        "category": "composition",
+        "tags": ["passacaglia", "Baroque", "form"]
+    },
+    {
+        "id": 115,
+        "text": "The steelpan is a percussion instrument originating from Trinidad and Tobago.",
+        "category": "instrument",
+        "tags": ["steelpan", "percussion", "Caribbean"]
+    },
+    {
+        "id": 116,
+        "text": "Ska is a music genre that originated in Jamaica in the late 1950s, precursor to reggae.",
+        "category": "genre",
+        "tags": ["ska", "Jamaican", "reggae"]
+    },
+    {
+        "id": 117,
+        "text": "John Cage was an American composer known for his avant-garde and experimental music.",
+        "category": "composer",
+        "tags": ["John Cage", "avant-garde", "4'33"]
+    },
+    {
+        "id": 118,
+        "text": "A neapolitan chord is a major chord built on the lowered second scale degree.",
+        "category": "music theory",
+        "tags": ["neapolitan", "chord", "classical"]
+    },
+    {
+        "id": 119,
+        "text": "The erhu is a two-stringed bowed musical instrument from China.",
+        "category": "instrument",
+        "tags": ["erhu", "Chinese", "bowed"]
+    },
+    {
+        "id": 120,
+        "text": "The Ramones were an American punk rock band that formed in Queens, New York in 1974.",
+        "category": "band",
+        "tags": ["Ramones", "punk", "New York"]
+    },
+    {
+        "id": 121,
+        "text": "Serialism is a method of composition using series of pitches, rhythms, dynamics, etc.",
+        "category": "composition",
+        "tags": ["serialism", "modern", "Schoenberg"]
+    },
+    {
+        "id": 122,
+        "text": "The bouzouki is a Greek string instrument with a pear-shaped body.",
+        "category": "instrument",
+        "tags": ["bouzouki", "Greek", "folk"]
+    },
+    {
+        "id": 123,
+        "text": "Nina Simone was an American singer, songwriter, and civil rights activist.",
+        "category": "artist",
+        "tags": ["Nina Simone", "jazz", "civil rights"]
+    },
+    {
+        "id": 124,
+        "text": "A fugue is a contrapuntal compositional technique with a principal theme (subject).",
+        "category": "composition",
+        "tags": ["fugue", "counterpoint", "Bach"]
+    },
+    {
+        "id": 125,
+        "text": "The balalaika is a Russian stringed instrument with a triangular body.",
+        "category": "instrument",
+        "tags": ["balalaika", "Russian", "folk"]
+    },
+    {
+        "id": 126,
+        "text": "Bebop is a style of jazz characterized by fast tempos and complex harmonies.",
+        "category": "genre",
+        "tags": ["bebop", "jazz", "Charlie Parker"]
+    },
+    {
+        "id": 127,
+        "text": "Aaron Copland was an American composer known for his distinctly American style.",
+        "category": "composer",
+        "tags": ["Aaron Copland", "American", "Appalachian Spring"]
+    },
+    {
+        "id": 128,
+        "text": "A whole-tone scale is a scale in which each note is separated by a whole step.",
+        "category": "music theory",
+        "tags": ["whole-tone", "scale", "Debussy"]
+    },
+    {
+        "id": 129,
+        "text": "The shakuhachi is a Japanese end-blown flute made of bamboo.",
+        "category": "instrument",
+        "tags": ["shakuhachi", "Japanese", "bamboo"]
+    },
+    {
+        "id": 130,
+        "text": "The Clash were an English punk rock band formed in London in 1976.",
+        "category": "band",
+        "tags": ["The Clash", "punk", "London"]
+    },
+    {
+        "id": 131,
+        "text": "Microtonal music uses intervals smaller than a semitone (half step).",
+        "category": "music theory",
+        "tags": ["microtonal", "quarter tones", "experimental"]
+    },
+    {
+        "id": 132,
+        "text": "The hurdy-gurdy is a string instrument that produces sound by a crank-turned wheel rubbing against strings.",
+        "category": "instrument",
+        "tags": ["hurdy-gurdy", "medieval", "folk"]
+    },
+    {
+        "id": 133,
+        "text": "Johnny Cash was an American singer-songwriter known as the 'Man in Black'.",
+        "category": "artist",
+        "tags": ["Johnny Cash", "country", "Folsom Prison"]
+    },
+    {
+        "id": 134,
+        "text": "A tone cluster is a musical chord comprising at least three adjacent tones in a scale.",
+        "category": "music theory",
+        "tags": ["tone cluster", "modern", "Henry Cowell"]
+    },
+    {
+        "id": 135,
+        "text": "The pan flute is a set of vertical pipes of different lengths tied together.",
+        "category": "instrument",
+        "tags": ["pan flute", "wind", "folk"]
+    },
+    {
+        "id": 136,
+        "text": "Swing is a style of jazz that developed in the 1930s characterized by a strong rhythm section.",
+        "category": "genre",
+        "tags": ["swing", "jazz", "Big Band"]
+    },
+    {
+        "id": 137,
+        "text": "George Gershwin was an American composer known for blending jazz with classical music.",
+        "category": "composer",
+        "tags": ["George Gershwin", "Rhapsody in Blue", "jazz"]
+    },
+    {
+        "id": 138,
+        "text": "A hemidemisemiquaver is the British name for a sixty-fourth note.",
+        "category": "music notation",
+        "tags": ["hemidemisemiquaver", "note value", "British"]
+    },
+    {
+        "id": 139,
+        "text": "The tabla is a pair of drums used in traditional Indian music.",
+        "category": "instrument",
+        "tags": ["tabla", "Indian", "percussion"]
+    },
+    {
+        "id": 140,
+        "text": "Black Sabbath was an English rock band often cited as pioneers of heavy metal.",
+        "category": "band",
+        "tags": ["Black Sabbath", "heavy metal", "Ozzy Osbourne"]
+    },
+    {
+        "id": 141,
+        "text": "Sprechgesang is a vocal technique between singing and speaking.",
+        "category": "vocal",
+        "tags": ["Sprechgesang", "Schoenberg", "expressionist"]
+    },
+    {
+        "id": 142,
+        "text": "The concertina is a free-reed musical instrument like an accordion but smaller.",
+        "category": "instrument",
+        "tags": ["concertina", "folk", "squeezebox"]
+    },
+    {
+        "id": 143,
+        "text": "Billie Holiday was an American jazz singer with a career spanning nearly thirty years.",
+        "category": "artist",
+        "tags": ["Billie Holiday", "jazz", "vocalist"]
+    },
+    {
+        "id": 144,
+        "text": "A lied is a German art song for solo voice and piano, especially from the Romantic period.",
+        "category": "vocal",
+        "tags": ["lied", "German", "Schubert"]
+    },
+    {
+        "id": 145,
+        "text": "The djembe is a rope-tuned skin-covered goblet drum from West Africa.",
+        "category": "instrument",
+        "tags": ["djembe", "African", "percussion"]
+    },
+    {
+        "id": 146,
+        "text": "Progressive rock is a subgenre that combines rock with complex compositions and instrumentation.",
+        "category": "genre",
+        "tags": ["progressive rock", "Yes", "Genesis"]
+    },
+    {
+        "id": 147,
+        "text": "Hildegard von Bingen was a German composer, writer, and mystic of the Medieval period.",
+        "category": "composer",
+        "tags": ["Hildegard", "medieval", "chant"]
+    },
+    {
+        "id": 148,
+        "text": "A mordent is a musical ornament indicating the note should be played with a rapid alternation.",
+        "category": "ornamentation",
+        "tags": ["mordent", "Baroque", "ornament"]
+    },
+    {
+        "id": 149,
+        "text": "The guzheng is a Chinese plucked zither with movable bridges.",
+        "category": "instrument",
+        "tags": ["guzheng", "Chinese", "zither"]
+    },
+    {
+        "id": 150,
+        "text": "Pink Floyd was an English rock band known for their progressive and psychedelic music.",
+        "category": "band",
+        "tags": ["Pink Floyd", "progressive", "Dark Side of the Moon"]
+    },
+    {
+        "id": 151,
+        "text": "A cantata is a vocal composition with instrumental accompaniment, typically in several movements.",
+        "category": "vocal",
+        "tags": ["cantata", "Bach", "Baroque"]
+    },
+    {
+        "id": 152,
+        "text": "The nyckelharpa is a traditional Swedish string instrument with keys.",
+        "category": "instrument",
+        "tags": ["nyckelharpa", "Swedish", "folk"]
+    },
+    {
+        "id": 153,
+        "text": "Marvin Gaye was an American singer-songwriter who helped shape the sound of Motown.",
+        "category": "artist",
+        "tags": ["Marvin Gaye", "soul", "Motown"]
+    },
+    {
+        "id": 154,
+        "text": "A ricercar is an instrumental composition from the Renaissance and Baroque periods.",
+        "category": "composition",
+        "tags": ["ricercar", "Renaissance", "Frescobaldi"]
+    },
+    {
+        "id": 155,
+        "text": "The oud is a pear-shaped stringed instrument common in Middle Eastern music.",
+        "category": "instrument",
+        "tags": ["oud", "Middle Eastern", "lute"]
+    },
+    {
+        "id": 156,
+        "text": "Bluegrass is a genre of American roots music with origins in Irish and Scottish traditional music.",
+        "category": "genre",
+        "tags": ["bluegrass", "American", "Bill Monroe"]
+    },
+    {
+        "id": 157,
+        "text": "Scott Joplin was an American composer and pianist known as the 'King of Ragtime'.",
+        "category": "composer",
+        "tags": ["Scott Joplin", "ragtime", "Maple Leaf Rag"]
+    },
+    {
+        "id": 158,
+        "text": "A turn is a musical ornament consisting of the note above, the main note, the note below, and the main note again.",
+        "category": "ornamentation",
+        "tags": ["turn", "ornament", "classical"]
+    },
+    {
+        "id": 159,
+        "text": "The sarod is a stringed instrument used in Hindustani classical music.",
+        "category": "instrument",
+        "tags": ["sarod", "Indian", "classical"]
+    },
+    {
+        "id": 160,
+        "text": "The Byrds were an American rock band influential in developing folk rock and country rock.",
+        "category": "band",
+        "tags": ["The Byrds", "folk rock", "Mr. Tambourine Man"]
+    },
+    {
+        "id": 161,
+        "text": "A madrigal is a secular vocal music composition from the Renaissance and early Baroque eras.",
+        "category": "vocal",
+        "tags": ["madrigal", "Renaissance", "Monteverdi"]
+    },
+    {
+        "id": 162,
+        "text": "The bandoneon is a type of concertina particularly popular in Argentina.",
+        "category": "instrument",
+        "tags": ["bandoneon", "tango", "Argentina"]
+    },
+    {
+        "id": 163,
+        "text": "Etta James was an American singer who performed in various genres including blues and soul.",
+        "category": "artist",
+        "tags": ["Etta James", "blues", "At Last"]
+    },
+    {
+        "id": 164,
+        "text": "A toccata is a virtuoso piece of music typically for a keyboard or plucked string instrument.",
+        "category": "composition",
+        "tags": ["toccata", "Baroque", "Bach"]
+    },
+    {
+        "id": 165,
+        "text": "The cajón is a box-shaped percussion instrument originally from Peru.",
+        "category": "instrument",
+        "tags": ["cajón", "percussion", "Latin"]
+    },
+    {
+        "id": 166,
+        "text": "Zydeco is a music genre that evolved in Louisiana combining blues, rhythm and blues, and music indigenous to Louisiana.",
+        "category": "genre",
+        "tags": ["zydeco", "Louisiana", "Creole"]
+    },
+    {
+        "id": 167,
+        "text": "Dmitri Shostakovich was a Soviet composer known for his symphonies and string quartets.",
+        "category": "composer",
+        "tags": ["Shostakovich", "Soviet", "symphony"]
+    },
+    {
+        "id": 168,
+        "text": "A appoggiatura is a musical ornament that leans on the following note taking some of its time.",
+        "category": "ornamentation",
+        "tags": ["appoggiatura", "ornament", "classical"]
+    },
+    {
+        "id": 169,
+        "text": "The pipa is a four-stringed Chinese musical instrument with a pear-shaped body.",
+        "category": "instrument",
+        "tags": ["pipa", "Chinese", "lute"]
+    },
+    {
+        "id": 170,
+        "text": "The Allman Brothers Band was an American rock band known for their improvisational live performances.",
+        "category": "band",
+        "tags": ["Allman Brothers", "Southern rock", "jam band"]
+    },
+    {
+        "id": 171,
+        "text": "A motet is a mainly vocal musical composition with highly varied forms and styles.",
+        "category": "vocal",
+        "tags": ["motet", "Renaissance", "sacred"]
+    },
+    {
+        "id": 172,
+        "text": "The hammered dulcimer is a stringed musical instrument with strings stretched over a trapezoidal sounding board.",
+        "category": "instrument",
+        "tags": ["dulcimer", "folk", "hammered"]
+    },
+    {
+        "id": 173,
+        "text": "Otis Redding was an American singer-songwriter known as the 'King of Soul'.",
+        "category": "artist",
+        "tags": ["Otis Redding", "soul", "(Sittin' On) The Dock of the Bay"]
+    },
+    {
+        "id": 174,
+        "text": "A chaconne is a type of musical composition popular in the Baroque era.",
+        "category": "composition",
+        "tags": ["chaconne", "Baroque", "variation"]
+    },
+    {
+        "id": 175,
+        "text": "The berimbau is a single-string percussion instrument from Brazil used in capoeira music.",
+        "category": "instrument",
+        "tags": ["berimbau", "Brazilian", "capoeira"]
+    },
+    {
+        "id": 176,
+        "text": "New Age is a genre of music intended to create artistic inspiration, relaxation, and optimism.",
+        "category": "genre",
+        "tags": ["New Age", "ambient", "relaxation"]
+    },
+    {
+        "id": 177,
+        "text": "Giya Kancheli was a Georgian composer known for his spiritually inspired works.",
+        "category": "composer",
+        "tags": ["Kancheli", "Georgian", "modern"]
+    },
+    {
+        "id": 178,
+        "text": "A tremolo is a rapid repetition of the same note or alternation between two notes.",
+        "category": "technique",
+        "tags": ["tremolo", "string", "technique"]
+    },
+    {
+        "id": 179,
+        "text": "The hang is a musical instrument created in Switzerland consisting of two metal pans glued together.",
+        "category": "instrument",
+        "tags": ["hang", "percussion", "Swiss"]
+    },
+    {
+        "id": 180,
+        "text": "The Grateful Dead was an American rock band known for their unique blend of various musical styles.",
+        "category": "band",
+        "tags": ["Grateful Dead", "jam band", "psychedelic"]
+    },
+    {
+        "id": 181,
+        "text": "A chorale is a melody to which a hymn is sung by a congregation in a German Protestant Church service.",
+        "category": "vocal",
+        "tags": ["chorale", "Bach", "hymn"]
+    },
+    {
+        "id": 182,
+        "text": "The glass harmonica is a musical instrument that uses a series of glass bowls or goblets.",
+        "category": "instrument",
+        "tags": ["glass harmonica", "Franklin", "unique"]
+    },
+    {
+        "id": 183,
+        "text": "Fela Kuti was a Nigerian musician and pioneer of the Afrobeat genre.",
+        "category": "artist",
+        "tags": ["Fela Kuti", "Afrobeat", "Nigerian"]
+    },
+    {
+        "id": 184,
+        "text": "A passamezzo is a 16th-century Italian dance and chord progression.",
+        "category": "composition",
+        "tags": ["passamezzo", "Renaissance", "dance"]
+    },
+    {
+        "id": 185,
+        "text": "The diddley bow is a single-stringed American instrument which influenced the blues.",
+        "category": "instrument",
+        "tags": ["diddley bow", "blues", "folk"]
+    },
+    {
+        "id": 186,
+        "text": "K-pop is a genre of popular music originating in South Korea.",
+        "category": "genre",
+        "tags": ["K-pop", "Korean", "BTS"]
+    },
+    {
+        "id": 187,
+        "text": "Arvo Pärt is an Estonian composer known for his minimalist style called 'tintinnabuli'.",
+        "category": "composer",
+        "tags": ["Pärt", "minimalist", "Estonian"]
+    },
+    {
+        "id": 188,
+        "text": "A portamento is a pitch sliding from one note to another.",
+        "category": "technique",
+        "tags": ["portamento", "glide", "vocal"]
+    },
+    {
+        "id": 189,
+        "text": "The waterphone is an acoustic percussion instrument consisting of a stainless steel resonator bowl.",
+        "category": "instrument",
+        "tags": ["waterphone", "percussion", "experimental"]
+    },
+    {
+        "id": 190,
+        "text": "The Beach Boys were an American rock band known for their vocal harmonies and surf music.",
+        "category": "band",
+        "tags": ["Beach Boys", "surf rock", "California"]
+    },
+    {
+        "id": 191,
+        "text": "A quodlibet is a musical composition that combines several different melodies in counterpoint.",
+        "category": "composition",
+        "tags": ["quodlibet", "Bach", "counterpoint"]
+    },
+    {
+        "id": 192,
+        "text": "The musical saw is a hand saw used as a musical instrument producing an eerie sound.",
+        "category": "instrument",
+        "tags": ["musical saw", "unique", "folk"]
+    },
+    {
+        "id": 193,
+        "text": "Cesaria Evora was a Cape Verdean singer known as the 'Barefoot Diva' for performing without shoes.",
+        "category": "artist",
+        "tags": ["Cesaria Evora", "Cape Verde", "morna"]
+    },
+    {
+        "id": 194,
+        "text": "A tarantella is a fast, upbeat dance in 6/8 time originating from Italy.",
+        "category": "composition",
+        "tags": ["tarantella", "Italian", "dance"]
+    },
+    {
+        "id": 195,
+        "text": "The jaw harp is a lamellophone instrument consisting of a flexible metal tongue attached to a frame.",
+        "category": "instrument",
+        "tags": ["jaw harp", "folk", "mouth"]
+    },
+    {
+        "id": 196,
+        "text": "Afrobeat is a music genre combining West African musical styles with American funk and jazz.",
+        "category": "genre",
+        "tags": ["Afrobeat", "African", "Fela Kuti"]
+    },
+    {
+        "id": 197,
+        "text": "Meredith Monk is an American composer known for her innovative vocal techniques.",
+        "category": "composer",
+        "tags": ["Meredith Monk", "vocal", "experimental"]
+    },
+    {
+        "id": 198,
+        "text": "A col legno instruction tells string players to strike the strings with the wood of the bow.",
+        "category": "technique",
+        "tags": ["col legno", "string", "effect"]
+    },
+    {
+        "id": 199,
+        "text": "The octobass is an extremely large and rare bowed string instrument.",
+        "category": "instrument",
+        "tags": ["octobass", "large", "rare"]
+    },
+    {
+        "id": 200,
+        "text": "The Talking Heads were an American rock band known for their art school sensibilities.",
+        "category": "band",
+        "tags": ["Talking Heads", "new wave", "David Byrne"]
+    },
+    {
+        "id": 201,
+        "text": "Metallica's 'Master of Puppets' (1986) is considered one of the greatest thrash metal albums of all time, featuring songs like 'Battery' and the title track.",
+        "category": "album",
+        "tags": ["Metallica", "thrash metal", "1986", "Master of Puppets"]
+    },
+    {
+        "id": 202,
+        "text": "Iron Maiden's 'The Number of the Beast' (1982) features Bruce Dickinson's debut and includes the iconic title track and 'Run to the Hills'.",
+        "category": "album",
+        "tags": ["Iron Maiden", "heavy metal", "1982", "The Number of the Beast"]
+    },
+    {
+        "id": 203,
+        "text": "Slayer's 'Reign in Blood' (1986) is a landmark thrash metal album known for its extreme speed and intensity, featuring 'Angel of Death'.",
+        "category": "album",
+        "tags": ["Slayer", "thrash metal", "1986", "Reign in Blood"]
+    },
+    {
+        "id": 204,
+        "text": "Black Sabbath's 'Paranoid' (1970) contains classics like 'War Pigs', 'Paranoid', and 'Iron Man', defining the heavy metal genre.",
+        "category": "album",
+        "tags": ["Black Sabbath", "heavy metal", "1970", "Paranoid"]
+    },
+    {
+        "id": 205,
+        "text": "Megadeth's 'Rust in Peace' (1990) is a technical thrash metal masterpiece featuring 'Holy Wars... The Punishment Due' and 'Hangar 18'.",
+        "category": "album",
+        "tags": ["Megadeth", "thrash metal", "1990", "Rust in Peace"]
+    },
+    {
+        "id": 206,
+        "text": "Judas Priest's 'Painkiller' (1990) features Rob Halford's soaring vocals and the blistering title track that influenced power metal.",
+        "category": "album",
+        "tags": ["Judas Priest", "heavy metal", "1990", "Painkiller"]
+    },
+    {
+        "id": 207,
+        "text": "Opeth's 'Blackwater Park' (2001) blends death metal with progressive elements, featuring the epic title track and 'The Drapery Falls'.",
+        "category": "album",
+        "tags": ["Opeth", "progressive metal", "2001", "Blackwater Park"]
+    },
+    {
+        "id": 208,
+        "text": "Tool's 'Lateralus' (2001) is a progressive metal masterpiece featuring complex time signatures and songs like 'Schism' and 'The Grudge'.",
+        "category": "album",
+        "tags": ["Tool", "progressive metal", "2001", "Lateralus"]
+    },
+    {
+        "id": 209,
+        "text": "Pantera's 'Vulgar Display of Power' (1992) defined groove metal with tracks like 'Walk' and 'Mouth for War'.",
+        "category": "album",
+        "tags": ["Pantera", "groove metal", "1992", "Vulgar Display of Power"]
+    },
+    {
+        "id": 210,
+        "text": "Meshuggah's 'Destroy Erase Improve' (1995) pioneered the djent subgenre with its polyrhythmic complexity.",
+        "category": "album",
+        "tags": ["Meshuggah", "djent", "progressive metal", "1995"]
+    },
+    {
+        "id": 211,
+        "text": "The Beatles' 'Sgt. Pepper's Lonely Hearts Club Band' (1967) revolutionized popular music with songs like 'Lucy in the Sky with Diamonds' and 'A Day in the Life'.",
+        "category": "album",
+        "tags": ["The Beatles", "rock", "1967", "Sgt. Pepper"]
+    },
+    {
+        "id": 212,
+        "text": "Pink Floyd's 'The Dark Side of the Moon' (1973) features classics like 'Money' and 'Time', known for its conceptual unity and sonic experimentation.",
+        "category": "album",
+        "tags": ["Pink Floyd", "progressive rock", "1973", "Dark Side of the Moon"]
+    },
+    {
+        "id": 213,
+        "text": "Led Zeppelin's 'IV' (1971) contains 'Stairway to Heaven', 'Black Dog', and 'Rock and Roll', making it one of rock's most iconic albums.",
+        "category": "album",
+        "tags": ["Led Zeppelin", "hard rock", "1971", "Led Zeppelin IV"]
+    },
+    {
+        "id": 214,
+        "text": "Michael Jackson's 'Thriller' (1982) is the best-selling album of all time, featuring hits like 'Billie Jean' and the title track.",
+        "category": "album",
+        "tags": ["Michael Jackson", "pop", "1982", "Thriller"]
+    },
+    {
+        "id": 215,
+        "text": "Nirvana's 'Nevermind' (1991) brought grunge to mainstream audiences with 'Smells Like Teen Spirit' and 'Come As You Are'.",
+        "category": "album",
+        "tags": ["Nirvana", "grunge", "1991", "Nevermind"]
+    },
+    {
+        "id": 216,
+        "text": "Radiohead's 'OK Computer' (1997) is a landmark alternative rock album featuring 'Paranoid Android' and 'Karma Police'.",
+        "category": "album",
+        "tags": ["Radiohead", "alternative rock", "1997", "OK Computer"]
+    },
+    {
+        "id": 217,
+        "text": "The Rolling Stones' 'Exile on Main St.' (1972) is a double album blending rock, blues, and country influences.",
+        "category": "album",
+        "tags": ["Rolling Stones", "rock", "1972", "Exile on Main St"]
+    },
+    {
+        "id": 218,
+        "text": "David Bowie's 'The Rise and Fall of Ziggy Stardust' (1972) is a glam rock masterpiece telling the story of a fictional rock star.",
+        "category": "album",
+        "tags": ["David Bowie", "glam rock", "1972", "Ziggy Stardust"]
+    },
+    {
+        "id": 219,
+        "text": "Queen's 'A Night at the Opera' (1975) features 'Bohemian Rhapsody' and showcases the band's diverse musical styles.",
+        "category": "album",
+        "tags": ["Queen", "rock", "1975", "A Night at the Opera"]
+    },
+    {
+        "id": 220,
+        "text": "The Who's 'Who's Next' (1971) contains classic rock anthems like 'Baba O'Riley' and 'Won't Get Fooled Again'.",
+        "category": "album",
+        "tags": ["The Who", "rock", "1971", "Who's Next"]
+    },
+    {
+        "id": 221,
+        "text": "Gojira's 'From Mars to Sirius' (2005) is a progressive death metal album with environmental themes, featuring 'Flying Whales'.",
+        "category": "album",
+        "tags": ["Gojira", "progressive metal", "2005", "From Mars to Sirius"]
+    },
+    {
+        "id": 222,
+        "text": "Mastodon's 'Crack the Skye' (2009) is a conceptual progressive metal album featuring 'Oblivion' and 'Divinations'.",
+        "category": "album",
+        "tags": ["Mastodon", "progressive metal", "2009", "Crack the Skye"]
+    },
+    {
+        "id": 223,
+        "text": "Dream Theater's 'Images and Words' (1992) established progressive metal with tracks like 'Pull Me Under' and 'Metropolis Pt. 1'.",
+        "category": "album",
+        "tags": ["Dream Theater", "progressive metal", "1992", "Images and Words"]
+    },
+    {
+        "id": 224,
+        "text": "System of a Down's 'Toxicity' (2001) blends alternative metal with political lyrics in songs like 'Chop Suey!' and the title track.",
+        "category": "album",
+        "tags": ["System of a Down", "alternative metal", "2001", "Toxicity"]
+    },
+    {
+        "id": 225,
+        "text": "Deftones' 'White Pony' (2000) features the hit 'Change (In the House of Flies)' and showcases their atmospheric alt-metal style.",
+        "category": "album",
+        "tags": ["Deftones", "alternative metal", "2000", "White Pony"]
+    },
+    {
+        "id": 226,
+        "text": "Slipknot's 'Iowa' (2001) is a brutal nu-metal album featuring 'People = Shit' and 'Left Behind'.",
+        "category": "album",
+        "tags": ["Slipknot", "nu-metal", "2001", "Iowa"]
+    },
+    {
+        "id": 227,
+        "text": "Lamb of God's 'Ashes of the Wake' (2004) is a groove metal landmark featuring 'Laid to Rest' and 'Now You've Got Something to Die For'.",
+        "category": "album",
+        "tags": ["Lamb of God", "groove metal", "2004", "Ashes of the Wake"]
+    },
+    {
+        "id": 228,
+        "text": "Children of Bodom's 'Follow the Reaper' (2000) blends melodic death metal with neoclassical elements.",
+        "category": "album",
+        "tags": ["Children of Bodom", "melodic death metal", "2000", "Follow the Reaper"]
+    },
+    {
+        "id": 229,
+        "text": "Dimmu Borgir's 'Enthrone Darkness Triumphant' (1997) is a symphonic black metal classic.",
+        "category": "album",
+        "tags": ["Dimmu Borgir", "black metal", "1997", "Enthrone Darkness Triumphant"]
+    },
+    {
+        "id": 230,
+        "text": "Emperor's 'In the Nightside Eclipse' (1994) is a foundational symphonic black metal album.",
+        "category": "album",
+        "tags": ["Emperor", "black metal", "1994", "In the Nightside Eclipse"]
+    },
+    {
+        "id": 231,
+        "text": "Bob Dylan's 'Highway 61 Revisited' (1965) features 'Like a Rolling Stone' and marked his transition to electric rock.",
+        "category": "album",
+        "tags": ["Bob Dylan", "folk rock", "1965", "Highway 61 Revisited"]
+    },
+    {
+        "id": 232,
+        "text": "The Beach Boys' 'Pet Sounds' (1966) influenced countless artists with its innovative production and songs like 'God Only Knows'.",
+        "category": "album",
+        "tags": ["Beach Boys", "pop", "1966", "Pet Sounds"]
+    },
+    {
+        "id": 233,
+        "text": "Marvin Gaye's 'What's Going On' (1971) is a soul masterpiece addressing social issues through songs like the title track.",
+        "category": "album",
+        "tags": ["Marvin Gaye", "soul", "1971", "What's Going On"]
+    },
+    {
+        "id": 234,
+        "text": "Stevie Wonder's 'Songs in the Key of Life' (1976) is a double album featuring 'Sir Duke' and 'Isn't She Lovely'.",
+        "category": "album",
+        "tags": ["Stevie Wonder", "soul", "1976", "Songs in the Key of Life"]
+    },
+    {
+        "id": 235,
+        "text": "Fleetwood Mac's 'Rumours' (1977) features hits like 'Go Your Own Way' and 'Dreams', written during band turmoil.",
+        "category": "album",
+        "tags": ["Fleetwood Mac", "rock", "1977", "Rumours"]
+    },
+    {
+        "id": 236,
+        "text": "Prince's 'Purple Rain' (1984) features the title track and 'When Doves Cry', serving as the soundtrack to his film.",
+        "category": "album",
+        "tags": ["Prince", "pop", "1984", "Purple Rain"]
+    },
+    {
+        "id": 237,
+        "text": "U2's 'The Joshua Tree' (1987) features 'With or Without You' and 'Where the Streets Have No Name', inspired by America.",
+        "category": "album",
+        "tags": ["U2", "rock", "1987", "The Joshua Tree"]
+    },
+    {
+        "id": 238,
+        "text": "Guns N' Roses' 'Appetite for Destruction' (1987) features 'Sweet Child O' Mine' and 'Welcome to the Jungle', defining hard rock.",
+        "category": "album",
+        "tags": ["Guns N' Roses", "hard rock", "1987", "Appetite for Destruction"]
+    },
+    {
+        "id": 239,
+        "text": "Pearl Jam's 'Ten' (1991) helped popularize grunge with songs like 'Alive' and 'Jeremy'.",
+        "category": "album",
+        "tags": ["Pearl Jam", "grunge", "1991", "Ten"]
+    },
+    {
+        "id": 240,
+        "text": "The Notorious B.I.G.'s 'Ready to Die' (1994) is a landmark East Coast hip-hop album featuring 'Juicy' and 'Big Poppa'.",
+        "category": "album",
+        "tags": ["Notorious B.I.G.", "hip-hop", "1994", "Ready to Die"]
+    },
+    {
+        "id": 241,
+        "text": "Sepultura's 'Roots' (1996) incorporated tribal elements into groove metal, influencing nu-metal.",
+        "category": "album",
+        "tags": ["Sepultura", "groove metal", "1996", "Roots"]
+    },
+    {
+        "id": 242,
+        "text": "Cannibal Corpse's 'Tomb of the Mutilated' (1992) is a death metal classic featuring 'Hammer Smashed Face'.",
+        "category": "album",
+        "tags": ["Cannibal Corpse", "death metal", "1992", "Tomb of the Mutilated"]
+    },
+    {
+        "id": 243,
+        "text": "Death's 'Symbolic' (1995) is a progressive death metal masterpiece by Chuck Schuldiner.",
+        "category": "album",
+        "tags": ["Death", "progressive death metal", "1995", "Symbolic"]
+    },
+    {
+        "id": 244,
+        "text": "At the Gates' 'Slaughter of the Soul' (1995) defined melodic death metal and influenced metalcore.",
+        "category": "album",
+        "tags": ["At the Gates", "melodic death metal", "1995", "Slaughter of the Soul"]
+    },
+    {
+        "id": 245,
+        "text": "Mayhem's 'De Mysteriis Dom Sathanas' (1994) is a foundational black metal album despite its notorious history.",
+        "category": "album",
+        "tags": ["Mayhem", "black metal", "1994", "De Mysteriis Dom Sathanas"]
+    },
+    {
+        "id": 246,
+        "text": "Bathory's 'Blood Fire Death' (1988) helped establish Viking metal while transitioning from black metal.",
+        "category": "album",
+        "tags": ["Bathory", "black metal", "1988", "Blood Fire Death"]
+    },
+    {
+        "id": 247,
+        "text": "Neurosis' 'Through Silver in Blood' (1996) pioneered post-metal with its atmospheric sludge sound.",
+        "category": "album",
+        "tags": ["Neurosis", "post-metal", "1996", "Through Silver in Blood"]
+    },
+    {
+        "id": 248,
+        "text": "Kyuss' 'Welcome to Sky Valley' (1994) defined desert rock and influenced stoner metal.",
+        "category": "album",
+        "tags": ["Kyuss", "stoner rock", "1994", "Welcome to Sky Valley"]
+    },
+    {
+        "id": 249,
+        "text": "Electric Wizard's 'Dopethrone' (2000) is a doom metal landmark with ultra-heavy riffs.",
+        "category": "album",
+        "tags": ["Electric Wizard", "doom metal", "2000", "Dopethrone"]
+    },
+    {
+        "id": 250,
+        "text": "Sleep's 'Dopesmoker' (2003) is a single 63-minute stoner doom epic.",
+        "category": "album",
+        "tags": ["Sleep", "doom metal", "2003", "Dopesmoker"]
+    },
+    {
+        "id": 251,
+        "text": "Miles Davis' 'Kind of Blue' (1959) is the best-selling jazz album featuring 'So What' and modal jazz improvisation.",
+        "category": "album",
+        "tags": ["Miles Davis", "jazz", "1959", "Kind of Blue"]
+    },
+    {
+        "id": 252,
+        "text": "John Coltrane's 'A Love Supreme' (1965) is a spiritual jazz masterpiece in four parts.",
+        "category": "album",
+        "tags": ["John Coltrane", "jazz", "1965", "A Love Supreme"]
+    },
+    {
+        "id": 253,
+        "text": "Joni Mitchell's 'Blue' (1971) is a landmark singer-songwriter album with confessional lyrics.",
+        "category": "album",
+        "tags": ["Joni Mitchell", "folk", "1971", "Blue"]
+    },
+    {
+        "id": 254,
+        "text": "Carole King's 'Tapestry' (1971) features 'It's Too Late' and 'You've Got a Friend', defining 70s singer-songwriter pop.",
+        "category": "album",
+        "tags": ["Carole King", "pop", "1971", "Tapestry"]
+    },
+    {
+        "id": 255,
+        "text": "The Clash's 'London Calling' (1979) blends punk with diverse influences across its double album.",
+        "category": "album",
+        "tags": ["The Clash", "punk", "1979", "London Calling"]
+    },
+    {
+        "id": 256,
+        "text": "Public Enemy's 'It Takes a Nation of Millions to Hold Us Back' (1988) revolutionized hip-hop production and political lyrics.",
+        "category": "album",
+        "tags": ["Public Enemy", "hip-hop", "1988", "It Takes a Nation"]
+    },
+    {
+        "id": 257,
+        "text": "Nas' 'Illmatic' (1994) is considered one of the greatest hip-hop albums with tracks like 'N.Y. State of Mind'.",
+        "category": "album",
+        "tags": ["Nas", "hip-hop", "1994", "Illmatic"]
+    },
+    {
+        "id": 258,
+        "text": "OutKast's 'Stankonia' (2000) features 'Ms. Jackson' and blends Southern hip-hop with futuristic sounds.",
+        "category": "album",
+        "tags": ["OutKast", "hip-hop", "2000", "Stankonia"]
+    },
+    {
+        "id": 259,
+        "text": "Daft Punk's 'Discovery' (2001) is an electronic masterpiece featuring 'One More Time' and 'Harder, Better, Faster, Stronger'.",
+        "category": "album",
+        "tags": ["Daft Punk", "electronic", "2001", "Discovery"]
+    },
+    {
+        "id": 260,
+        "text": "Kendrick Lamar's 'To Pimp a Butterfly' (2015) blends hip-hop with jazz and funk while addressing racial issues.",
+        "category": "album",
+        "tags": ["Kendrick Lamar", "hip-hop", "2015", "To Pimp a Butterfly"]
+    },
+    {
+        "id": 261,
+        "text": "Amon Amarth's 'Twilight of the Thunder God' (2008) is a melodic death metal album featuring Norse mythology themes.",
+        "category": "album",
+        "tags": ["Amon Amarth", "melodic death metal", "2008", "Twilight of the Thunder God"]
+    },
+    {
+        "id": 262,
+        "text": "Behemoth's 'The Satanist' (2014) is a blackened death metal album considered their artistic peak.",
+        "category": "album",
+        "tags": ["Behemoth", "blackened death metal", "2014", "The Satanist"]
+    },
+    {
+        "id": 263,
+        "text": "Arch Enemy's 'Wages of Sin' (2001) marked Angela Gossow's debut as vocalist in melodic death metal.",
+        "category": "album",
+        "tags": ["Arch Enemy", "melodic death metal", "2001", "Wages of Sin"]
+    },
+    {
+        "id": 264,
+        "text": "In Flames' 'Clayman' (2000) represents the peak of their melodic death metal style before transitioning.",
+        "category": "album",
+        "tags": ["In Flames", "melodic death metal", "2000", "Clayman"]
+    },
+    {
+        "id": 265,
+        "text": "Testament's 'The New Order' (1988) is a thrash metal classic featuring 'Disciples of the Watch'.",
+        "category": "album",
+        "tags": ["Testament", "thrash metal", "1988", "The New Order"]
+    },
+    {
+        "id": 266,
+        "text": "Kreator's 'Pleasure to Kill' (1986) is a foundational Teutonic thrash metal album.",
+        "category": "album",
+        "tags": ["Kreator", "thrash metal", "1986", "Pleasure to Kill"]
+    },
+    {
+        "id": 267,
+        "text": "Sodom's 'Agent Orange' (1989) is a German thrash metal classic with war themes.",
+        "category": "album",
+        "tags": ["Sodom", "thrash metal", "1989", "Agent Orange"]
+    },
+    {
+        "id": 268,
+        "text": "Darkthrone's 'Transilvanian Hunger' (1994) is a raw black metal classic with lo-fi production.",
+        "category": "album",
+        "tags": ["Darkthrone", "black metal", "1994", "Transilvanian Hunger"]
+    },
+    {
+        "id": 269,
+        "text": "Burzum's 'Filosofem' (1996) is a minimalist black metal album created by Varg Vikernes while imprisoned.",
+        "category": "album",
+        "tags": ["Burzum", "black metal", "1996", "Filosofem"]
+    },
+    {
+        "id": 270,
+        "text": "Immortal's 'At the Heart of Winter' (1999) blends black metal with thrash influences.",
+        "category": "album",
+        "tags": ["Immortal", "black metal", "1999", "At the Heart of Winter"]
+    },
+    {
+        "id": 271,
+        "text": "The Smiths' 'The Queen Is Dead' (1986) features Morrissey's lyrics and Johnny Marr's jangly guitar work.",
+        "category": "album",
+        "tags": ["The Smiths", "alternative", "1986", "The Queen Is Dead"]
+    },
+    {
+        "id": 272,
+        "text": "Joy Division's 'Unknown Pleasures' (1979) is a post-punk landmark with its distinctive sound and cover art.",
+        "category": "album",
+        "tags": ["Joy Division", "post-punk", "1979", "Unknown Pleasures"]
+    },
+    {
+        "id": 273,
+        "text": "The Cure's 'Disintegration' (1989) is a gothic rock masterpiece featuring 'Lovesong' and 'Pictures of You'.",
+        "category": "album",
+        "tags": ["The Cure", "gothic rock", "1989", "Disintegration"]
+    },
+    {
+        "id": 274,
+        "text": "New Order's 'Power, Corruption & Lies' (1983) transitioned from post-punk to dance-oriented rock.",
+        "category": "album",
+        "tags": ["New Order", "alternative", "1983", "Power Corruption Lies"]
+    },
+    {
+        "id": 275,
+        "text": "Depeche Mode's 'Violator' (1990) features 'Enjoy the Silence' and 'Personal Jesus', their commercial peak.",
+        "category": "album",
+        "tags": ["Depeche Mode", "synthpop", "1990", "Violator"]
+    },
+    {
+        "id": 276,
+        "text": "R.E.M.'s 'Automatic for the People' (1992) contains melancholic hits like 'Everybody Hurts' and 'Man on the Moon'.",
+        "category": "album",
+        "tags": ["R.E.M.", "alternative", "1992", "Automatic for the People"]
+    },
+    {
+        "id": 277,
+        "text": "Pixies' 'Doolittle' (1989) influenced alternative rock with its loud-quiet dynamics and surreal lyrics.",
+        "category": "album",
+        "tags": ["Pixies", "alternative", "1989", "Doolittle"]
+    },
+    {
+        "id": 278,
+        "text": "Sonic Youth's 'Daydream Nation' (1988) is a noise rock landmark with experimental guitar tunings.",
+        "category": "album",
+        "tags": ["Sonic Youth", "noise rock", "1988", "Daydream Nation"]
+    },
+    {
+        "id": 279,
+        "text": "My Bloody Valentine's 'Loveless' (1991) defined shoegaze with its wall of guitar effects.",
+        "category": "album",
+        "tags": ["My Bloody Valentine", "shoegaze", "1991", "Loveless"]
+    },
+    {
+        "id": 280,
+        "text": "Portishead's 'Dummy' (1994) is a trip hop classic featuring 'Glory Box' and 'Sour Times'.",
+        "category": "album",
+        "tags": ["Portishead", "trip hop", "1994", "Dummy"]
+    },
+    {
+        "id": 281,
+        "text": "Katatonia's 'Brave Murder Day' (1996) helped define depressive rock/metal with Mikael Åkerfeldt on vocals.",
+        "category": "album",
+        "tags": ["Katatonia", "doom metal", "1996", "Brave Murder Day"]
+    },
+    {
+        "id": 282,
+        "text": "Type O Negative's 'October Rust' (1996) blends gothic metal with doom and romantic lyrics.",
+        "category": "album",
+        "tags": ["Type O Negative", "gothic metal", "1996", "October Rust"]
+    },
+    {
+        "id": 283,
+        "text": "Paradise Lost's 'Draconian Times' (1995) is a gothic metal classic featuring 'The Last Time'.",
+        "category": "album",
+        "tags": ["Paradise Lost", "gothic metal", "1995", "Draconian Times"]
+    },
+    {
+        "id": 284,
+        "text": "Anathema's 'The Silent Enigma' (1995) marked their transition from death/doom to gothic metal.",
+        "category": "album",
+        "tags": ["Anathema", "doom metal", "1995", "The Silent Enigma"]
+    },
+    {
+        "id": 285,
+        "text": "My Dying Bride's 'Turn Loose the Swans' (1993) is a death/doom landmark with violin and romantic themes.",
+        "category": "album",
+        "tags": ["My Dying Bride", "doom metal", "1993", "Turn Loose the Swans"]
+    },
+    {
+        "id": 286,
+        "text": "Cradle of Filth's 'Dusk... and Her Embrace' (1996) is a symphonic black metal classic with gothic elements.",
+        "category": "album",
+        "tags": ["Cradle of Filth", "black metal", "1996", "Dusk and Her Embrace"]
+    },
+    {
+        "id": 287,
+        "text": "Emperor's 'Anthems to the Welkin at Dusk' (1997) refined their symphonic black metal sound.",
+        "category": "album",
+        "tags": ["Emperor", "black metal", "1997", "Anthems to the Welkin"]
+    },
+    {
+        "id": 288,
+        "text": "Enslaved's 'Below the Lights' (2003) marked their transition to progressive black metal.",
+        "category": "album",
+        "tags": ["Enslaved", "black metal", "2003", "Below the Lights"]
+    },
+    {
+        "id": 289,
+        "text": "Ulver's 'Bergtatt' (1995) is a black metal folk album with clean vocals and acoustic passages.",
+        "category": "album",
+        "tags": ["Ulver", "black metal", "1995", "Bergtatt"]
+    },
+    {
+        "id": 290,
+        "text": "Agalloch's 'The Mantle' (2002) blends black metal with neofolk and post-rock influences.",
+        "category": "album",
+        "tags": ["Agalloch", "black metal", "2002", "The Mantle"]
+    },
+    {
+        "id": 291,
+        "text": "Bruce Springsteen's 'Born to Run' (1975) features the title track and 'Thunder Road', capturing American dreams.",
+        "category": "album",
+        "tags": ["Bruce Springsteen", "rock", "1975", "Born to Run"]
+    },
+    {
+        "id": 292,
+        "text": "Fugazi's 'Repeater' (1990) is a post-hardcore landmark with DIY ethics and angular riffs.",
+        "category": "album",
+        "tags": ["Fugazi", "post-hardcore", "1990", "Repeater"]
+    },
+    {
+        "id": 293,
+        "text": "The Stooges' 'Raw Power' (1973) is a proto-punk album produced by David Bowie, featuring 'Search and Destroy'.",
+        "category": "album",
+        "tags": ["The Stooges", "punk", "1973", "Raw Power"]
+    },
+    {
+        "id": 294,
+        "text": "MC5's 'Kick Out the Jams' (1969) is a live proto-punk album with revolutionary politics.",
+        "category": "album",
+        "tags": ["MC5", "punk", "1969", "Kick Out the Jams"]
+    },
+    {
+        "id": 295,
+        "text": "The Velvet Underground's 'White Light/White Heat' (1968) features noise experiments like 'Sister Ray'.",
+        "category": "album",
+        "tags": ["Velvet Underground", "experimental", "1968", "White Light White Heat"]
+    },
+    {
+        "id": 296,
+        "text": "Nick Cave's 'Murder Ballads' (1996) is a concept album about death featuring duets with PJ Harvey.",
+        "category": "album",
+        "tags": ["Nick Cave", "alternative", "1996", "Murder Ballads"]
+    },
+    {
+        "id": 297,
+        "text": "Tom Waits' 'Rain Dogs' (1985) blends blues, jazz, and experimental music with storytelling lyrics.",
+        "category": "album",
+        "tags": ["Tom Waits", "experimental", "1985", "Rain Dogs"]
+    },
+    {
+        "id": 298,
+        "text": "Leonard Cohen's 'Songs of Love and Hate' (1971) features 'Famous Blue Raincoat' and dark, poetic lyrics.",
+        "category": "album",
+        "tags": ["Leonard Cohen", "folk", "1971", "Songs of Love and Hate"]
+    },
+    {
+        "id": 299,
+        "text": "Jeff Buckley's 'Grace' (1994) features his famous cover of 'Hallelujah' and showcases his vocal range.",
+        "category": "album",
+        "tags": ["Jeff Buckley", "rock", "1994", "Grace"]
+    },
+    {
+        "id": 300,
+        "text": "Elliott Smith's 'Either/Or' (1997) contains 'Between the Bars' and showcases his intimate songwriting.",
+        "category": "album",
+        "tags": ["Elliott Smith", "indie", "1997", "Either/Or"]
+    },
+    {
+        "id": 301,
+        "text": "**Blues** music originated in African-American communities, characterized by its 12-bar structure, call-and-response patterns, and expressive vocals. The blues genre heavily influenced rock and jazz with its soulful melodies and pentatonic scales.",
+        "category": "genre",
+        "tags": ["blues", "African-American", "12-bar blues", "pentatonic"]
+    },
+    {
+        "id": 302,
+        "text": "**Jazz** emerged in New Orleans, blending ragtime and blues with improvisation. This genre features syncopated rhythms, extended chords, and solo passages, with subgenres like bebop jazz and cool jazz developing distinct approaches to harmony and rhythm.",
+        "category": "genre",
+        "tags": ["jazz", "improvisation", "syncopation", "bebop"]
+    },
+    {
+        "id": 303,
+        "text": "**Rock** music evolved from 1950s rockabilly, characterized by electric guitars, strong backbeats, and verse-chorus structures. From classic rock to alternative rock, this genre continually reinvents itself while maintaining its rebellious spirit.",
+        "category": "genre",
+        "tags": ["rock", "electric guitar", "backbeat", "verse-chorus"]
+    },
+    {
+        "id": 304,
+        "text": "**Hip-hop** began in the Bronx with MCing, DJing, breakdancing, and graffiti. This urban genre features rapped vocals over sampled beats, with subgenres like trap music and conscious hip-hop addressing different themes through rhythmic poetry.",
+        "category": "genre",
+        "tags": ["hip-hop", "rapping", "sampling", "trap music"]
+    },
+    {
+        "id": 305,
+        "text": "**Electronic dance music (EDM)** uses synthesizers and drum machines to create pulsating beats for clubs. Subgenres like house music, techno, and dubstep each have distinct BPM ranges and production techniques for maximum danceability.",
+        "category": "genre",
+        "tags": ["EDM", "synthesizers", "BPM", "dubstep"]
+    },
+    {
+        "id": 306,
+        "text": "**Classical** music spans from Baroque to Romantic periods, featuring orchestral arrangements and complex forms like sonatas and symphonies. Composers like Mozart and Beethoven established conventions in tonality and musical structure still studied today.",
+        "category": "genre",
+        "tags": ["classical", "orchestra", "sonata", "tonality"]
+    },
+    {
+        "id": 307,
+        "text": "**Country** music originated in the American South, blending folk ballads with simple chord progressions. Modern country incorporates pop elements, but traditional styles like bluegrass preserve the genre's roots in storytelling and acoustic instrumentation.",
+        "category": "genre",
+        "tags": ["country", "folk", "bluegrass", "storytelling"]
+    },
+    {
+        "id": 308,
+        "text": "**Reggae** from Jamaica features offbeat rhythms and social commentary. The genre's signature skank guitar rhythm and one-drop drum pattern create its laidback feel, with roots reggae and dancehall representing different eras of its evolution.",
+        "category": "genre",
+        "tags": ["reggae", "Jamaica", "skank", "one-drop"]
+    },
+    {
+        "id": 309,
+        "text": "**Heavy metal** emphasizes distorted guitars, powerful vocals, and thunderous drums. From traditional metal to extreme subgenres like death metal, this style pushes musical intensity with palm-muted riffs and virtuosic solos.",
+        "category": "genre",
+        "tags": ["heavy metal", "distortion", "palm-muting", "guitar solos"]
+    },
+    {
+        "id": 310,
+        "text": "**Funk** prioritizes groove with syncopated basslines and percussive guitar. The genre's emphasis on the downbeat and use of horn sections created the foundation for disco and modern R&B music.",
+        "category": "genre",
+        "tags": ["funk", "groove", "syncopation", "basslines"]
+    },
+    {
+        "id": 311,
+        "text": "**Soul** music combines gospel vocals with R&B instrumentation. This emotionally powerful genre features melismatic singing and call-and-response patterns, with artists like Aretha Franklin perfecting its blend of secular and sacred influences.",
+        "category": "genre",
+        "tags": ["soul", "gospel", "melisma", "R&B"]
+    },
+    {
+        "id": 312,
+        "text": "**Punk rock** rebelled against mainstream music with short, fast songs. The genre's DIY ethos and power chord simplicity inspired countless bands, while hardcore punk pushed its intensity even further with breakneck tempos.",
+        "category": "genre",
+        "tags": ["punk", "DIY", "power chords", "hardcore"]
+    },
+    {
+        "id": 313,
+        "text": "**Disco** dominated 1970s dance floors with four-on-the-floor beats and lush orchestrations. The genre's emphasis on studio production and extended mixes paved the way for modern club music and DJ culture.",
+        "category": "genre",
+        "tags": ["disco", "four-on-the-floor", "DJ", "studio production"]
+    },
+    {
+        "id": 314,
+        "text": "**Gospel** music features Christian lyrics with passionate vocal delivery. The genre's hand-clapped rhythms and choir arrangements have influenced nearly all American popular music, particularly soul and R&B genres.",
+        "category": "genre",
+        "tags": ["gospel", "Christian", "choir", "call-and-response"]
+    },
+    {
+        "id": 315,
+        "text": "**World music** encompasses traditional styles from global cultures. From African polyrhythms to Indian ragas, these genres often use indigenous instruments and scales unfamiliar in Western pop music contexts.",
+        "category": "genre",
+        "tags": ["world music", "polyrhythm", "raga", "indigenous"]
+    },
+    {
+        "id": 316,
+        "text": "**Folk** music preserves cultural traditions through acoustic storytelling. Whether Appalachian folk or protest folk, these songs typically feature simple structures that highlight lyrical content and communal participation.",
+        "category": "genre",
+        "tags": ["folk", "acoustic", "storytelling", "protest songs"]
+    },
+    {
+        "id": 317,
+        "text": "**R&B** (rhythm and blues) evolved from jump blues to incorporate soulful vocals over groove-based arrangements. Contemporary R&B blends electronic production with the genre's traditional emphasis on emotional delivery.",
+        "category": "genre",
+        "tags": ["R&B", "soulful", "groove", "electronic production"]
+    },
+    {
+        "id": 318,
+        "text": "**Progressive rock** pushes musical boundaries with complex time signatures and conceptual albums. Bands like Yes and King Crimson incorporated classical and jazz influences into extended rock compositions.",
+        "category": "genre",
+        "tags": ["progressive rock", "time signatures", "concept albums", "extended compositions"]
+    },
+    {
+        "id": 319,
+        "text": "**Alternative rock** emerged as college radio's answer to mainstream rock. The genre's distorted guitars and introspective lyrics ranged from grunge's raw power to shoegaze's wall of sound effects.",
+        "category": "genre",
+        "tags": ["alternative rock", "college radio", "grunge", "shoegaze"]
+    },
+    {
+        "id": 320,
+        "text": "**Latin music** encompasses salsa, merengue, and other styles featuring clave rhythms. These genres blend African percussion with European harmony, creating infectious dance music with complex polyrhythmic foundations.",
+        "category": "genre",
+        "tags": ["Latin music", "salsa", "clave", "polyrhythm"]
+    },
+    {
+        "id": 321,
+        "text": "**New wave** updated punk energy with synthesizers and pop sensibilities. Emerging alongside post-punk, the genre produced quirky, danceable hits that incorporated emerging electronic music technology.",
+        "category": "genre",
+        "tags": ["new wave", "synthesizers", "post-punk", "electronic"]
+    },
+    {
+        "id": 322,
+        "text": "**Ambient music** creates atmospheric soundscapes rather than traditional songs. Pioneered by Brian Eno, this genre uses sustained tones and subtle textures to evoke moods and environments.",
+        "category": "genre",
+        "tags": ["ambient", "soundscapes", "Brian Eno", "textures"]
+    },
+    {
+        "id": 323,
+        "text": "**Bluegrass** features acoustic string instruments playing fast, intricate lines. This Appalachian genre emphasizes improvisation within its high-energy breakdowns and close harmony singing.",
+        "category": "genre",
+        "tags": ["bluegrass", "acoustic", "improvisation", "Appalachian"]
+    },
+    {
+        "id": 324,
+        "text": "**Grunge** combined punk aggression with sludgy metal riffs. The Seattle sound featured distorted guitars, angsty lyrics, and a rejection of 1980s glam metal's polished aesthetic.",
+        "category": "genre",
+        "tags": ["grunge", "Seattle", "distortion", "sludge"]
+    },
+    {
+        "id": 325,
+        "text": "**Doo-wop** featured vocal harmony groups singing romantic ballads. This 1950s genre used nonsense syllables and smooth arrangements that influenced later pop and R&B vocal styles.",
+        "category": "genre",
+        "tags": ["doo-wop", "vocal harmony", "ballads", "1950s"]
+    },
+    {
+        "id": 326,
+        "text": "**Industrial music** combines aggressive electronics with provocative imagery. Using found sounds and distorted vocals, the genre creates mechanical, dystopian soundscapes that influenced metal and electronic genres.",
+        "category": "genre",
+        "tags": ["industrial", "electronics", "found sounds", "dystopian"]
+    },
+    {
+        "id": 327,
+        "text": "**Ska** predated reggae with its upbeat tempo and horn sections. The genre's offbeat guitar chops created a bouncy rhythm that evolved through Jamaican, British two-tone, and third-wave American revivals.",
+        "category": "genre",
+        "tags": ["ska", "horn sections", "offbeat", "two-tone"]
+    },
+    {
+        "id": 328,
+        "text": "**Glam rock** embraced theatricality with outrageous costumes and anthemic songs. Artists like David Bowie and T. Rex combined rock energy with androgynous imagery and catchy hooks.",
+        "category": "genre",
+        "tags": ["glam rock", "theatrical", "David Bowie", "androgynous"]
+    },
+    {
+        "id": 329,
+        "text": "**Psychedelic rock** experimented with studio effects and extended improvisations. The genre's swirling guitars and surreal lyrics attempted to replicate or enhance drug experiences through sound.",
+        "category": "genre",
+        "tags": ["psychedelic", "studio effects", "improvisation", "surreal"]
+    },
+    {
+        "id": 330,
+        "text": "**Trap music** features 808 bass, hi-hat rolls, and dark atmospheres. This hip-hop subgenre originated in Southern rap before influencing global pop and EDM productions with its distinctive rhythmic patterns.",
+        "category": "genre",
+        "tags": ["trap", "808", "hi-hats", "Southern rap"]
+    },
+    {
+        "id": 331,
+        "text": "**Shoegaze** creates a wall of sound with layers of distorted guitars. Bands like My Bloody Valentine used extensive effects pedals while singing softly buried in the mix for a dreamy, immersive quality.",
+        "category": "genre",
+        "tags": ["shoegaze", "wall of sound", "effects pedals", "My Bloody Valentine"]
+    },
+    {
+        "id": 332,
+        "text": "**Baroque music** (1600-1750) features ornate melodies and basso continuo. Composers like Bach and Vivaldi established conventions like the concerto grosso and fugue that defined Western classical music's foundation.",
+        "category": "genre",
+        "tags": ["Baroque", "basso continuo", "concerto grosso", "fugue"]
+    },
+    {
+        "id": 333,
+        "text": "**Hardcore punk** accelerated punk's speed and intensity. With blisteringly fast tempos and shouted vocals, the genre spawned straight edge and youth crew movements that maintained its DIY ethics.",
+        "category": "genre",
+        "tags": ["hardcore punk", "fast tempos", "straight edge", "DIY"]
+    },
+    {
+        "id": 334,
+        "text": "**Synthpop** combined new wave energy with electronic instrumentation. The genre's catchy melodies played on synthesizers defined 1980s pop music and influenced contemporary electronic dance music.",
+        "category": "genre",
+        "tags": ["synthpop", "synthesizers", "1980s", "electronic"]
+    },
+    {
+        "id": 335,
+        "text": "**Neo-soul** updated classic soul with hip-hop influences. Artists like Erykah Badu and D'Angelo brought live instrumentation back to R&B while maintaining contemporary production aesthetics.",
+        "category": "genre",
+        "tags": ["neo-soul", "Erykah Badu", "live instrumentation", "hip-hop"]
+    },
+    {
+        "id": 336,
+        "text": "**Dubstep** features wobble bass and half-time drum patterns. Originating in London, the genre's heavy drops and sparse arrangements created a new template for electronic dance music's evolution.",
+        "category": "genre",
+        "tags": ["dubstep", "wobble bass", "half-time", "drops"]
+    },
+    {
+        "id": 337,
+        "text": "**Jazz fusion** blended jazz improvisation with rock energy. Miles Davis' electric period and bands like Weather Report incorporated synthesizers and funk rhythms into complex compositions.",
+        "category": "genre",
+        "tags": ["jazz fusion", "Miles Davis", "synthesizers", "Weather Report"]
+    },
+    {
+        "id": 338,
+        "text": "**Gothic rock** combined post-punk with dark romanticism. The genre's reverb-drenched guitars and baritone vocals created an atmospheric sound that influenced later goth and darkwave movements.",
+        "category": "genre",
+        "tags": ["gothic rock", "post-punk", "reverb", "darkwave"]
+    },
+    {
+        "id": 339,
+        "text": "**Zydeco** blends Creole music with blues and R&B. This Louisiana genre features accordion and washboard alongside syncopated rhythms for lively dance music with French-language influences.",
+        "category": "genre",
+        "tags": ["zydeco", "Creole", "accordion", "Louisiana"]
+    },
+    {
+        "id": 340,
+        "text": "**Drone music** sustains tones for extended periods. From La Monte Young's minimalism to doom metal's power chords, this approach creates hypnotic soundscapes through sustained harmonic textures.",
+        "category": "genre",
+        "tags": ["drone", "minimalism", "sustained tones", "doom metal"]
+    },
+    {
+        "id": 341,
+        "text": "**Math rock** features complex time signatures and angular melodies. Bands like Don Caballero and Hella combine prog-rock complexity with punk energy through intricate guitar work and rhythmic displacement.",
+        "category": "genre",
+        "tags": ["math rock", "time signatures", "angular melodies", "rhythmic displacement"]
+    },
+    {
+        "id": 342,
+        "text": "**Noise music** challenges musical conventions with harsh textures. Using feedback, distortion, and unconventional instruments, the genre explores sound's physical impact rather than traditional harmony or rhythm.",
+        "category": "genre",
+        "tags": ["noise music", "feedback", "distortion", "unconventional"]
+    },
+    {
+        "id": 343,
+        "text": "**Afrobeat** combines West African rhythms with jazz and funk. Fela Kuti's creation features extended instrumental sections, political lyrics, and complex polyrhythms performed by large ensembles.",
+        "category": "genre",
+        "tags": ["Afrobeat", "Fela Kuti", "polyrhythms", "political"]
+    },
+    {
+        "id": 344,
+        "text": "**Chamber pop** updates baroque pop with lush arrangements. The genre combines indie rock intimacy with orchestral instrumentation for sophisticated songwriting that recalls 1960s productions.",
+        "category": "genre",
+        "tags": ["chamber pop", "baroque pop", "orchestral", "indie rock"]
+    },
+    {
+        "id": 345,
+        "text": "**Crunk** is a Southern hip-hop subgenre with energetic call-and-response. Lil Jon's productions featured pounding 808s, chanted hooks, and minimalist arrangements that influenced later trap music.",
+        "category": "genre",
+        "tags": ["crunk", "Southern hip-hop", "808s", "Lil Jon"]
+    },
+    {
+        "id": 346,
+        "text": "**Freestyle** emerged from Latin hip-hop with melodic synth lines. This 1980s electronic dance music combined R&B vocals with uptempo beats and romantic lyrics, primarily in urban Latino communities.",
+        "category": "genre",
+        "tags": ["freestyle", "Latin hip-hop", "synth lines", "1980s"]
+    },
+    {
+        "id": 347,
+        "text": "**Horror punk** blends punk rock with horror movie themes. The Misfits established the genre's signature look and sound with catchy songs about B-movie monsters and ghouls.",
+        "category": "genre",
+        "tags": ["horror punk", "The Misfits", "horror themes", "punk rock"]
+    },
+    {
+        "id": 348,
+        "text": "**K-pop** combines Western pop with Korean influences. The genre's highly produced idol groups feature synchronized dancing, colorful visuals, and a mix of electronic, hip-hop, and R&B elements.",
+        "category": "genre",
+        "tags": ["K-pop", "idol groups", "synchronized dancing", "Korean"]
+    },
+    {
+        "id": 349,
+        "text": "**New jack swing** fused R&B with hip-hop beats in the 1990s. Teddy Riley's productions featured swing rhythms, synth bass, and rap verses that defined urban contemporary music's transition into hip-hop soul.",
+        "category": "genre",
+        "tags": ["new jack swing", "Teddy Riley", "swing rhythms", "hip-hop soul"]
+    },
+    {
+        "id": 350,
+        "text": "Post-rock uses rock instrumentation for non-rock purposes. Bands like Sigur Rós and Godspeed You! Black Emperor create cinematic soundscapes that emphasize texture and dynamics over traditional song structures.",
+        "category": "genre",
+        "tags": ["post-rock", "cinematic", "soundscapes", "Sigur Rós"]
+    },
+    {
+        "id": 351,
+        "text": "**Songwriting** begins with developing a melody or chord progression. Many composers use verse-chorus structures while experimenting with lyrical themes and harmonic tension to create memorable hooks that resonate with listeners.",
+        "category": "creation",
+        "tags": ["songwriting", "melody", "chord progression", "hooks"]
+    },
+    {
+        "id": 352,
+        "text": "**Recording** captures performances in a studio environment. Engineers use microphones, preamps, and digital audio workstations (DAWs) to achieve professional sound quality through proper microphone placement and signal processing techniques.",
+        "category": "creation",
+        "tags": ["recording", "microphones", "DAWs", "signal processing"]
+    },
+    {
+        "id": 353,
+        "text": "**Mixing** balances all recorded elements into a cohesive track. Audio engineers adjust levels, apply equalization (EQ), and add effects like reverb to create clarity and depth in the final stereo mixdown.",
+        "category": "creation",
+        "tags": ["mixing", "EQ", "reverb", "stereo"]
+    },
+    {
+        "id": 354,
+        "text": "**Mastering** prepares music for distribution by optimizing loudness and consistency. Mastering engineers use compression, limiting, and stereo enhancement to ensure tracks sound their best across all playback systems.",
+        "category": "creation",
+        "tags": ["mastering", "compression", "limiting", "loudness"]
+    },
+    {
+        "id": 355,
+        "text": "**Sampling** incorporates pre-recorded audio into new compositions. Hip-hop producers often sample drum breaks from funk records while electronic musicians create new sounds by manipulating sampled waveforms in creative ways.",
+        "category": "creation",
+        "tags": ["sampling", "hip-hop", "drum breaks", "waveforms"]
+    },
+    {
+        "id": 356,
+        "text": "**Synthesis** generates sounds electronically using oscillators and filters. From analog synthesizers to software instruments, sound designers shape timbre through ADSR envelopes and modulation routing for unique sonic textures.",
+        "category": "creation",
+        "tags": ["synthesis", "oscillators", "ADSR", "modulation"]
+    },
+    {
+        "id": 357,
+        "text": "**Improvisation** creates music spontaneously in the moment. Jazz musicians develop solos over chord changes while blues players use pentatonic scales to express emotion through real-time musical decisions.",
+        "category": "creation",
+        "tags": ["improvisation", "jazz", "solos", "pentatonic"]
+    },
+    {
+        "id": 358,
+        "text": "**Arranging** determines how instruments play a composition. Orchestrators assign parts to different sections while pop arrangers craft vocal harmonies and instrumental layers that enhance the song's emotional impact.",
+        "category": "creation",
+        "tags": ["arranging", "orchestration", "vocal harmonies", "instrumentation"]
+    },
+    {
+        "id": 359,
+        "text": "**Beatmaking** constructs rhythmic foundations for hip-hop and electronic music. Producers program drum patterns using sequencers and drum machines while layering percussion samples to create dynamic grooves.",
+        "category": "creation",
+        "tags": ["beatmaking", "drum patterns", "sequencers", "groove"]
+    },
+    {
+        "id": 360,
+        "text": "**Field recording** captures environmental sounds for musical use. Composers incorporate natural ambiences and found sounds into experimental compositions or use them as raw material for sound design and sampling.",
+        "category": "creation",
+        "tags": ["field recording", "ambience", "found sounds", "sound design"]
+    },
+    {
+        "id": 361,
+        "text": "**Music theory** provides frameworks for understanding composition. Studying scales, chord progressions, and harmonic function helps musicians communicate ideas and analyze existing works across genres.",
+        "category": "creation",
+        "tags": ["music theory", "scales", "chord progressions", "harmonic function"]
+    },
+    {
+        "id": 362,
+        "text": "**Lyric writing** crafts poetic messages set to music. Songwriters use rhyme schemes, metaphors, and rhythmic phrasing to convey stories and emotions that complement the musical arrangement.",
+        "category": "creation",
+        "tags": ["lyrics", "rhyme schemes", "metaphors", "phrasing"]
+    },
+    {
+        "id": 363,
+        "text": "**Sound design** creates unique audio elements for music and media. Using synthesis, sampling, and processing, designers develop signature sounds ranging from realistic instrument emulations to futuristic effects.",
+        "category": "creation",
+        "tags": ["sound design", "synthesis", "sampling", "audio processing"]
+    },
+    {
+        "id": 364,
+        "text": "**Live performance** translates compositions to stage settings. Musicians adapt studio arrangements for concert environments while incorporating improvisation and audience interaction into their shows.",
+        "category": "creation",
+        "tags": ["live performance", "stage", "improvisation", "audience"]
+    },
+    {
+        "id": 365,
+        "text": "**Collaboration** combines multiple creators' strengths. Songwriting camps, production teams, and band dynamics all demonstrate how shared creativity can yield results greater than individual efforts.",
+        "category": "creation",
+        "tags": ["collaboration", "songwriting", "production", "band dynamics"]
+    },
+    {
+        "id": 366,
+        "text": "**Music production** oversees the entire creation process. Producers guide artistic vision while solving technical challenges, from selecting takes to finalizing mixes that realize the project's potential.",
+        "category": "creation",
+        "tags": ["production", "artistic vision", "mixing", "technical"]
+    },
+    {
+        "id": 367,
+        "text": "**Film scoring** composes music synchronized to visual media. Composers use leitmotifs and thematic development to enhance storytelling while navigating technical requirements like hit points and temp tracks.",
+        "category": "creation",
+        "tags": ["film scoring", "leitmotifs", "hit points", "temp tracks"]
+    },
+    {
+        "id": 368,
+        "text": "**DJing** mixes recorded music for live audiences. Using turntables or controllers, DJs beatmatch tracks and apply effects to create seamless transitions that maintain dancefloor energy.",
+        "category": "creation",
+        "tags": ["DJing", "beatmatching", "transitions", "dancefloor"]
+    },
+    {
+        "id": 369,
+        "text": "**Orchestration** assigns musical ideas to specific instruments. Composers consider timbral combinations and playing techniques when translating compositions from piano sketches to full orchestral arrangements.",
+        "category": "creation",
+        "tags": ["orchestration", "timbres", "playing techniques", "arranging"]
+    },
+    {
+        "id": 370,
+        "text": "**Vocal production** captures and enhances singing performances. Producers use techniques like comping (combining multiple takes), pitch correction, and vocal doubling to achieve polished results in the studio.",
+        "category": "creation",
+        "tags": ["vocal production", "comping", "pitch correction", "doubling"]
+    },
+    {
+        "id": 371,
+        "text": "**Loop-based composition** builds songs from repeating segments. Electronic musicians arrange pre-recorded loops while hip-hop producers chop samples to create new rhythmic and melodic patterns.",
+        "category": "creation",
+        "tags": ["loops", "sampling", "electronic", "hip-hop"]
+    },
+    {
+        "id": 372,
+        "text": "**Modular synthesis** patches customizable electronic sound generators. Musicians connect oscillator, filter, and envelope modules with patch cables to create evolving sounds impossible with traditional instruments.",
+        "category": "creation",
+        "tags": ["modular synthesis", "oscillators", "patch cables", "sound design"]
+    },
+    {
+        "id": 373,
+        "text": "**Music notation** preserves compositions on paper or digitally. From standard sheet music to guitar tablature, these systems communicate pitch, rhythm, and expression markings to performers.",
+        "category": "creation",
+        "tags": ["notation", "sheet music", "tablature", "rhythm"]
+    },
+    {
+        "id": 374,
+        "text": "**Remixing** reinterprets existing recordings with new elements. Remixers isolate stems (individual tracks) to reconstruct songs with different instrumentation, grooves, or stylistic approaches.",
+        "category": "creation",
+        "tags": ["remixing", "stems", "reinterpretation", "groove"]
+    },
+    {
+        "id": 375,
+        "text": "**Home recording** enables professional results in personal studios. With affordable audio interfaces and DAW software, musicians can produce release-quality tracks without expensive studio time.",
+        "category": "creation",
+        "tags": ["home recording", "audio interfaces", "DAWs", "production"]
+    },
+    {
+        "id": 376,
+        "text": "**Algorithmic composition** uses rules or AI to generate music. From Mozart's dice games to modern neural networks, these systems create novel musical ideas that human composers can develop further.",
+        "category": "creation",
+        "tags": ["algorithmic", "AI", "neural networks", "composition"]
+    },
+    {
+        "id": 377,
+        "text": "**Foley** creates custom sound effects for media. Artists record and manipulate everyday objects to produce realistic sounds that enhance films, games, and other audio-visual projects.",
+        "category": "creation",
+        "tags": ["Foley", "sound effects", "recording", "media"]
+    },
+    {
+        "id": 378,
+        "text": "**Session musicians** provide professional performances for recordings. These versatile players adapt quickly to different styles and contribute their expertise to enhance others' musical projects.",
+        "category": "creation",
+        "tags": ["session musicians", "recording", "versatility", "performance"]
+    },
+    {
+        "id": 379,
+        "text": "**MIDI sequencing** programs musical performances digitally. Using piano roll editors or step sequencers, composers can edit note data with precision unavailable in live recordings.",
+        "category": "creation",
+        "tags": ["MIDI", "sequencing", "piano roll", "step sequencer"]
+    },
+    {
+        "id": 380,
+        "text": "**Audio editing** manipulates recorded waveforms directly. Engineers splice takes, adjust timing, and clean up noise using spectral editing tools that visualize sound for surgical precision.",
+        "category": "creation",
+        "tags": ["audio editing", "waveforms", "spectral editing", "noise reduction"]
+    },
+    {
+        "id": 381,
+        "text": "**Instrument building** crafts custom musical tools. Luthiers shape wood for acoustic instruments while circuit benders modify electronics to create unique performance interfaces.",
+        "category": "creation",
+        "tags": ["instrument building", "luthiers", "circuit bending", "custom"]
+    },
+    {
+        "id": 382,
+        "text": "**Music therapy** uses sound to promote healing. Practitioners employ improvisation, songwriting, and listening techniques to address physical, emotional, and cognitive needs in clinical settings.",
+        "category": "creation",
+        "tags": ["music therapy", "healing", "improvisation", "clinical"]
+    },
+    {
+        "id": 383,
+        "text": "**Jingle writing** composes short, memorable tunes for advertising. These composers distill brand messages into catchy musical hooks designed to stick in listeners' minds.",
+        "category": "creation",
+        "tags": ["jingles", "advertising", "hooks", "memorable"]
+    },
+    {
+        "id": 384,
+        "text": "**Audio programming** develops software for music creation. From virtual instruments to audio plugins, programmers combine DSP (digital signal processing) with user interface design for creative tools.",
+        "category": "creation",
+        "tags": ["audio programming", "DSP", "plugins", "virtual instruments"]
+    },
+    {
+        "id": 385,
+        "text": "**Music education** teaches performance and theory concepts. Pedagogues develop curricula that balance technical skills with creative expression across various learning styles and age groups.",
+        "category": "creation",
+        "tags": ["music education", "pedagogy", "performance", "theory"]
+    },
+    {
+        "id": 386,
+        "text": "**Vinyl cutting** transfers audio to physical records. Mastering engineers optimize mixes for the medium's limitations while lathe operators physically engrave the grooves that produce analog sound.",
+        "category": "creation",
+        "tags": ["vinyl", "cutting", "analog", "mastering"]
+    },
+    {
+        "id": 387,
+        "text": "**Mobile music** adapts creation for smartphones and tablets. Apps provide portable production environments with touch interfaces that inspire new approaches to composition and performance.",
+        "category": "creation",
+        "tags": ["mobile music", "apps", "touch interfaces", "portable"]
+    },
+    {
+        "id": 388,
+        "text": "**Interactive scoring** adapts music to user actions in games. Composers create adaptive systems where musical layers respond dynamically to gameplay events and player choices.",
+        "category": "creation",
+        "tags": ["interactive", "game music", "adaptive", "dynamic"]
+    },
+    {
+        "id": 389,
+        "text": "**Spatial audio** places sounds in three-dimensional environments. Using ambisonics and binaural techniques, engineers create immersive mixes for VR and advanced speaker systems.",
+        "category": "creation",
+        "tags": ["spatial audio", "ambisonics", "binaural", "VR"]
+    },
+    {
+        "id": 390,
+        "text": "**Music supervision** selects existing recordings for media. Supervisors clear rights and curate songs that enhance storytelling in films, TV shows, and advertising campaigns.",
+        "category": "creation",
+        "tags": ["music supervision", "licensing", "curation", "media"]
+    },
+    {
+        "id": 391,
+        "text": "**Circuit bending** creatively modifies electronic devices. Artists short-circuit toys and instruments to produce glitchy, unpredictable sounds for experimental music and performance.",
+        "category": "creation",
+        "tags": ["circuit bending", "modification", "glitch", "experimental"]
+    },
+    {
+        "id": 392,
+        "text": "**Audio forensics** analyzes recordings for legal purposes. Experts enhance clarity and authenticate materials using spectral analysis and other advanced audio processing techniques.",
+        "category": "creation",
+        "tags": ["audio forensics", "analysis", "authentication", "legal"]
+    },
+    {
+        "id": 393,
+        "text": "**Music cognition** studies how brains process sound. Researchers investigate perception of melody, rhythm, and harmony to understand music's psychological and neurological effects.",
+        "category": "creation",
+        "tags": ["music cognition", "perception", "psychology", "neurology"]
+    },
+    {
+        "id": 394,
+        "text": "**Generative music** creates ever-changing compositions. Systems like Brian Eno's ambient works produce infinite variations through algorithmic processes that respond to environmental inputs.",
+        "category": "creation",
+        "tags": ["generative music", "algorithmic", "Brian Eno", "ambient"]
+    },
+    {
+        "id": 395,
+        "text": "**Audio branding** develops sonic identities for companies. Like visual logos, these distinctive sounds and jingles reinforce brand recognition across various media touchpoints.",
+        "category": "creation",
+        "tags": ["audio branding", "sonic identity", "jingles", "recognition"]
+    },
+    {
+        "id": 396,
+        "text": "**Music archaeology** reconstructs ancient instruments and practices. Researchers analyze artifacts and historical texts to understand how music sounded in past civilizations.",
+        "category": "creation",
+        "tags": ["music archaeology", "ancient", "instruments", "reconstruction"]
+    },
+    {
+        "id": 397,
+        "text": "**Crowdsourced music** involves public contributions. Online platforms enable collective composition projects where participants submit parts that combine into complete musical works.",
+        "category": "creation",
+        "tags": ["crowdsourced", "collaboration", "online", "composition"]
+    },
+    {
+        "id": 398,
+        "text": "**Haptic feedback** adds physical vibration to musical interfaces. This technology lets performers feel sound through specialized controllers that enhance electronic music expression.",
+        "category": "creation",
+        "tags": ["haptic", "feedback", "controllers", "electronic"]
+    },
+    {
+        "id": 399,
+        "text": "**Music information retrieval** analyzes audio with computers. Algorithms identify patterns in pitch, rhythm, and timbre to enable applications like automatic transcription and recommendation systems.",
+        "category": "creation",
+        "tags": ["music information retrieval", "algorithms", "transcription", "recommendation"]
+    },
+    {
+        "id": 400,
+        "text": "**Biofeedback music** responds to physiological signals. Performers can control sound with brainwaves, heart rate, or other biometric data for unique interactive compositions.",
+        "category": "creation",
+        "tags": ["biofeedback", "physiological", "brainwaves", "interactive"]
+    },
+    {
+        "id": 401,
+        "text": "The **musical alphabet** consists of the first seven letters A through G, which repeat across octaves to name all pitches in Western music notation.",
+        "category": "fundamentals",
+        "tags": ["music theory", "notes", "pitch", "beginner"]
+    },
+    {
+        "id": 402,
+        "text": "A **note** represents both a musical sound and its written symbol, showing pitch and duration in sheet music.",
+        "category": "fundamentals",
+        "tags": ["notation", "reading music", "basics", "theory"]
+    },
+    {
+        "id": 403,
+        "text": "**Rhythm** refers to the pattern of sounds and silences in time, created through combinations of different note durations.",
+        "category": "fundamentals",
+        "tags": ["timing", "beat", "duration", "musical elements"]
+    },
+    {
+        "id": 404,
+        "text": "The **beat** is the basic pulse of music that you naturally tap your foot to, serving as the foundational time unit.",
+        "category": "fundamentals",
+        "tags": ["tempo", "pulse", "timing", "rhythm"]
+    },
+    {
+        "id": 405,
+        "text": "**Tempo** indicates how fast or slow music should be played, measured in beats per minute (BPM) or described with Italian terms like allegro (fast).",
+        "category": "fundamentals",
+        "tags": ["speed", "BPM", "timing", "performance"]
+    },
+    {
+        "id": 406,
+        "text": "A **rest** is a musical symbol indicating silence for a specific duration, with different symbols for whole rests, half rests, quarter rests etc.",
+        "category": "fundamentals",
+        "tags": ["silence", "notation", "rhythm", "reading music"]
+    },
+    {
+        "id": 407,
+        "text": "The **staff** is the set of five horizontal lines and four spaces where musical notes are written to indicate their pitch.",
+        "category": "fundamentals",
+        "tags": ["notation", "sheet music", "reading", "beginner"]
+    },
+    {
+        "id": 408,
+        "text": "**Clefs** are symbols at the beginning of the staff that determine which pitches the lines and spaces represent (treble clef for higher notes, bass clef for lower).",
+        "category": "fundamentals",
+        "tags": ["notation", "reading music", "pitch", "theory"]
+    },
+    {
+        "id": 409,
+        "text": "A **scale** is an ordered sequence of notes that provides the harmonic and melodic foundation for music, like the familiar do-re-mi major scale.",
+        "category": "fundamentals",
+        "tags": ["pitch", "melody", "theory", "practice"]
+    },
+    {
+        "id": 410,
+        "text": "**Dynamics** refer to how loud or soft music should be played, indicated by symbols like p (piano/soft) and f (forte/loud).",
+        "category": "fundamentals",
+        "tags": ["volume", "expression", "notation", "performance"]
+    },
+    {
+        "id": 411,
+        "text": "An **octave** is the interval between one musical pitch and another with double its frequency, sounding like the same note at higher or lower pitch.",
+        "category": "fundamentals",
+        "tags": ["pitch", "intervals", "harmony", "acoustics"]
+    },
+    {
+        "id": 412,
+        "text": "**Articulation** describes how notes are played - smoothly connected (legato) or separated (staccato) - indicated by symbols above notes.",
+        "category": "fundamentals",
+        "tags": ["performance", "technique", "expression", "notation"]
+    },
+    {
+        "id": 413,
+        "text": "A **chord** is three or more notes played simultaneously, creating harmony. Basic chords include major (happy) and minor (sad) triads.",
+        "category": "fundamentals",
+        "tags": ["harmony", "theory", "piano", "guitar"]
+    },
+    {
+        "id": 414,
+        "text": "**Time signature** shows the meter of music with two numbers - top indicates beats per measure, bottom shows which note gets one beat (4/4 = four quarter-note beats).",
+        "category": "fundamentals",
+        "tags": ["rhythm", "meter", "notation", "reading music"]
+    },
+    {
+        "id": 415,
+        "text": "A **measure** (or bar) is a segment of music bounded by vertical lines on the staff, containing the number of beats specified by the time signature.",
+        "category": "fundamentals",
+        "tags": ["notation", "rhythm", "meter", "reading music"]
+    },
+    {
+        "id": 416,
+        "text": "**Key signature** shows which notes are consistently sharp or flat throughout a piece, indicating its tonal center or key (like C major or G minor).",
+        "category": "fundamentals",
+        "tags": ["theory", "scales", "notation", "harmony"]
+    },
+    {
+        "id": 417,
+        "text": "**Accidentals** are symbols (sharps, flats, naturals) that temporarily alter a note's pitch from what the key signature indicates.",
+        "category": "fundamentals",
+        "tags": ["notation", "theory", "pitch", "reading music"]
+    },
+    {
+        "id": 418,
+        "text": "**Melody** is a sequence of single notes that form a recognizable musical line - the tune you would sing or hum from a song.",
+        "category": "fundamentals",
+        "tags": ["tune", "song", "pitch", "composition"]
+    },
+    {
+        "id": 419,
+        "text": "**Harmony** occurs when multiple pitches sound together, supporting the melody through chords and chord progressions.",
+        "category": "fundamentals",
+        "tags": ["chords", "theory", "accompaniment", "composition"]
+    },
+    {
+        "id": 420,
+        "text": "**Form** refers to a musical work's structure - common patterns include verse-chorus in pop songs or ABA ternary form in classical pieces.",
+        "category": "fundamentals",
+        "tags": ["structure", "composition", "analysis", "songwriting"]
+    },
+    {
+        "id": 421,
+        "text": "An **interval** is the distance between two pitches, named by counting letter names (C to E is a third) and qualified as major/minor/perfect etc.",
+        "category": "fundamentals",
+        "tags": ["theory", "ear training", "harmony", "pitch"]
+    },
+    {
+        "id": 422,
+        "text": "**Timbre** (tone color) is what makes different instruments sound distinct even when playing the same note - determined by harmonic content and envelope.",
+        "category": "fundamentals",
+        "tags": ["sound quality", "instruments", "acoustics", "tone"]
+    },
+    {
+        "id": 423,
+        "text": "**Sight-reading** is the ability to play or sing music from written notation without prior preparation, an essential skill for musicians.",
+        "category": "fundamentals",
+        "tags": ["reading music", "performance", "practice", "skills"]
+    },
+    {
+        "id": 424,
+        "text": "A **metronome** is a device that produces regular ticks at adjustable speeds to help musicians maintain steady tempo during practice.",
+        "category": "fundamentals",
+        "tags": ["tempo", "practice", "timing", "tools"]
+    },
+    {
+        "id": 425,
+        "text": "**Ear training** develops the ability to identify pitches, intervals, chords, and rhythms by ear - crucial for playing by ear and musical communication.",
+        "category": "fundamentals",
+        "tags": ["aural skills", "pitch recognition", "intervals", "practice"]
+    },
+    {
+        "id": 426,
+        "text": "**Transposition** means changing a piece of music to a different key while maintaining all interval relationships between notes.",
+        "category": "fundamentals",
+        "tags": ["theory", "arranging", "keys", "performance"]
+    },
+    {
+        "id": 427,
+        "text": "**Improvisation** is creating music spontaneously during performance, common in jazz but used across genres from Baroque ornamentation to rock solos.",
+        "category": "fundamentals",
+        "tags": ["creativity", "performance", "jazz", "solo"]
+    },
+    {
+        "id": 428,
+        "text": "A **cadence** is a sequence of chords that brings a musical phrase to rest, like punctuation in language - authentic (V-I) or plagal (IV-I) are common types.",
+        "category": "fundamentals",
+        "tags": ["harmony", "phrasing", "composition", "theory"]
+    },
+    {
+        "id": 429,
+        "text": "**Consonance and dissonance** describe how pleasing or tense combinations of notes sound - culturally dependent concepts that drive musical tension/release.",
+        "category": "fundamentals",
+        "tags": ["harmony", "intervals", "theory", "perception"]
+    },
+    {
+        "id": 430,
+        "text": "**Ornamentation** adds decorative flourishes to melodies - trills, turns, and grace notes common in Baroque and classical music.",
+        "category": "fundamentals",
+        "tags": ["embellishment", "performance", "classical", "technique"]
+    },
+    {
+        "id": 431,
+        "text": "A **mode** is a type of scale with characteristic intervals - major and minor are modes, along with Dorian, Phrygian, etc. used in jazz and world music.",
+        "category": "fundamentals",
+        "tags": ["scales", "theory", "improvisation", "composition"]
+    },
+    {
+        "id": 432,
+        "text": "**Syncopation** emphasizes normally weak beats or off-beats, creating rhythmic surprise in genres like jazz, funk, and Latin music.",
+        "category": "fundamentals",
+        "tags": ["rhythm", "groove", "off-beat", "performance"]
+    },
+    {
+        "id": 433,
+        "text": "A **tie** connects two notes of the same pitch into one sustained sound, while a **slur** indicates legato playing of different pitches.",
+        "category": "fundamentals",
+        "tags": ["notation", "articulation", "reading music", "performance"]
+    },
+    {
+        "id": 434,
+        "text": "**Phrasing** shapes musical lines with dynamics and articulation much like spoken sentences have inflection and punctuation.",
+        "category": "fundamentals",
+        "tags": ["expression", "performance", "interpretation", "musicality"]
+    },
+    {
+        "id": 435,
+        "text": "**Vibrato** is a slight, rapid variation in pitch that adds warmth and expression to sustained notes in singing and string instrument playing.",
+        "category": "fundamentals",
+        "tags": ["technique", "expression", "voice", "strings"]
+    },
+    {
+        "id": 436,
+        "text": "A **fermata** (hold) indicates a note should be sustained longer than its written value - duration determined by performer/conductor.",
+        "category": "fundamentals",
+        "tags": ["notation", "performance", "timing", "expression"]
+    },
+    {
+        "id": 437,
+        "text": "**Call-and-response** is a musical conversation where a phrase by one musician/group is answered by another, common in blues, gospel, and African music.",
+        "category": "fundamentals",
+        "tags": ["form", "improvisation", "tradition", "ensemble"]
+    },
+    {
+        "id": 438,
+        "text": "**Counterpoint** combines independent melodic lines that harmonize vertically while maintaining horizontal integrity, as in Bach's fugues.",
+        "category": "fundamentals",
+        "tags": ["harmony", "composition", "polyphony", "classical"]
+    },
+    {
+        "id": 439,
+        "text": "A **canon** is a contrapuntal form where voices enter successively with the same melody (like 'Row Your Boat'), creating overlapping repetition.",
+        "category": "fundamentals",
+        "tags": ["form", "counterpoint", "round", "composition"]
+    },
+    {
+        "id": 440,
+        "text": "**Tuning systems** determine precise pitch relationships - equal temperament (modern standard) slightly compromises pure intervals to enable key changes.",
+        "category": "fundamentals",
+        "tags": ["pitch", "theory", "acoustics", "instruments"]
+    },
+    {
+        "id": 441,
+        "text": "The **circle of fifths** visually organizes keys by ascending fifths, showing relationships between major/minor keys and their key signatures.",
+        "category": "fundamentals",
+        "tags": ["theory", "keys", "harmony", "composition"]
+    },
+    {
+        "id": 442,
+        "text": "**Solfège** assigns syllables (do-re-mi) to scale degrees, aiding sight-singing and ear training in both fixed-do and movable-do systems.",
+        "category": "fundamentals",
+        "tags": ["ear training", "singing", "theory", "education"]
+    },
+    {
+        "id": 443,
+        "text": "A **ledger line** extends the staff to notate pitches above or below the five main lines, keeping all notes on the same relative line/space system.",
+        "category": "fundamentals",
+        "tags": ["notation", "reading music", "pitch", "beginner"]
+    },
+    {
+        "id": 444,
+        "text": "**Double stops** on string instruments involve bowing two strings simultaneously to produce harmony, requiring precise finger placement.",
+        "category": "fundamentals",
+        "tags": ["strings", "violin", "technique", "harmony"]
+    },
+    {
+        "id": 445,
+        "text": "**Pizzicato** indicates plucking rather than bowing string instruments, producing a short, percussive sound - common in jazz and orchestral works.",
+        "category": "fundamentals",
+        "tags": ["strings", "technique", "articulation", "performance"]
+    },
+    {
+        "id": 446,
+        "text": "**Harmonics** on strings produce bell-like tones by lightly touching nodes instead of pressing strings fully to the fingerboard.",
+        "category": "fundamentals",
+        "tags": ["strings", "technique", "acoustics", "timbre"]
+    },
+    {
+        "id": 447,
+        "text": "A **capo** clamps across guitar strings to raise pitch without changing fingering patterns, enabling easy key changes while using familiar chords.",
+        "category": "fundamentals",
+        "tags": ["guitar", "tools", "transposition", "performance"]
+    },
+    {
+        "id": 448,
+        "text": "**Barre chords** on guitar use one finger to press multiple strings, allowing movable chord shapes up/down the neck for different keys.",
+        "category": "fundamentals",
+        "tags": ["guitar", "technique", "chords", "beginner"]
+    },
+    {
+        "id": 449,
+        "text": "**Fingerpicking** plays guitar by plucking strings individually with fingers rather than strumming with a pick, enabling complex patterns.",
+        "category": "fundamentals",
+        "tags": ["guitar", "technique", "folk", "acoustic"]
+    },
+    {
+        "id": 450,
+        "text": "**Piano pedals** modify sound - sustain pedal (right) lets notes ring, soft pedal (left) reduces volume, sostenuto (middle) sustains select notes.",
+        "category": "fundamentals",
+        "tags": ["piano", "technique", "expression", "performance"]
+    },
+    {
+        "id": 451,
+        "text": "**Breathing techniques** for wind players and singers involve diaphragmatic support for steady tone and phrasing without running out of air.",
+        "category": "fundamentals",
+        "tags": ["winds", "voice", "technique", "performance"]
+    },
+    {
+        "id": 452,
+        "text": "**Embouchure** describes how mouth/lips interact with wind instrument mouthpieces, crucial for tone production and pitch control.",
+        "category": "fundamentals",
+        "tags": ["winds", "brass", "woodwinds", "technique"]
+    },
+    {
+        "id": 453,
+        "text": "**Drum rudiments** are standard sticking patterns (like paradiddles) that form the foundation of percussion technique across styles.",
+        "category": "fundamentals",
+        "tags": ["drums", "percussion", "technique", "practice"]
+    },
+    {
+        "id": 454,
+        "text": "A **backbeat** emphasizes beats 2 and 4 in 4/4 time - foundational to rock/pop drumming and creating groove/danceability.",
+        "category": "fundamentals",
+        "tags": ["rhythm", "drums", "groove", "rock"]
+    },
+    {
+        "id": 455,
+        "text": "**Vocal registers** describe different voice production mechanisms - chest voice (lower, powerful) and head voice (higher, lighter) most commonly referenced.",
+        "category": "fundamentals",
+        "tags": ["singing", "voice", "technique", "range"]
+    },
+    {
+        "id": 456,
+        "text": "**Falsetto** is a vocal register above normal range where only vocal cord edges vibrate, producing an airy, flute-like tone quality.",
+        "category": "fundamentals",
+        "tags": ["singing", "voice", "technique", "range"]
+    },
+    {
+        "id": 457,
+        "text": "**Sight-singing** is reading and singing music at first sight using solfège or other systems - essential for choral singers and music students.",
+        "category": "fundamentals",
+        "tags": ["singing", "reading music", "ear training", "education"]
+    },
+    {
+        "id": 458,
+        "text": "**Diction** in singing involves clear pronunciation of lyrics while maintaining proper vocal technique - especially important in classical and musical theater.",
+        "category": "fundamentals",
+        "tags": ["singing", "voice", "technique", "performance"]
+    },
+    {
+        "id": 459,
+        "text": "**Vocal warm-ups** prepare the voice through scales and exercises that gradually expand range while preventing strain or injury.",
+        "category": "fundamentals",
+        "tags": ["singing", "practice", "technique", "health"]
+    },
+    {
+        "id": 460,
+        "text": "A **choir** is an ensemble of singers typically divided into soprano, alto, tenor, and bass sections (SATB) to cover vocal ranges.",
+        "category": "fundamentals",
+        "tags": ["ensemble", "singing", "voice", "performance"]
+    },
+    {
+        "id": 461,
+        "text": "**Conducting patterns** visually represent beats in measures - downbeat on 1, then specific motions for subsequent beats to guide ensembles.",
+        "category": "fundamentals",
+        "tags": ["conducting", "ensemble", "performance", "timing"]
+    },
+    {
+        "id": 462,
+        "text": "**Rehearsal techniques** include sectional work (practicing parts separately), marking scores, and targeted repetition to efficiently improve ensemble performance.",
+        "category": "fundamentals",
+        "tags": ["practice", "ensemble", "performance", "education"]
+    },
+    {
+        "id": 463,
+        "text": "**Stage presence** involves performance elements beyond musical execution - posture, facial expression, and audience connection that enhance live shows.",
+        "category": "fundamentals",
+        "tags": ["performance", "live", "expression", "musicality"]
+    },
+    {
+        "id": 464,
+        "text": "**Music stands** hold sheet music at eye level during practice and performance, with adjustable height and angle for optimal reading posture.",
+        "category": "fundamentals",
+        "tags": ["equipment", "performance", "practice", "tools"]
+    },
+    {
+        "id": 465,
+        "text": "**Tuning forks** produce a specific pitch (usually A440) when struck, providing a reference for tuning instruments before playing.",
+        "category": "fundamentals",
+        "tags": ["tuning", "tools", "pitch", "beginner"]
+    },
+    {
+        "id": 466,
+        "text": "**Electronic tuners** detect and display pitch accuracy via microphone or instrument input, helping musicians tune quickly and precisely.",
+        "category": "fundamentals",
+        "tags": ["tuning", "technology", "tools", "practice"]
+    },
+    {
+        "id": 467,
+        "text": "**Sheet music** is printed musical notation showing pitches, rhythms, and performance instructions - available for solo pieces or ensemble arrangements.",
+        "category": "fundamentals",
+        "tags": ["notation", "reading", "performance", "education"]
+    },
+    {
+        "id": 468,
+        "text": "**Fake books** provide simplified chord charts and melodies for jazz/pop standards, allowing musicians to improvise their own arrangements.",
+        "category": "fundamentals",
+        "tags": ["notation", "jazz", "improvisation", "performance"]
+    },
+    {
+        "id": 469,
+        "text": "**Lead sheets** contain essential song elements - melody, lyrics, and chord symbols - for performers to create their own interpretations.",
+        "category": "fundamentals",
+        "tags": ["notation", "songwriting", "jazz", "performance"]
+    },
+    {
+        "id": 470,
+        "text": "**Tablature** shows finger positions rather than pitches, commonly used for guitar, bass, and other fretted instruments.",
+        "category": "fundamentals",
+        "tags": ["notation", "guitar", "beginner", "reading music"]
+    },
+    {
+        "id": 471,
+        "text": "**Music software** includes notation programs (Finale, Sibelius), DAWs for recording (Pro Tools, Logic), and ear training/apps for learning.",
+        "category": "fundamentals",
+        "tags": ["technology", "composition", "recording", "education"]
+    },
+    {
+        "id": 472,
+        "text": "**Practice routines** should include warm-ups, technical exercises, repertoire work, and sight-reading for balanced musical development.",
+        "category": "fundamentals",
+        "tags": ["practice", "technique", "education", "skills"]
+    },
+    {
+        "id": 473,
+        "text": "**Scales and arpeggios** are fundamental technical exercises that develop finger dexterity, tone production, and understanding of key relationships.",
+        "category": "fundamentals",
+        "tags": ["practice", "technique", "theory", "education"]
+    },
+    {
+        "id": 474,
+        "text": "**Etudes** are short musical compositions designed to develop specific technical skills while maintaining artistic value beyond pure exercises.",
+        "category": "fundamentals",
+        "tags": ["practice", "technique", "education", "repertoire"]
+    },
+    {
+        "id": 475,
+        "text": "**Music stands** hold sheet music at eye level during practice and performance, with adjustable height and angle for optimal reading posture.",
+        "category": "fundamentals",
+        "tags": ["equipment", "performance", "practice", "tools"]
+    },
+    {
+        "id": 476,
+        "text": "**Tuning forks** produce a specific pitch (usually A440) when struck, providing a reference for tuning instruments before playing.",
+        "category": "fundamentals",
+        "tags": ["tuning", "tools", "pitch", "beginner"]
+    },
+    {
+        "id": 477,
+        "text": "**Electronic tuners** detect and display pitch accuracy via microphone or instrument input, helping musicians tune quickly and precisely.",
+        "category": "fundamentals",
+        "tags": ["tuning", "technology", "tools", "practice"]
+    },
+    {
+        "id": 478,
+        "text": "**Sheet music** is printed musical notation showing pitches, rhythms, and performance instructions - available for solo pieces or ensemble arrangements.",
+        "category": "fundamentals",
+        "tags": ["notation", "reading", "performance", "education"]
+    },
+    {
+        "id": 479,
+        "text": "**Fake books** provide simplified chord charts and melodies for jazz/pop standards, allowing musicians to improvise their own arrangements.",
+        "category": "fundamentals",
+        "tags": ["notation", "jazz", "improvisation", "performance"]
+    },
+    {
+        "id": 480,
+        "text": "**Lead sheets** contain essential song elements - melody, lyrics, and chord symbols - for performers to create their own interpretations.",
+        "category": "fundamentals",
+        "tags": ["notation", "songwriting", "jazz", "performance"]
+    },
+    {
+        "id": 481,
+        "text": "**Tablature** shows finger positions rather than pitches, commonly used for guitar, bass, and other fretted instruments.",
+        "category": "fundamentals",
+        "tags": ["notation", "guitar", "beginner", "reading music"]
+    },
+    {
+        "id": 482,
+        "text": "**Music software** includes notation programs (Finale, Sibelius), DAWs for recording (Pro Tools, Logic), and ear training/apps for learning.",
+        "category": "fundamentals",
+        "tags": ["technology", "composition", "recording", "education"]
+    },
+    {
+        "id": 483,
+        "text": "**Practice routines** should include warm-ups, technical exercises, repertoire work, and sight-reading for balanced musical development.",
+        "category": "fundamentals",
+        "tags": ["practice", "technique", "education", "skills"]
+    },
+    {
+        "id": 484,
+        "text": "**Scales and arpeggios** are fundamental technical exercises that develop finger dexterity, tone production, and understanding of key relationships.",
+        "category": "fundamentals",
+        "tags": ["practice", "technique", "theory", "education"]
+    },
+    {
+        "id": 485,
+        "text": "**Etudes** are short musical compositions designed to develop specific technical skills while maintaining artistic value beyond pure exercises.",
+        "category": "fundamentals",
+        "tags": ["practice", "technique", "education", "repertoire"]
+    },
+    {
+        "id": 486,
+        "text": "**Music history** studies the evolution of musical styles, forms, and practices across cultures and historical periods from ancient to contemporary.",
+        "category": "fundamentals",
+        "tags": ["education", "culture", "tradition", "analysis"]
+    },
+    {
+        "id": 487,
+        "text": "**Music appreciation** involves listening to and understanding diverse musical styles to develop critical listening skills and cultural awareness.",
+        "category": "fundamentals",
+        "tags": ["education", "listening", "culture", "analysis"]
+    },
+    {
+        "id": 488,
+        "text": "**Ear protection** like musician's earplugs helps prevent hearing damage during loud rehearsals/performances while maintaining sound quality.",
+        "category": "fundamentals",
+        "tags": ["health", "safety", "performance", "equipment"]
+    },
+    {
+        "id": 489,
+        "text": "**Proper posture** aligns the body efficiently for playing instruments or singing, preventing strain and enabling optimal breath support/technique.",
+        "category": "fundamentals",
+        "tags": ["technique", "health", "performance", "beginner"]
+    },
+    {
+        "id": 490,
+        "text": "**Stage fright** management techniques include preparation, breathing exercises, and positive visualization to overcome performance anxiety.",
+        "category": "fundamentals",
+        "tags": ["performance", "psychology", "anxiety", "skills"]
+    },
+    {
+        "id": 491,
+        "text": "**Musical memory** can be developed through analysis, repetition, and association techniques to perform without sheet music.",
+        "category": "fundamentals",
+        "tags": ["performance", "practice", "skills", "education"]
+    },
+    {
+        "id": 492,
+        "text": "**Audition preparation** involves selecting appropriate repertoire, practicing under pressure, and presenting oneself professionally for ensemble placements.",
+        "category": "fundamentals",
+        "tags": ["performance", "education", "career", "skills"]
+    },
+    {
+        "id": 493,
+        "text": "**Music festivals** bring together performers and audiences for concentrated musical experiences, ranging from classical to contemporary genres.",
+        "category": "fundamentals",
+        "tags": ["performance", "community", "culture", "events"]
+    },
+    {
+        "id": 494,
+        "text": "**Jam sessions** are informal gatherings where musicians play together, often improvising on standards or original material in jazz/rock/blues contexts.",
+        "category": "fundamentals",
+        "tags": ["performance", "improvisation", "community", "skills"]
+    },
+    {
+        "id": 495,
+        "text": "**Open mics** provide performance opportunities for musicians to showcase original material or covers in a supportive, low-pressure environment.",
+        "category": "fundamentals",
+        "tags": ["performance", "community", "beginner", "singing"]
+    },
+    {
+        "id": 496,
+        "text": "**Busking** is street performance where musicians play for tips, requiring portable equipment and repertoire suited to outdoor acoustics.",
+        "category": "fundamentals",
+        "tags": ["performance", "community", "career", "singing"]
+    },
+    {
+        "id": 497,
+        "text": "**Music therapy** uses musical interventions to address physical, emotional, cognitive, and social needs in clinical and educational settings.",
+        "category": "fundamentals",
+        "tags": ["health", "education", "psychology", "career"]
+    },
+    {
+        "id": 498,
+        "text": "**Community bands/orchestras** offer amateur musicians opportunities to play challenging repertoire in ensemble settings regardless of professional aspirations.",
+        "category": "fundamentals",
+        "tags": ["ensemble", "community", "performance", "education"]
+    },
+    {
+        "id": 499,
+        "text": "**Music camps** provide intensive summer programs for students to develop skills through masterclasses, ensemble playing, and private lessons.",
+        "category": "fundamentals",
+        "tags": ["education", "summer", "performance", "ensemble"]
+    },
+    {
+        "id": 500,
+        "text": "**Music competitions** motivate excellence through adjudicated performances, offering prizes, recognition, and performance opportunities for winners.",
+        "category": "fundamentals",
+        "tags": ["performance", "education", "career", "skills"]
+    },
+    {
+        "id": 501,
+        "text": "**'Bohemian Rhapsody' by Queen** (1975) blends rock, ballad, and opera elements in its six-minute suite structure. The song's complex vocal harmonies and guitar solo made it one of the most innovative pop-rock songs ever recorded.",
+        "category": "song",
+        "tags": ["Queen", "classic rock", "progressive", "vocal harmonies"]
+    },
+    {
+        "id": 502,
+        "text": "**'Like a Rolling Stone' by Bob Dylan** (1965) revolutionized rock music with its six-minute length and poetic lyrics. The Hammond organ riff and Dylan's sneering vocal delivery created a new template for rock songwriting.",
+        "category": "song",
+        "tags": ["Bob Dylan", "folk rock", "lyrics", "1960s"]
+    },
+    {
+        "id": 503,
+        "text": "**'Billie Jean' by Michael Jackson** (1982) features one of the most recognizable bass lines in pop history. The song's minimalist production and Jackson's vocal performance helped make 'Thriller' the best-selling album ever.",
+        "category": "song",
+        "tags": ["Michael Jackson", "pop", "bass line", "Thriller"]
+    },
+    {
+        "id": 504,
+        "text": "**'Smells Like Teen Spirit' by Nirvana** (1991) defined the grunge movement with its loud-quiet dynamics and angsty lyrics. The song's music video featuring a chaotic high school gym performance became iconic.",
+        "category": "song",
+        "tags": ["Nirvana", "grunge", "1990s", "alternative rock"]
+    },
+    {
+        "id": 505,
+        "text": "**'Imagine' by John Lennon** (1971) remains one of the most famous peace anthems with its simple piano melody and utopian lyrics. The song's message continues to resonate globally decades after its release.",
+        "category": "song",
+        "tags": ["John Lennon", "piano", "peace anthem", "1970s"]
+    },
+    {
+        "id": 506,
+        "text": "**'Hey Jude' by The Beatles** (1968) features one of the longest fadeouts in popular music at over four minutes. The song's 'na-na-na' coda and emotional build make it a timeless singalong classic.",
+        "category": "song",
+        "tags": ["The Beatles", "singalong", "1960s", "ballad"]
+    },
+    {
+        "id": 507,
+        "text": "**'Sweet Child O' Mine' by Guns N' Roses** (1987) opens with one of rock's most famous guitar riffs by Slash. The song's structure shifts from tender verses to explosive choruses, showcasing Axl Rose's vocal range.",
+        "category": "song",
+        "tags": ["Guns N' Roses", "guitar riff", "hard rock", "1980s"]
+    },
+    {
+        "id": 508,
+        "text": "**'Rolling in the Deep' by Adele** (2010) brought soul music back to the mainstream with its stomping beat and powerful vocals. The song's emotional intensity and bluesy progression helped it become a global hit.",
+        "category": "song",
+        "tags": ["Adele", "soul", "2010s", "vocal performance"]
+    },
+    {
+        "id": 509,
+        "text": "**'Hotel California' by The Eagles** (1976) is famous for its dual guitar outro and cryptic lyrics about excess. The song's extended solos and harmonic minor scale give it a distinctive Spanish-flavored sound.",
+        "category": "song",
+        "tags": ["The Eagles", "classic rock", "guitar solo", "1970s"]
+    },
+    {
+        "id": 510,
+        "text": "**'Purple Haze' by Jimi Hendrix** (1967) introduced psychedelic rock with its distorted guitar and ambiguous lyrics. The song's innovative use of the 'Hendrix chord' (7#9) created a new vocabulary for rock guitar.",
+        "category": "song",
+        "tags": ["Jimi Hendrix", "psychedelic", "guitar", "1960s"]
+    },
+    {
+        "id": 511,
+        "text": "**'Yesterday' by The Beatles** (1965) is one of the most covered songs in history with over 2,200 versions. McCartney's melancholy melody and string quartet arrangement set a new standard for pop ballads.",
+        "category": "song",
+        "tags": ["The Beatles", "ballad", "strings", "1960s"]
+    },
+    {
+        "id": 512,
+        "text": "**'I Will Always Love You' by Whitney Houston** (1992) features one of the most powerful vocal performances in pop history. Originally a Dolly Parton country song, Houston's version became the best-selling single by a female artist.",
+        "category": "song",
+        "tags": ["Whitney Houston", "vocal", "ballad", "1990s"]
+    },
+    {
+        "id": 513,
+        "text": "**'Stairway to Heaven' by Led Zeppelin** (1971) builds from acoustic folk to hard rock across its eight-minute duration. The song's mystical lyrics and Page's guitar solo made it a classic rock radio staple.",
+        "category": "song",
+        "tags": ["Led Zeppelin", "progressive", "guitar", "1970s"]
+    },
+    {
+        "id": 514,
+        "text": "**'Superstition' by Stevie Wonder** (1972) features one of funk's most recognizable clavinet riffs. Wonder's syncopated vocals and the horn arrangements create an irresistible groove that defined 1970s soul.",
+        "category": "song",
+        "tags": ["Stevie Wonder", "funk", "clavinet", "1970s"]
+    },
+    {
+        "id": 515,
+        "text": "**'Like a Virgin' by Madonna** (1984) became a cultural phenomenon with its provocative lyrics and danceable beat. The song's production by Nile Rodgers helped establish Madonna as the Queen of Pop.",
+        "category": "song",
+        "tags": ["Madonna", "pop", "1980s", "dance"]
+    },
+    {
+        "id": 516,
+        "text": "**'Sweet Home Alabama' by Lynyrd Skynyrd** (1974) responds to Neil Young's critiques of the South with its iconic guitar riff. The song's three-guitar attack became a blueprint for Southern rock.",
+        "category": "song",
+        "tags": ["Lynyrd Skynyrd", "Southern rock", "guitar", "1970s"]
+    },
+    {
+        "id": 517,
+        "text": "**'Thriller' by Michael Jackson** (1982) revolutionized music videos with its 13-minute horror movie narrative. The song's Vincent Price rap and Quincy Jones production created a Halloween anthem for generations.",
+        "category": "song",
+        "tags": ["Michael Jackson", "music video", "1980s", "Halloween"]
+    },
+    {
+        "id": 518,
+        "text": "**'Blinding Lights' by The Weeknd** (2019) brought 1980s synthwave into modern pop with its pulsating rhythm. The song broke records by spending over a year in the Billboard Top 10.",
+        "category": "song",
+        "tags": ["The Weeknd", "synthwave", "2010s", "retro"]
+    },
+    {
+        "id": 519,
+        "text": "**'Respect' by Aretha Franklin** (1967) transformed Otis Redding's original into a feminist anthem. Franklin's powerful vocals and the 'sock it to me' backing vocals made it her signature song.",
+        "category": "song",
+        "tags": ["Aretha Franklin", "soul", "feminist", "1960s"]
+    },
+    {
+        "id": 520,
+        "text": "**'Wonderwall' by Oasis** (1995) became the definitive Britpop ballad with its acoustic strumming pattern. The song's simple chord progression and ambiguous lyrics made it a global singalong favorite.",
+        "category": "song",
+        "tags": ["Oasis", "Britpop", "acoustic", "1990s"]
+    },
+    {
+        "id": 521,
+        "text": "**'Uptown Funk' by Mark Ronson ft. Bruno Mars** (2014) revived funk music with its horn-driven groove and retro production. The song's dance challenge went viral, helping it spend 14 weeks at #1.",
+        "category": "song",
+        "tags": ["Bruno Mars", "funk", "2010s", "dance"]
+    },
+    {
+        "id": 522,
+        "text": "**'Don't Stop Believin'' by Journey** (1981) features one of the most recognizable piano intros in rock. The song's underdog narrative and anthemic chorus gave it enduring popularity across generations.",
+        "category": "song",
+        "tags": ["Journey", "piano", "anthem", "1980s"]
+    },
+    {
+        "id": 523,
+        "text": "**'Single Ladies' by Beyoncé** (2008) popularized the 'uh-oh' hook and its iconic dance routine. The song's minimalist production and feminist message made it a cultural milestone.",
+        "category": "song",
+        "tags": ["Beyoncé", "R&B", "dance", "2000s"]
+    },
+    {
+        "id": 524,
+        "text": "**'Smoke on the Water' by Deep Purple** (1972) contains one of the most famous guitar riffs in rock history. The song's lyrics recount the true story of a casino fire during the band's recording session.",
+        "category": "song",
+        "tags": ["Deep Purple", "hard rock", "guitar riff", "1970s"]
+    },
+    {
+        "id": 525,
+        "text": "**'Shape of You' by Ed Sheeran** (2017) blends pop with dancehall influences in its tropical house production. The song became Spotify's most-streamed track with over 3 billion plays.",
+        "category": "song",
+        "tags": ["Ed Sheeran", "pop", "streaming", "2010s"]
+    },
+    {
+        "id": 526,
+        "text": "**'Johnny B. Goode' by Chuck Berry** (1958) established the template for rock guitar with its opening riff. The song's lyrics about a 'country boy' who 'could play guitar' became rock's origin story.",
+        "category": "song",
+        "tags": ["Chuck Berry", "rock and roll", "guitar", "1950s"]
+    },
+    {
+        "id": 527,
+        "text": "**'Hey Ya!' by OutKast** (2003) disguised its melancholic lyrics with an upbeat funk production. The song's 'shake it like a Polaroid picture' hook and retro influences made it a genre-defying hit.",
+        "category": "song",
+        "tags": ["OutKast", "funk", "hip-hop", "2000s"]
+    },
+    {
+        "id": 528,
+        "text": "**'Lose Yourself' by Eminem** (2002) became the first rap song to win an Academy Award for Best Original Song. The track's motivational lyrics and tense production captured the spirit of the film '8 Mile.'",
+        "category": "song",
+        "tags": ["Eminem", "hip-hop", "soundtrack", "2000s"]
+    },
+    {
+        "id": 529,
+        "text": "**'All About That Bass' by Meghan Trainor** (2014) promoted body positivity through its doo-wop inspired production. The song's retro sound and anti-photoshop message resonated globally.",
+        "category": "song",
+        "tags": ["Meghan Trainor", "pop", "body positive", "2010s"]
+    },
+    {
+        "id": 530,
+        "text": "**'Every Breath You Take' by The Police** (1983) features one of pop's most misunderstood lyrics - a stalker narrative disguised as a love song. The song's simple guitar arpeggio and Sting's vocals made it a #1 hit.",
+        "category": "song",
+        "tags": ["The Police", "new wave", "guitar", "1980s"]
+    },
+    {
+        "id": 531,
+        "text": "**'Hallelujah' by Leonard Cohen** (1984) gained fame through covers by Jeff Buckley and others. The song's biblical references and emotional progression make it a modern standard at weddings and funerals alike.",
+        "category": "song",
+        "tags": ["Leonard Cohen", "ballad", "covers", "1980s"]
+    },
+    {
+        "id": 532,
+        "text": "**'Old Town Road' by Lil Nas X** (2019) blended country and trap music to break Billboard records. The song's viral TikTok popularity and Billy Ray Cyrus remix created a cultural phenomenon.",
+        "category": "song",
+        "tags": ["Lil Nas X", "country trap", "viral", "2010s"]
+    },
+    {
+        "id": 533,
+        "text": "**'Poker Face' by Lady Gaga** (2008) brought electropop to mainstream audiences with its robotic vocals and gambling metaphors. The song's 'mum-mum-mum-mah' hook became instantly recognizable worldwide.",
+        "category": "song",
+        "tags": ["Lady Gaga", "electropop", "dance", "2000s"]
+    },
+    {
+        "id": 534,
+        "text": "**'Sweet Caroline' by Neil Diamond** (1969) became a sports stadium anthem with its 'so good, so good' call-and-response chorus. The song's horn arrangements and Diamond's delivery created timeless appeal.",
+        "category": "song",
+        "tags": ["Neil Diamond", "stadium anthem", "1960s", "singalong"]
+    },
+    {
+        "id": 535,
+        "text": "**'WAP' by Cardi B ft. Megan Thee Stallion** (2020) sparked debates about female sexuality in hip-hop with its explicit lyrics. The song's bass-heavy production and unapologetic message broke streaming records.",
+        "category": "song",
+        "tags": ["Cardi B", "hip-hop", "feminist", "2020s"]
+    },
+    {
+        "id": 536,
+        "text": "**'Take On Me' by a-ha** (1985) combined synthpop with its groundbreaking rotoscoped music video. The song's soaring chorus and Morten Harket's falsetto made it an 1980s signature track.",
+        "category": "song",
+        "tags": ["a-ha", "synthpop", "music video", "1980s"]
+    },
+    {
+        "id": 537,
+        "text": "**'No Woman, No Cry' by Bob Marley** (1974) introduced reggae to global audiences with its comforting message. The live version from 'Natty Dread' album became the definitive recording of this anthem.",
+        "category": "song",
+        "tags": ["Bob Marley", "reggae", "live", "1970s"]
+    },
+    {
+        "id": 538,
+        "text": "**'Happy' by Pharrell Williams** (2013) became a global mood booster with its disco-influenced production. The song's 24-hour music video featuring cameos from celebrities enhanced its viral appeal.",
+        "category": "song",
+        "tags": ["Pharrell Williams", "disco", "happy", "2010s"]
+    },
+    {
+        "id": 539,
+        "text": "**'Dreams' by Fleetwood Mac** (1977) gained renewed popularity in 2020 through a viral TikTok trend. Stevie Nicks' mystical lyrics and the song's smooth groove exemplify the 'Rumours' album's magic.",
+        "category": "song",
+        "tags": ["Fleetwood Mac", "soft rock", "TikTok", "1970s"]
+    },
+    {
+        "id": 540,
+        "text": "**'Bad Guy' by Billie Eilish** (2019) defined Gen Z pop with its whisper vocals and sub-bass production. The song's anti-chorus structure and dark humor marked a shift in mainstream pop aesthetics.",
+        "category": "song",
+        "tags": ["Billie Eilish", "Gen Z", "whisper pop", "2010s"]
+    },
+    {
+        "id": 541,
+        "text": "**'Watermelon Sugar' by Harry Styles** (2019) channeled 1970s soft rock with its sensual lyrics and breezy production. The song's summer vibe and saxophone solo made it a streaming era favorite.",
+        "category": "song",
+        "tags": ["Harry Styles", "soft rock", "summer", "2010s"]
+    },
+    {
+        "id": 542,
+        "text": "**'Dancing Queen' by ABBA** (1976) perfected Europop with its sparkling piano and soaring vocals. The song's celebration of youth became an eternal disco floorfiller and Broadway showstopper.",
+        "category": "song",
+        "tags": ["ABBA", "disco", "Europop", "1970s"]
+    },
+    {
+        "id": 543,
+        "text": "**'All I Want for Christmas Is You' by Mariah Carey** (1994) became the modern Christmas standard through its retro-inspired production. The song's annual chart resurgence makes it one of music's most valuable copyrights.",
+        "category": "song",
+        "tags": ["Mariah Carey", "Christmas", "holiday", "1990s"]
+    },
+    {
+        "id": 544,
+        "text": "**'Crazy in Love' by Beyoncé ft. Jay-Z** (2003) introduced Beyoncé as a solo artist with its horn sample and energetic delivery. The song's music video featuring denim shorts became instantly iconic.",
+        "category": "song",
+        "tags": ["Beyoncé", "R&B", "2000s", "music video"]
+    },
+    {
+        "id": 545,
+        "text": "**'Take Me Home, Country Roads' by John Denver** (1971) became an unofficial anthem for West Virginia despite being written about Maryland. The song's folksy charm and singalong chorus give it timeless appeal.",
+        "category": "song",
+        "tags": ["John Denver", "country", "folk", "1970s"]
+    },
+    {
+        "id": 546,
+        "text": "**'Royals' by Lorde** (2013) disrupted pop music with its minimalist production and anti-materialistic lyrics. The then-16-year-old's deadpan delivery created a new template for teen pop stars.",
+        "category": "song",
+        "tags": ["Lorde", "minimalist", "teen", "2010s"]
+    },
+    {
+        "id": 547,
+        "text": "**'My Heart Will Go On' by Celine Dion** (1997) became synonymous with 'Titanic' through its emotional power ballad delivery. The song's penny whistle intro and sweeping strings made it a wedding staple.",
+        "category": "song",
+        "tags": ["Celine Dion", "ballad", "soundtrack", "1990s"]
+    },
+    {
+        "id": 548,
+        "text": "**'Enter Sandman' by Metallica** (1991) brought heavy metal to mainstream radio with its ominous riff and nursery rhyme lyrics. The song's dynamic shifts between verses and chorus showcase thrash metal's power.",
+        "category": "song",
+        "tags": ["Metallica", "heavy metal", "riff", "1990s"]
+    },
+    {
+        "id": 549,
+        "text": "**'Firework' by Katy Perry** (2010) became an empowerment anthem with its explosive chorus and inspirational lyrics. The song's maximalist production and Perry's vocal delivery defined early 2010s pop.",
+        "category": "song",
+        "tags": ["Katy Perry", "pop", "empowerment", "2010s"]
+    },
+    {
+        "id": 550,
+        "text": "**'Shallow' by Lady Gaga & Bradley Cooper** (2018) revived the power duet through its 'A Star Is Born' film performance. The song's raw vocal takes and country-rock production earned it an Academy Award.",
+        "category": "song",
+        "tags": ["Lady Gaga", "duet", "soundtrack", "2010s"]
+    }
+]
