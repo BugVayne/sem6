@@ -1,6 +1,6 @@
 # Лабораторная работа №1 по дисциплине Модели решения задач в интеллектуальных системах.
 # Вариант 7. Реализовать алгоритм вычисления произведения пары 6-разрядных чисел умножением с младших разрядов со сдвигом множимого влево.
-# Выполнена студентом группы 221702 БГУИР Багдасаров Тван Евгеньевич
+# Выполнена студентом группы 221702 БГУИР Багдасаров Иван Евгеньевич
 
 
 
@@ -137,7 +137,6 @@ def main():
                     pipeline_stages[0] = calculate_partial_product(input_queue.pop(0), flag=False)
                 elif pipeline_stages[stage_index - 1] and stage_index>0:  # Обрабатываем данные из предыдущего этапа
                     current_stage = pipeline_stages[stage_index - 1]
-                    # Сдвигаем множитель вправо
                     current_stage['multiplier'] = '0' + current_stage['multiplier'][:-1]
                     pipeline_stages[stage_index] = calculate_partial_product(current_stage)
                     pipeline_stages[stage_index - 1] = None  # Освобождаем предыдущий этап
